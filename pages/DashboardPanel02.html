@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/breadcrumb.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxGrid.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTopCtrl.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxStep.css" />
+
+    <link rel="stylesheet" href="/styles/css/pages/dashboard.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">ZTP Dashboard</h2>
+          </div>
+
+          <div class="box_breadcrumb">
+            <a href="#">ZTP Dashboard</a>
+            <strong>windriver 2112 demo 1</strong>
+          </div>
+
+          <div class="box_step">
+            <ul>
+              <li>
+                <i class="step">1</i>
+                <strong>REGISTERING</strong>
+                <span>47s / 60s</span>
+              </li>
+              <li>
+                <i class="step">2</i>
+                <strong>HEALTH_CHECK</strong>
+                <span>5.4m / 300s</span>
+              </li>
+              <li>
+                <i class="step">3</i>
+                <strong>BIOS_SETUP</strong>
+                <span>2.4m / 120s</span>
+              </li>
+              <li>
+                <i class="step">4</i>
+                <strong>PROVISING</strong>
+                <span>22.4m / 300s</span>
+              </li>
+              <li>
+                <i class="step">5</i>
+                <strong>HYPERVISOR_INSTALL</strong>
+                <span>0 / 600s</span>
+              </li>
+              <li>
+                <i class="step">6</i>
+                <strong>PLATFORM_SETUP</strong>
+                <span>46.7m / 600s</span>
+              </li>
+              <li>
+                <i class="step">7</i>
+                <strong>DEVELOPED</strong>
+                <span>0 / 60s</span>
+              </li>
+            </ul>
+          </div>
+          <div class="box_grid_item">
+            <div class="grid_title">
+              <strong>xr11-test2.exapmple.com</strong>
+            </div>
+            <div class="grid_cont">
+              <div class="box_top_ctrl">
+                <div class="right_area">
+                  <button type="button" class="btn_basic btn_blue"><span>DEPLOYED</span></button>
+                  <button type="button" class="btn_basic btn_gray02"><span>COMPLETED</span></button>
+                  <button type="button" class="btn_basic btn_gray03"><span>DETAILS</span></button>
+                </div>
+              </div>
+
+              <div class="box_table_wrap">
+                <table>
+                  <caption>
+                    ID,Point ,Step ,Status ,Description ,Created/Updated 에 관한 표
+                  </caption>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
+                    <col />
+                    <col style="width: 170px" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col" class="t_left">ID</th>
+                      <th scope="col" class="t_left">Point</th>
+                      <th scope="col" class="t_left">Step</th>
+                      <th scope="col" class="t_left">Status</th>
+                      <th scope="col" class="t_left">Description</th>
+                      <th scope="col" class="t_left">Created/Updated</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="t_left"><span class="num">123</span></td>
+                      <td class="t_left">ZTP-07</td>
+                      <td class="t_left">DEPLOYED</td>
+                      <td class="t_left">Completed</td>
+                      <td class="t_left"></td>
+                      <td class="t_left">2022-11-18 03:04:56</td>
+                    </tr>
+
+                    <tr class="no_data">
+                      <td colspan="6">
+                        <p>내용없음 텍스트</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+  </body>
+</html>

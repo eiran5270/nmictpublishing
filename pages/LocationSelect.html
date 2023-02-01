@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/breadcrumb.css" />
+    <link rel="stylesheet" href="/styles/css/components/tab.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxGrid.css" />
+
+    <link rel="stylesheet" href="/styles/css/pages/locationSelect.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">Locations</h2>
+
+            <div class="box_ctrl_btns">
+              <button type="button" class="btn_basic btn_gray"><span>Cancel</span></button>
+              <button type="button" class="btn_basic btn_blue"><span>Submit</span></button>
+            </div>
+          </div>
+
+          <div class="box_breadcrumb">
+            <a href="#">Locations</a>
+            <strong>abp-test.example.com</strong>
+          </div>
+
+          <div class="box_tab_menu">
+            <!-- [D] 탭 swiper 넣어주세요 -->
+            <div class="box_tab_anchors">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Locations</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Users</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">SmartProxies</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Subnets</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">ComputeResources</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Media</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">ProvisioningTemplates</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item active">
+                  <button type="button" class="tab_anchor">PartitionTables</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Domains</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Realms</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">HostGroups</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Organizations</button>
+                </div>
+              </div>
+            </div>
+            <div class="box_tab_container">
+              <div class="tab_cont" style="display: block">
+                <div class="box_selected_location">
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <strong>Available</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <ul class="box_select_list">
+                        <li>
+                          <button type="button"><span>ABP Kickstart root</span></button>
+                        </li>
+                        <li class="active">
+                          <button type="button"><span>AutoYaST entire SCSI disk</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>AutoYaST LVM</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>CoreOS default fake</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Empty</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>FreeBSD default fake</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart default</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>Jumpstart mirrered</span></button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box_btns">
+                    <button type="button" class="btn_move right"><span class="hidden">selected로 이동</span></button>
+                    <button type="button" class="btn_move right_all"><span class="hidden">selected로 전체 이동</span></button>
+                    <button type="button" class="btn_move left" disabled><span class="hidden">Available로 이동</span></button>
+                    <button type="button" class="btn_move left_all"><span class="hidden">Available로 전체 이동</span></button>
+                  </div>
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <strong>Selected</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <ul class="box_select_list">
+                        <li>
+                          <button type="button"><span>ABP kickstart Null</span></button>
+                        </li>
+                        <li>
+                          <button type="button"><span>AutoYaST entire virtual disk</span></button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Swiper JS 스와이프 라이브러리용. fo작업시 필요없음 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+    <script>
+      var swiper = new Swiper(".box_tab_anchors", {
+        slidesPerView: "auto",
+      });
+    </script>
+  </body>
+</html>

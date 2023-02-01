@@ -1,0 +1,257 @@
+/* font face */
+@font-face {
+  font-family: "pretendard";
+  font-weight: 400;
+  src: local("pretendard"), url("/assets/fonts/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "pretendard";
+  font-weight: 500;
+  src: local("pretendard"), url("/assets/fonts/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "pretendard";
+  font-weight: 600;
+  src: local("pretendard"), url("/assets/fonts/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "pretendard";
+  font-weight: 700;
+  src: local("pretendard"), url("/assets/fonts/Pretendard-Bold.woff") format("woff");
+}
+
+/* reset */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  font-family: "pretendard", "Malgun Gothic", "맑은 고딕", "돋음", "Dotum", "Apple SD Gothic Neo", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #565656;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  color: #565656;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+address,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+caption {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  text-indent: -999em;
+}
+th,
+td {
+  word-break: break-all;
+  border-collapse: collapse;
+}
+fieldset {
+  width: 100%;
+  pointer-events: none;
+}
+fieldset,
+img {
+  border: 0;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+button,
+select,
+input,
+textarea,
+label,
+img {
+  vertical-align: middle;
+}
+input {
+  border-radius: 0px;
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: "pretendard", "Malgun Gothic", "맑은 고딕", "돋음", "Dotum", "Apple SD Gothic Neo", Arial, Helvetica, sans-serif;
+  outline: 0px;
+  border: 0;
+}
+button {
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  font-family: "pretendard", "Malgun Gothic", "맑은 고딕", "돋음", "Dotum", "Apple SD Gothic Neo", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000;
+  line-height: 20px;
+}
+button:disabled {
+  cursor: default;
+}
+address,
+caption,
+em,
+strong,
+th,
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+em,
+address {
+  font-style: normal;
+}
+i {
+  font-style: normal;
+}
+/* textarea */
+textarea {
+  width: 100%;
+  /* Remove First */
+  -webkit-appearance: none;
+  resize: none;
+  outline: 0px;
+  border: 0;
+  font-family: "pretendard", "Malgun Gothic", "맑은 고딕", "돋음", "Dotum", "Apple SD Gothic Neo", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #565656;
+}
+
+/* hidden */
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.hide {
+  display: none;
+}
+
+/* common */
+.wrapper {
+  display: flex;
+  // overflow-x: hidden;
+  min-width: 1280px;
+  width: 100%;
+  height: 100%;
+  .side_bar {
+    &:not(.open) ~ .page_wrapper {
+      width: calc(100% - 80px);
+    }
+    & ~ .page_wrapper {
+      width: calc(100% - 261px);
+      transition: all 0.4s;
+      .header ~ .container {
+        padding: 20px 40px;
+      }
+    }
+  }
+  .page_wrapper {
+    width: 100%;
+  }
+}

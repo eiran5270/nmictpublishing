@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/breadcrumb.css" />
+    <link rel="stylesheet" href="/styles/css/components/tab.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTableList.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTopCtrl.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTextarea.css" />
+    <link rel="stylesheet" href="/styles/css/components/pagination.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">Products</h2>
+
+            <div class="box_ctrl_btns">
+              <div class="box_select mid02">
+                <button type="button" class="btn_select"><span>Take Action</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box_breadcrumb">
+            <a href="#">Products</a>
+            <strong>CentOS-7-x86_64-2009</strong>
+          </div>
+
+          <div class="box_tab_menu">
+            <div class="box_tab_anchors">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide tab_anchor_item active">
+                  <button type="button" class="tab_anchor">Details</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Repositories</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Tasks</button>
+                </div>
+              </div>
+            </div>
+            <div class="box_tab_container">
+              <div class="tab_cont" style="display: block">
+                <div class="box_top_ctrl">
+                  <div class="right_area">
+                    <button type="button" class="btn_basic btn_blue"><span>Submit</span></button>
+                    <button type="button" class="btn_basic btn_gray"><span>Cancel</span></button>
+                  </div>
+                </div>
+
+                <div class="box_table_list">
+                  <div class="table_list_item">
+                    <strong class="title">Basic Information</strong>
+                    <table>
+                      <caption>
+                        ID, JobGroup, Name, #Jobs/#Tasks, Enabled, Snippet, Created/Updated, Actions 에 관한 표
+                      </caption>
+                      <colgroup>
+                        <col style="width: 180px" />
+                        <col />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><label for="ipt01">Name</label></th>
+                          <td>
+                            <div class="box_input small">
+                              <input type="text" value="CentOS-7-x86_64-2009" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Label</th>
+                          <td>CentOS-7-x86_64-2009</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">GPG Key</th>
+                          <td>
+                            <div class="box_select mid02">
+                              <button type="button" class="btn_select"><span>Select</span></button>
+                              <div class="options">
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SSL CA Cert</th>
+                          <td>
+                            <div class="box_select mid02">
+                              <button type="button" class="btn_select"><span>Select</span></button>
+                              <div class="options">
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SSL Client Cert</th>
+                          <td>
+                            <div class="box_select mid02">
+                              <button type="button" class="btn_select"><span>Select</span></button>
+                              <div class="options">
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SSL Client Key</th>
+                          <td>
+                            <div class="box_select mid02">
+                              <button type="button" class="btn_select"><span>Select</span></button>
+                              <div class="options">
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Description</th>
+                          <td>
+                            <div class="box_textarea">
+                              <textarea placeholder="test"></textarea>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Number of Repositories</th>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Active Tasks</th>
+                          <td>0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table_list_item">
+                    <strong class="title">Sync Status</strong>
+                    <table>
+                      <caption>
+                        ID, JobGroup, Name, #Jobs/#Tasks, Enabled, Snippet, Created/Updated, Actions 에 관한 표
+                      </caption>
+                      <colgroup>
+                        <col style="width: 180px" />
+                        <col />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Sync Plan</th>
+                          <td>
+                            <div class="box_select mid02">
+                              <button type="button" class="btn_select"><span>Select</span></button>
+                              <div class="options">
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                                <button type="button" class="option"><span>test</span></button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sync Interval</th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Last Sync</th>
+                          <td>Synced manually, no interval set.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Next Sync</th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sync State</th>
+                          <td>No sync information available</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Swiper JS 스와이프 라이브러리용. fo작업시 필요없음 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+    <script>
+      var swiper = new Swiper(".box_tab_anchors", {
+        slidesPerView: "auto",
+      });
+    </script>
+  </body>
+</html>

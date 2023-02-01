@@ -1,0 +1,23 @@
+.form_wrapper {
+  .label {
+    flex-basis: 190px;
+  }
+  .box_input,
+  .box_select {
+    width: 348px;
+  }
+  .box_table_wrap {
+    max-height: 300px;
+    thead {
+      position: sticky;
+      top: 0;
+    }
+  }
+  &:not(.row) {
+    margin-top: 35px;
+    .label {
+      flex-basis: auto;
+      margin-bottom: 0;
+    }
+  }
+}

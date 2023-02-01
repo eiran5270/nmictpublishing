@@ -1,0 +1,29 @@
+.box_grid_wrapper {
+  width: calc(100% - 40px);
+  grid-template-columns: 26% 51% 23%;
+  gap: 20px;
+  .box_grid_item:first-child {
+    grid-column: 1/4;
+  }
+  .box_top_ctrl .box_select {
+    width: 380px;
+  }
+  .box_chart_total {
+    border-bottom: 1px solid #e7ecf0;
+    th,
+    td {
+      padding: 9px 20px;
+      border-top: 1px solid #e7ecf0;
+    }
+    th {
+      text-align: left;
+    }
+    td {
+      text-align: right;
+    }
+    tfoot th {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+}

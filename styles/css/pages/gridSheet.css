@@ -1,0 +1,22 @@
+.form_wrapper .label {
+  flex-basis: 190px;
+}
+.form_wrapper .box_input,
+.form_wrapper .box_select {
+  width: 348px;
+}
+.form_wrapper .box_table_wrap {
+  max-height: 300px;
+}
+.form_wrapper .box_table_wrap thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.form_wrapper:not(.row) {
+  margin-top: 35px;
+}
+.form_wrapper:not(.row) .label {
+  flex-basis: auto;
+  margin-bottom: 0;
+}

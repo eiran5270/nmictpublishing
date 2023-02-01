@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>퍼블리싱 현황판</title>
+    <link rel="stylesheet" href="/pub_guide/css/reset.css" />
+    <link rel="stylesheet" href="/pub_guide/css/common.css" />
+  </head>
+  <body style="min-width: 1024px">
+    <div class="guide_wrap">
+      <header class="header_guide">
+        <h1>퍼블리싱 가이드</h1>
+        <ul class="guide_link">
+          <li class="on">
+            <a href="/pub_guide/html/convention/index.html"><span>기본 환경 및 규칙</span></a>
+          </li>
+          <li>
+            <a href="/pub_guide/html/elements/index.html"><span>퍼블리싱 가이드</span></a>
+          </li>
+          <li>
+            <a href="/index.html"><span>퍼블리싱 리스트</span></a>
+          </li>
+        </ul>
+      </header>
+      <div class="container_guide">
+        <div class="guide_box">
+          <strong class="guide_tit">프로젝트 환경</strong>
+
+          <div class="guide_detail_table">
+            <table>
+              <colgroup>
+                <col width="20%" />
+                <col />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>문서 및 버전</th>
+                  <td>html5, css3</td>
+                </tr>
+                <tr>
+                  <th>인코딩</th>
+                  <td>UTF-8</td>
+                </tr>
+                <tr>
+                  <th>크로스 브라이징</th>
+                  <td>PC : 엣지, 크롬, 파이어폭스</td>
+                </tr>
+                <tr>
+                  <th>웹 접근성</th>
+                  <td>준수 수준 (크롬의 openwax 확장프로그램 추가 후 확인 필요)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="guide_box">
+          <strong class="guide_tit">파일/폴더 규칙</strong>
+
+          <div class="guide_detail_table col">
+            <table>
+              <colgroup>
+                <col width="20%" />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>분류 폴더</th>
+                  <th>서브 폴더</th>
+                  <th>파일 이름</th>
+                  <th>설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="guide_t_center">_pub</td>
+                  <td>include</td>
+                  <td>-</td>
+                  <td>퍼블리싱 include html 파일</td>
+                </tr>
+                <tr>
+                  <td>common.js</td>
+                  <td>-</td>
+                  <td>퍼블리싱용 js</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" class="guide_t_center">assets</td>
+                  <td>fonts</td>
+                  <td style="vertical-align: top">
+                    <ul>
+                      <li>Pretendard-Bold</li>
+                      <li>Pretendard-Medium</li>
+                      <li>Pretendard-Regular</li>
+                      <li>Pretendard-SemiBold</li>
+                    </ul>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">images</td>
+                  <td>-</td>
+                  <td>이미지 폴더</td>
+                </tr>
+                <tr>
+                  <td>common</td>
+                  <td>공통으로 사용되는 이미지 폴더</td>
+                </tr>
+                <tr>
+                  <td class="guide_t_center">pages</td>
+
+                  <td>-</td>
+                  <td>-</td>
+                  <td>페이지 폴더</td>
+                </tr>
+                <tr>
+                  <td class="guide_t_center">pub_guide</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>퍼블리싱 가이드용 폴더</td>
+                </tr>
+                <tr>
+                  <td rowspan="6" class="guide_t_center">styles</td>
+                  <td rowspan="3">css</td>
+                  <td>common.css</td>
+                  <td>공통 css</td>
+                </tr>
+                <tr>
+                  <td>components</td>
+                  <td>컴포넌트용 css 폴더</td>
+                </tr>
+                <tr>
+                  <td>pages</td>
+                  <td>페이지용 css 폴더</td>
+                </tr>
+
+                <tr>
+                  <td rowspan="3">scss</td>
+                  <td>common.scss</td>
+                  <td>공통 scss</td>
+                </tr>
+                <tr>
+                  <td>components</td>
+                  <td>컴포넌트용 scss 폴더</td>
+                </tr>
+                <tr>
+                  <td>pages</td>
+                  <td>페이지용 scss 폴더</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>

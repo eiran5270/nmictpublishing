@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/popup.css" />
+
+    <link rel="stylesheet" href="/styles/css/pages/popupAdminUser.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="popup_wrapper small">
+            <div class="dimmed"></div>
+            <div class="popup_inner">
+              <div class="popup_title">Admin User</div>
+              <div class="popup_cont">
+                <div class="popup_admin_user">
+                  <div class="box_select mid">
+                    <button type="button" class="btn_select"><span>Locations</span></button>
+                    <div class="options">
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                    </div>
+                  </div>
+                  <div class="box_select mid">
+                    <button type="button" class="btn_select"><span>Organizations</span></button>
+                    <div class="options">
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                    </div>
+                  </div>
+                  <a href="#" class="btn_basic btn_text">Account Settings</a>
+                  <a href="#" class="btn_basic btn_text">Sign Out</a>
+                </div>
+              </div>
+              <button type="button" class="btn_popup_close"><span class="hidden">닫기</span></button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+  </body>
+</html>

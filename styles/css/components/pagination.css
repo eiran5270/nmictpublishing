@@ -1,0 +1,65 @@
+.box_pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 5px;
+  position: relative;
+  margin-top: 20px;
+}
+.box_pagination .page_total {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.box_pagination .page_total .box_select .btn_select {
+  padding: 0 29px 0 10px;
+}
+.box_pagination .page_total .box_select .btn_select:after {
+  right: 10px;
+}
+.box_pagination .btn_page,
+.box_pagination .btn_num {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.box_pagination .btn_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+.box_pagination .btn_page:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 12px;
+  background: url("/assets/images/common/icon_arrow_left.png") no-repeat;
+  background-size: 100%;
+}
+.box_pagination .btn_page.next:before {
+  transform: rotate(180deg);
+}
+.box_pagination .btn_num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.box_pagination .btn_num:before {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #444444;
+}
+.box_pagination strong.btn_num {
+  color: #000;
+  font-weight: 700;
+}
+.box_pagination strong.btn_num:before {
+  display: block;
+}

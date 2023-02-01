@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/breadcrumb.css" />
+    <link rel="stylesheet" href="/styles/css/components/tab.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxGrid.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+
+    <link rel="stylesheet" href="/styles/css/pages/dashboard.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">Devices</h2>
+
+            <div class="box_ctrl_btns">
+              <button type="button" class="btn_basic btn_blue"><span>Console</span></button>
+              <button type="button" class="btn_basic"><span>Edit</span></button>
+              <button type="button" class="btn_basic"><span>Build</span></button>
+              <button type="button" class="btn_basic btn_gray"><span>Delete</span></button>
+            </div>
+          </div>
+
+          <div class="box_breadcrumb">
+            <a href="#">Devices</a>
+            <strong>abp-test.example.com</strong>
+          </div>
+
+          <div class="box_tab_menu">
+            <!-- ver1.1 탭 슬라이드적용 -->
+            <div class="box_tab_anchors">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide tab_anchor_item active">
+                  <button type="button" class="tab_anchor">Machine Summary</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">BIOS Config</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Checkpoint</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">System</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="box_tab_container">
+              <div class="tab_cont" style="display: block">
+                <div class="box_dashboard_grid">
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <i class="icon icon01"></i>
+                      <strong>Machine status</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <div class="dashboard_detail_list">
+                        <strong>Processing</strong>
+                        <ul>
+                          <li>Provisioning</li>
+                          <li>Windriver_Cloud_Platform_2112_SX</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <i class="icon icon02"></i>
+                      <strong>CPU</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <div class="dashboard_detail_list">
+                        <strong>32 cores</strong>
+                        <ul>
+                          <li>x86_64</li>
+                          <li>Intel(R) Xeon(R) Gold 6338N CPU@ 2.20GHz</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <i class="icon icon03"></i>
+                      <strong>Memory</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <div class="dashboard_detail_list">
+                        <strong>128 GIB</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <i class="icon icon04"></i>
+                      <strong>Main board</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <div class="dashboard_detail_list">
+                        <ul>
+                          <li>
+                            <span class="subject">Vendor</span>
+                            Dell Inc.
+                          </li>
+                          <li>
+                            <span class="subject">Product</span>
+                            0P2RNTA01
+                          </li>
+                          <li>
+                            <span class="subject">Firmware</span>
+                            Dell Inc.
+                          </li>
+                          <li>
+                            <span class="subject">Version</span>
+                            1.5.4
+                          </li>
+                          <li>
+                            <span class="subject">Date</span>
+                            -
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <i class="icon icon05"></i>
+                      <strong>System</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <div class="dashboard_detail_list">
+                        <ul>
+                          <li>
+                            <span class="subject">Vendor</span>
+                            Dell Inc.
+                          </li>
+                          <li>
+                            <span class="subject">Build</span>
+                            Installed
+                          </li>
+                          <li>
+                            <span class="subject">Rroduct</span>
+                            PowerEdge XR11
+                          </li>
+                          <li>
+                            <span class="subject">Build</span>
+                            Installed
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <i class="icon icon06"></i>
+                      <strong>STORAGE</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <div class="dashboard_detail_list">
+                        <!-- nodata 케이스-->
+                        <div class="no_detail">
+                          <p>데이터 없음 텍스트</p>
+                        </div>
+                      </div>
+                      <!-- <div class="dashboard_detail_list">
+                        <strong>Hard Drive / 1.92 TB</strong>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <i class="icon icon07"></i>
+                      <strong>1CPU</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <div class="dashboard_detail_list">
+                        <!-- nodata 케이스-->
+                        <div class="no_detail">
+                          <p>데이터 없음 텍스트</p>
+                        </div>
+                      </div>
+                      <!-- <div class="dashboard_detail_list">
+                        <strong>CPU1</strong>
+                        <ul>
+                          <li>
+                            <span class="subject">Model</span>
+                            Intel(R) Xeon(R) Gold 6338N CPU@2.20 GHz
+                          </li>
+                          <li><span class="subject">Manufact urer</span>Unknown</li>
+                          <li><span class="subject">Threads</span>-</li>
+                          <li><span class="subject">Cores</span>32</li>
+                        </ul>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="box_grid_item">
+                    <div class="grid_title">
+                      <i class="icon icon08"></i>
+                      <strong>Network</strong>
+                    </div>
+                    <div class="grid_cont">
+                      <div class="box_table_wrap">
+                        <table>
+                          <caption>
+                            FQDN, IP, MTU, MAC, Domin Name, Name, Virtual, PRIMAF 에 관한 표
+                          </caption>
+                          <colgroup>
+                            <col style="width: 15%" />
+                            <col style="width: 7%" />
+                            <col style="width: 5%" />
+                            <col style="width: 9%" />
+                            <col style="width: 20%" />
+                            <col style="width: 16%" />
+                            <col />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th scope="col">FQDN</th>
+                              <th scope="col">IP</th>
+                              <th scope="col">MTU</th>
+                              <th scope="col">MAC</th>
+                              <th scope="col">Domin Name</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Virtual</th>
+                              <th scope="col">PRIMAF</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="t_left">abp-test05.exacsdccsmple.com</td>
+                              <td>10.1.13.105</td>
+                              <td>1500</td>
+                              <td class="t_left">52:54:00:d3:ef:54</td>
+                              <td class="t_left">example.com</td>
+                              <td class="t_left">eth0</td>
+                              <td class="t_left"></td>
+                              <td class="t_left"></td>
+                            </tr>
+                            <tr>
+                              <td class="t_left">abp-test05.exacsdccsmple.com</td>
+                              <td>10.1.13.105</td>
+                              <td>1500</td>
+                              <td class="t_left">52:54:00:d3:ef:54</td>
+                              <td class="t_left">esdcsdcsxesdcsdcsxsxsxxdcscxample.com</td>
+                              <td class="t_left">br-2f374b44d63f4b44d63f44d63f</td>
+                              <td class="t_left"></td>
+                              <td class="t_left"></td>
+                            </tr>
+                            <tr>
+                              <td class="t_left">abp-test05.exacsdccsmple.com</td>
+                              <td>10.1.13.105</td>
+                              <td>1500</td>
+                              <td class="t_left">52:54:00:d3:ef:54</td>
+                              <td class="t_left">esdcsdcsxesdcsdcsxsxsxxdcscxample.com</td>
+                              <td class="t_left">br-2f374b44d63f4b44d63f44d63f</td>
+                              <td class="t_left"></td>
+                              <td class="t_left"></td>
+                            </tr>
+                            <tr>
+                              <td class="t_left">abp-test05.exacsdccsmple.com</td>
+                              <td>10.1.13.105</td>
+                              <td>1500</td>
+                              <td class="t_left">52:54:00:d3:ef:54</td>
+                              <td class="t_left">esdcsdcsxesdcsdcsxsxsxxdcscxample.com</td>
+                              <td class="t_left">br-2f374b44d63f4b44d63f44d63f</td>
+                              <td class="t_left"></td>
+                              <td class="t_left"></td>
+                            </tr>
+                            <tr>
+                              <td class="t_left">abp-test05.exacsdccsmple.com</td>
+                              <td>10.1.13.105</td>
+                              <td>1500</td>
+                              <td class="t_left">52:54:00:d3:ef:54</td>
+                              <td class="t_left">esdcsdcsxesdcsdcsxsxsxxdcscxample.com</td>
+                              <td class="t_left">br-2f374b44d63f4b44d63f44d63f</td>
+                              <td class="t_left"></td>
+                              <td class="t_left"></td>
+                            </tr>
+                            <tr>
+                              <td class="t_left">abp-test05.exacsdccsmple.com</td>
+                              <td>10.1.13.105</td>
+                              <td>1500</td>
+                              <td class="t_left">52:54:00:d3:ef:54</td>
+                              <td class="t_left">esdcsdcsxesdcsdcsxsxsxxdcscxample.com</td>
+                              <td class="t_left">br-2f374b44d63f4b44d63f44d63f</td>
+                              <td class="t_left"></td>
+                              <td class="t_left"></td>
+                            </tr>
+                            <tr>
+                              <td class="t_left">abp-test05.exacsdccsmple.com</td>
+                              <td>10.1.13.105</td>
+                              <td>1500</td>
+                              <td class="t_left">52:54:00:d3:ef:54</td>
+                              <td class="t_left">esdcsdcsxesdcsdcsxsxsxxdcscxample.com</td>
+                              <td class="t_left">br-2f374b44d63f4b44d63f44d63f</td>
+                              <td class="t_left"></td>
+                              <td class="t_left"></td>
+                            </tr>
+                            <tr class="no_data">
+                              <td colspan="8">
+                                <p>내용없음 텍스트</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Swiper JS 스와이프 라이브러리용. fo작업시 필요없음 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+    <script>
+      var swiper = new Swiper(".box_tab_anchors", {
+        slidesPerView: "auto",
+      });
+    </script>
+  </body>
+</html>

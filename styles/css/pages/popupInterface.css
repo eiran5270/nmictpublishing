@@ -1,0 +1,11 @@
+.popup_interface .box_interface_chk {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 27px 20px;
+  margin-top: 20px;
+  padding: 30px 0;
+  border: 1px solid #e7ecf0;
+  border-left: 0;
+  border-right: 0;
+  white-space: nowrap;
+}

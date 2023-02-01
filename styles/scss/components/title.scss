@@ -1,0 +1,43 @@
+.title_wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  & + .box_tab_menu {
+    margin-top: 16px;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333;
+  }
+  .box_ctrl_btns {
+    display: flex;
+    align-items: center;
+    gap: 0 6px;
+    margin-left: auto;
+    .box_checkbox {
+      & ~ .box_checkbox {
+        margin-left: 14px;
+      }
+    }
+    .btn_basic {
+      width: 100%;
+    }
+  }
+  &.line {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -40px;
+      right: 0;
+      bottom: 0;
+      width: calc(100% + 80px);
+      height: 1px;
+      background-color: #e7ecf0;
+    }
+  }
+}

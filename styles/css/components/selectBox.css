@@ -1,0 +1,120 @@
+.box_select {
+  position: relative;
+  max-width: 680px;
+  width: 100%;
+  height: 40px;
+}
+.box_select .btn_select {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 45px 0 15px;
+  border: 1px solid #e7ecf0;
+  color: #565656;
+  font-weight: 500;
+  line-height: 40px;
+  border-radius: 4px;
+  text-align: left;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+  z-index: 2;
+  background-color: #fff;
+}
+.box_select .btn_select span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.box_select .btn_select:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 12px;
+  height: 8px;
+  transform: translateY(-50%);
+  background: url("/assets/images/common/icon_arrow_bottom_black.png") no-repeat;
+  background-size: 100%;
+}
+.box_select .options {
+  display: none;
+  position: absolute;
+  top: calc(100% - 2px);
+  width: 100%;
+  padding-top: 2px;
+  border: 1px solid #c8c8c8;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+  background-color: #fff;
+  z-index: 3;
+}
+.box_select .options .option {
+  display: block;
+  width: 100%;
+  height: 33px;
+  padding: 0 14px;
+  color: #333333;
+  text-align: left;
+}
+.box_select .options span {
+  white-space: nowrap;
+}
+.box_select.mid {
+  height: 34px;
+}
+.box_select.mid .btn_select {
+  font-weight: 400;
+  border-color: #c8c8c8;
+  line-height: 34px;
+}
+.box_select.mid02 {
+  height: 30px;
+}
+.box_select.mid02 .btn_select {
+  font-weight: 400;
+  border-color: #c8c8c8;
+  line-height: 29px;
+}
+.box_select.small {
+  max-width: 200px;
+  height: 25px;
+}
+.box_select.small .btn_select {
+  padding: 0 29px 0 10px;
+  line-height: 25px;
+}
+.box_select.small .btn_select:after {
+  right: 10px;
+}
+.box_select.small:not(.active) .btn_select:after {
+  top: calc(50% + 2px);
+}
+.box_select.top .options {
+  top: initial;
+  bottom: calc(100% - 2px);
+  padding-bottom: 2px;
+  border: 1px solid #c8c8c8;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+}
+.box_select.active .btn_select {
+  border-color: #333;
+  z-index: 4;
+}
+.box_select.active .btn_select:after {
+  transform: rotate(180deg) translateY(50%);
+}
+.box_select.active .options {
+  display: block;
+}
+.box_select.disabled .btn_select {
+  background-color: #f7f7f7;
+  color: #767676;
+  pointer-events: none;
+}
+.box_select.w200 {
+  width: 200px;
+}

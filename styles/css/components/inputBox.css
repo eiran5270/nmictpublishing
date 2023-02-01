@@ -1,0 +1,81 @@
+.box_input {
+  display: flex;
+  align-items: center;
+  max-width: 680px;
+  height: 34px;
+  padding: 0 15px;
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+}
+.box_table_wrap .box_input {
+  max-width: 100%;
+}
+.box_input input {
+  width: 100%;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+}
+.box_input input::-moz-placeholder {
+  color: #565656;
+}
+.box_input input:-ms-input-placeholder {
+  color: #565656;
+}
+.box_input input::placeholder {
+  color: #565656;
+}
+.box_input.search {
+  width: 170px;
+  height: 30px;
+  padding-left: 30px;
+  background: url("/assets/images/common/icon_search.png") no-repeat left 9px center;
+  background-size: 16px 16px;
+}
+.box_input.small {
+  height: 30px;
+}
+.box_input.focus:not(.disabled), .box_input:hover:not(.disabled) {
+  border-color: #333;
+}
+.box_input.disabled {
+  background: #f7f7f7;
+  color: #767676;
+}
+.box_input.disabled textarea,
+.box_input.disabled input {
+  background: #f7f7f7;
+  color: #767676;
+}
+.box_input.disabled textarea::-moz-placeholder, .box_input.disabled input::-moz-placeholder {
+  color: #767676;
+}
+.box_input.disabled textarea:-ms-input-placeholder, .box_input.disabled input:-ms-input-placeholder {
+  color: #767676;
+}
+.box_input.disabled textarea::placeholder,
+.box_input.disabled input::placeholder {
+  color: #767676;
+}
+.box_input.error {
+  border-color: #db392e;
+}
+.box_input.error input {
+  color: #db392e;
+}
+.box_input .btn_area {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 20px;
+}
+.box_input .btn_value_del {
+  display: block;
+  min-width: 20px;
+  height: 20px;
+  background: url("/assets/images/common/btn_input_del.png") no-repeat;
+  background-size: 100%;
+}

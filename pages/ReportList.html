@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/pagination.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap line">
+            <h2 class="title">Reports</h2>
+            <div class="box_ctrl_btns">
+              <button type="button" class="btn_basic btn_clear"><span>Clear</span></button>
+              <div class="box_input search">
+                <input type="text" placeholder="Keyword Search" />
+              </div>
+              <button type="button" class="btn_basic btn_export"><span>Export</span></button>
+            </div>
+          </div>
+
+          <div class="box_table_wrap">
+            <table>
+              <caption>
+                Hosts ,Last report ,Orgin ,Applied ,Restarted th> ,Failed ,Restarted Failures ,Skipped ,Pending ,Actions 에 관한 표
+              </caption>
+              <colgroup>
+                <col style="width: 16%" />
+                <col style="width: 16%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 5%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="t_left">Hosts</th>
+                  <th scope="col" class="t_left">Last report</th>
+                  <th scope="col">Orgin</th>
+                  <th scope="col">Applied</th>
+                  <th scope="col">Restarted</th>
+                  <th scope="col">Failed</th>
+                  <th scope="col">Restarted Failures</th>
+                  <th scope="col">Skipped</th>
+                  <th scope="col">Pending</th>
+                  <th scope="col" class="t_left">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="t_left">abp-test05.exapmple.com</td>
+                  <td class="t_left"><span class="col_blue">10 minutes ago</span></td>
+                  <td><span class="icon_origin">P</span></td>
+                  <td><span class="num small">0</span></td>
+                  <td><span class="num small">0</span></td>
+                  <td><span class="num small">0</span></td>
+                  <td><span class="num small">0</span></td>
+                  <td><span class="num small">0</span></td>
+                  <td><span class="num small">0</span></td>
+                  <td class="t_left">
+                    <button type="button" class="btn_basic btn_red"><span>delete</span></button>
+                  </td>
+                </tr>
+
+                <tr class="no_data">
+                  <td colspan="10">
+                    <p>내용없음 텍스트</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="box_pagination">
+            <button type="button" class="btn_page prev">
+              <span class="hidden">이전</span>
+            </button>
+
+            <strong class="btn_num">1 </strong>
+            <button class="btn_num">2</button>
+            <button class="btn_num">3</button>
+            <button class="btn_num">4</button>
+            <button class="btn_num">5</button>
+            <button class="btn_num">6</button>
+            <button class="btn_num">7</button>
+            <button class="btn_num">8</button>
+            <button class="btn_num">9</button>
+            <button class="btn_num">10</button>
+            <button type="button" class="btn_page next">
+              <span class="hidden">다음</span>
+            </button>
+            <div class="page_total">
+              <div class="box_select mid02">
+                <button type="button" class="btn_select"><span>100</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+  </body>
+</html>

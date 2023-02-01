@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/pagination.css" />
+
+    <link rel="stylesheet" href="/styles/css/pages/machines.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">Machines</h2>
+
+            <div class="box_ctrl_btns">
+              <button type="button" class="btn_basic btn_blue"><span>Create</span></button>
+            </div>
+          </div>
+
+          <div class="box_search_data">
+            <label for="search">Search</label>
+            <div class="search_form">
+              <div class="box_input">
+                <input type="text" id="search" />
+                <div class="btn_area">
+                  <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                </div>
+              </div>
+              <div class="box_select mid">
+                <button type="button" class="btn_select"><span>No Grouping</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="total_count"><strong>20</strong> Machines</div>
+
+          <!-- [D] 
+            테이블에 컨텐츠가 적거나 위,아래로 같은 th를 사용하는 테이블이 있어 정렬을 맞추고 싶을때는 .box_table_wrap 에 fixed_table 클래스 추가하면 테이블의 넓이가 고정됨.
+            정렬기능 필요시  th에 <button type="button" class="btn_sorting"><span>th 내용</span></button> 추가.
+          -->
+          <div class="box_table_wrap">
+            <table>
+              <caption>
+                IP/MAC, Global status,Host group,Name,Domain,CUP/ARCH,OS,BMC,Power 에 관한 표
+              </caption>
+              <!-- <colgroup>
+                <col style="width: 12%" />
+                <col style="width: 4%" />
+                <col style="width: 7%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 5%" />
+                <col />
+                <col />
+                <col />
+              </colgroup> -->
+              <thead>
+                <tr>
+                  <th scope="col">IP/MAC</th>
+                  <th scope="col">Global status</th>
+                  <th scope="col">Host group</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Domain</th>
+                  <th scope="col">CUP/ARCH</th>
+                  <th scope="col">OS</th>
+                  <th scope="col">BMC</th>
+                  <th scope="col">Power</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="t_left">
+                    <strong>10.10.130.105</strong>
+                    52.54:00:d3:e7:54
+                  </td>
+                  <td><strong class="col_red">NO</strong></td>
+                  <td class="t_left">WRCP_2112_SX</td>
+                  <td class="t_left"><span class="col_blue">abp-test02.example.com</span></td>
+                  <td class="t_left">example.com</td>
+                  <td>
+                    <strong>8</strong>
+                    x86_64
+                  </td>
+                  <td class="t_left">Windriver_Cloud_Platform_2112_SX</td>
+                  <td class="t_left">test_Windriver_Cloud_Platform_2112_SX</td>
+                  <td class="t_left">test_Windriver_Cloud_Platform_2112_SX</td>
+                </tr>
+                <tr>
+                  <td class="t_left">
+                    <strong>10.10.130.105</strong>
+                    52.54:00:d3:e7:54
+                  </td>
+                  <td>OK</td>
+                  <td class="t_left"></td>
+                  <td class="t_left"><a href="#" class="col_blue">link ver</a></td>
+                  <td class="t_left">example.com</td>
+                  <td>
+                    <strong>-</strong>
+                    x86_64
+                  </td>
+                  <td class="t_left">Windriver_Cloud_Platform_2112_SX</td>
+                  <td class="t_left">test_Windriver_Cloud_Platform_2112_SX</td>
+                  <td class="t_left"></td>
+                </tr>
+
+                <tr class="no_data">
+                  <td colspan="9">
+                    <p>내용없음 텍스트</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="box_pagination">
+            <button type="button" class="btn_page prev">
+              <span class="hidden">이전</span>
+            </button>
+            <!-- [D] 현재페이지는 버튼태그가 아닌 strong 태그로 변경 -->
+            <strong class="btn_num">1</strong>
+            <button class="btn_num">2</button>
+            <button class="btn_num">3</button>
+            <button class="btn_num">4</button>
+            <button class="btn_num">5</button>
+            <button class="btn_num">6</button>
+            <button class="btn_num">7</button>
+            <button class="btn_num">8</button>
+            <button class="btn_num">9</button>
+            <button class="btn_num">10</button>
+            <button type="button" class="btn_page next">
+              <span class="hidden">다음</span>
+            </button>
+            <div class="page_total">
+              <div class="box_select mid02">
+                <button type="button" class="btn_select"><span>100</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+  </body>
+</html>

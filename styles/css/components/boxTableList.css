@@ -1,0 +1,124 @@
+.box_table_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.box_table_list .table_list_item {
+  padding: 20px;
+  border: 1px solid #e7ecf0;
+  border-radius: 6px;
+}
+.tab_cont .box_table_list .table_list_item {
+  padding: 0;
+  border: 0;
+}
+.box_table_list .title {
+  display: block;
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #473ee9;
+}
+.box_table_list .title:first-child {
+  margin-top: 0;
+}
+.box_table_list .sub_title {
+  display: block;
+  margin-top: 10px;
+  padding-left: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  background: url("/assets/images/common/icon_arrow_double.png") no-repeat left center;
+  background-size: auto 12px;
+}
+.box_table_list table {
+  table-layout: fixed;
+  margin-top: 16px;
+}
+.box_table_list tbody th,
+.box_table_list tbody td {
+  padding: 4px 0 5px;
+}
+.box_table_list tbody th {
+  position: relative;
+  padding-left: 12px;
+  text-align: left;
+}
+.box_table_list tbody th:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 3px;
+  height: 3px;
+  background: #565656;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.box_table_list .box_input,
+.box_table_list .box_select,
+.box_table_list .box_textarea {
+  max-width: 348px;
+}
+.box_table_list .box_file_upload {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 18px;
+  border: 1px solid #949495;
+  border-radius: 6px;
+}
+.box_table_list .box_file_upload .box_file_btns {
+  display: flex;
+  padding: 20px;
+  gap: 0 6px;
+  background-color: #f7f8f9;
+}
+.box_table_list .box_file_upload .box_file_btns .btn_file {
+  display: inline-block;
+  height: 30px;
+  padding: 0 7px 0 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 4px;
+  background-position: left 7px center;
+  background-repeat: no-repeat;
+  background-color: #2e86d8;
+  background-size: 16px 16px;
+}
+.box_table_list .box_file_upload .box_file_btns .btn_file.add {
+  background-color: #473ee9;
+  background-image: url("/assets/images/common/icon_file_add.png");
+}
+.box_table_list .box_file_upload .box_file_btns .btn_file.upload {
+  background-image: url("/assets/images/common/icon_file_upload.png");
+}
+.box_table_list .box_file_upload .box_file_btns .btn_file.cancel {
+  background-image: url("/assets/images/common/icon_file_cancel.png");
+}
+.box_table_list .box_file_upload .files {
+  position: relative;
+  padding: 10px 20px;
+  border-top: 1px solid #949495;
+}
+.box_table_list .box_file_upload .files input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.box_tab_menu .box_table_list {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+.box_table_list .col_blue {
+  color: #2e86d8;
+}

@@ -1,0 +1,69 @@
+.box_input {
+  display: flex;
+  align-items: center;
+  max-width: 680px;
+  height: 34px;
+  padding: 0 15px;
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  .box_table_wrap & {
+    max-width: 100%;
+  }
+  input {
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    &::placeholder {
+      color: #565656;
+    }
+  }
+  &.search {
+    width: 170px;
+    height: 30px;
+    padding-left: 30px;
+    background: url("/assets/images/common/icon_search.png") no-repeat left 9px center;
+    background-size: 16px 16px;
+  }
+  &.small {
+    height: 30px;
+  }
+  &.focus:not(.disabled),
+  &:hover:not(.disabled) {
+    border-color: #333;
+  }
+  &.disabled {
+    background: #f7f7f7;
+    color: #767676;
+    textarea,
+    input {
+      background: #f7f7f7;
+      color: #767676;
+      &::placeholder {
+        color: #767676;
+      }
+    }
+  }
+  &.error {
+    border-color: #db392e;
+    input {
+      color: #db392e;
+    }
+  }
+  .btn_area {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-left: 20px;
+  }
+  .btn_value_del {
+    display: block;
+    min-width: 20px;
+    height: 20px;
+    background: url("/assets/images/common/btn_input_del.png") no-repeat;
+    background-size: 100%;
+  }
+}

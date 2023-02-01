@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/breadcrumb.css" />
+    <link rel="stylesheet" href="/styles/css/components/tab.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTopCtrl.css" />
+    <link rel="stylesheet" href="/styles/css/components/pagination.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">Environments</h2>
+          </div>
+
+          <div class="box_breadcrumb">
+            <a href="#">Environments</a>
+            <strong>Library</strong>
+          </div>
+
+          <div class="box_tab_menu">
+            <div class="box_tab_anchors">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide tab_anchor_item active">
+                  <button type="button" class="tab_anchor">Host</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Operating System</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Interfaces</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Parameters</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Additional Information</button>
+                </div>
+              </div>
+            </div>
+            <div class="box_tab_container">
+              <div class="tab_cont" style="display: block">
+                <div class="box_table_wrap row">
+                  <table>
+                    <caption>
+                      library,registry_name_pattern,registry_unathenticated_pull, id, name, label, description, organization_id,
+                      organization, created_at, updated_at, prior, succcessor, counts, permissions 에 관한 표
+                    </caption>
+                    <colgroup>
+                      <col style="width: 25%" />
+                      <col />
+                    </colgroup>
+
+                    <tbody>
+                      <tr>
+                        <th scope="row">library</th>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">registry_name_pattern</th>
+                        <td>null</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">registry_unathenticated_pull</th>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">id</th>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">name</th>
+                        <td>Library</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">label</th>
+                        <td>Library</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">description</th>
+                        <td>null</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">organization_id</th>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">organization</th>
+                        <td>[“name”:”NamuICT”,”label”:”NamuICT”,”id”:1}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">created_at</th>
+                        <td>2022-11-18 03:04;59 UTC</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">updated_at</th>
+                        <td>2022-11-18 03:04;59 UTC</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">prior</th>
+                        <td>null</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">succcessor</th>
+                        <td>null</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">counts</th>
+                        <td>
+                          [“content_hosts”:2,”content_views”:0,”packages”:12366,”module_streams”:66,”errrata”:[“security”:null,
+                          “bugfix”:0,”enhancement”:0, “total”;null}, “yum_respositories”:4, “docker_respositories”;0,
+                          “ostree_repositories”:0, “products”:3}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">permissions</th>
+                        <td>
+                          [“content_hosts”:2,”content_views”:0,”packages”:12366,”module_streams”:66,”errrata”:[“security”:null,
+                          “bugfix”:0,”enhancement”:0, “total”;null}, “yum_respositories”:4, “docker_respositories”;0,
+                          “ostree_repositories”:0, “products”:3}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Swiper JS 스와이프 라이브러리용. fo작업시 필요없음 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+    <script>
+      var swiper = new Swiper(".box_tab_anchors", {
+        slidesPerView: "auto",
+      });
+    </script>
+  </body>
+</html>

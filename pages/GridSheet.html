@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/breadcrumb.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/formItem.css" />
+
+    <link rel="stylesheet" href="/styles/css/pages/gridSheet.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">ZTP Dashboard</h2>
+
+            <div class="box_ctrl_btns">
+              <button type="button" class="btn_basic btn_blue"><span>Create</span></button>
+            </div>
+          </div>
+
+          <div class="box_breadcrumb">
+            <a href="#">ZTP Dashboard</a>
+            <strong>windriver 2112 demo 1</strong>
+          </div>
+
+          <div class="form_wrapper row border">
+            <div class="form_item">
+              <label for="ipt01" class="label required"><span>Design Name</span></label>
+              <div class="form_cont">
+                <div class="box_input">
+                  <input type="text" id="ipt01" />
+                  <div class="btn_area">
+                    <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form_item">
+              <strong class="label required"><span>Health Check</span></strong>
+              <div class="form_cont">
+                <div class="box_select mid02">
+                  <button type="button" class="btn_select"><span>Select</span></button>
+                  <div class="options">
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form_item">
+              <strong class="label required"><span>Node Type</span></strong>
+              <div class="form_cont">
+                <div class="box_select mid02">
+                  <button type="button" class="btn_select"><span>Select</span></button>
+                  <div class="options">
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form_wrapper row border">
+            <div class="form_item">
+              <strong class="label required"><span>Default Host Domain</span></strong>
+              <div class="form_cont">
+                <div class="box_input">
+                  <input type="text" id="ipt01" />
+                  <div class="btn_area">
+                    <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form_item">
+              <strong class="label required"><span>Default Host Organization</span></strong>
+              <div class="form_cont">
+                <div class="box_select mid02">
+                  <button type="button" class="btn_select"><span>Select</span></button>
+                  <div class="options">
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form_item">
+              <strong class="label required"><span>Default Host Location</span></strong>
+              <div class="form_cont">
+                <div class="box_select mid02">
+                  <button type="button" class="btn_select"><span>Select</span></button>
+                  <div class="options">
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form_wrapper">
+            <div class="form_label">
+              <strong class="label required"><span>Design Detail</span></strong>
+              <div class="right_area">
+                <button type="button" class="btn_basic btn_blue"><span>Import</span></button>
+                <button type="button" class="btn_basic btn_gray"><span>Export</span></button>
+              </div>
+            </div>
+            <div class="form_cont">
+              <div class="box_table_wrap">
+                <table>
+                  <caption>
+                    Machine Type ,Provider Interface ,Hostname ,BMC Mac ,BMC IP , Subnet Network Adress ,Subnet Netmask ,Subnet Gateway ,BMC
+                    Manag ,Provisiong MAC ,Provisiong IP , Provisiong Subnet Net 에 관한 표
+                  </caption>
+                  <colgroup>
+                    <col style="width: 30px" />
+                    <col style="width: 7%" />
+                    <col style="width: 15%" />
+                    <col style="width: 5%" />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col"><i class="icon_triangle"></i></th>
+                      <th scope="col" class="t_left">Machine Type</th>
+                      <th scope="col" class="t_left">Provider Interface</th>
+                      <th scope="col" class="t_left">Hostname</th>
+                      <th scope="col" class="t_left">BMC Mac</th>
+                      <th scope="col" class="t_left">BMC IP</th>
+                      <th scope="col" class="t_left">
+                        Subnet Network<br />
+                        Adress
+                      </th>
+                      <th scope="col" class="t_left">Subnet Netmask</th>
+                      <th scope="col" class="t_left">Subnet Gateway</th>
+                      <th scope="col" class="t_left">BMC Manag</th>
+                      <th scope="col" class="t_left">Provisiong MAC</th>
+                      <th scope="col" class="t_left">Provisiong IP</th>
+                      <th scope="col" class="t_left">
+                        Provisiong <br />
+                        Subnet Net
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td class="t_left">PM</td>
+                      <td class="t_left">DELL_PowerEdge XR</td>
+                      <td class="t_left">XR11-test11</td>
+                      <td class="t_left">90:8D:6E:F9:C3:9C</td>
+                      <td class="t_left">10.1.13.201</td>
+                      <td class="t_left">10.1.13.201</td>
+                      <td class="t_left">255.255.255.0</td>
+                      <td class="t_left">10.1.13.1</td>
+                      <td class="t_left">YES</td>
+                      <td class="t_left">B4:96:91:50:63:04</td>
+                      <td class="t_left">10.1.13.1</td>
+                      <td class="t_left">10.1.13.1</td>
+                    </tr>
+
+                    <tr class="no_data">
+                      <td colspan="13">
+                        <p>내용없음 텍스트</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="box_table_btns">
+                <button type="button" class="btn_add"><span>Add</span></button>
+                <div class="box_input">
+                  <input type="text" value="1" />
+                </div>
+                rows
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+  </body>
+</html>

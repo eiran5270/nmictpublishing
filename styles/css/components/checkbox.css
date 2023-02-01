@@ -1,0 +1,60 @@
+.box_checkbox {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+.box_checkbox .txt_label {
+  display: flex;
+  cursor: pointer;
+}
+.box_checkbox .txt_label .icon {
+  display: inline-block;
+  position: relative;
+  min-width: 16px;
+  height: 16px;
+}
+.box_checkbox .txt_label .icon:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  background: url("/assets/images/common/icon_checkbox_default.png") no-repeat;
+  background-size: 100%;
+}
+.box_checkbox .txt_label .label {
+  display: inline-block;
+  padding-left: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333;
+  word-break: keep-all;
+}
+.box_checkbox .txt_label .label.col_blue {
+  color: #2e86d8;
+}
+.box_checkbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  opacity: 0;
+}
+.box_checkbox input:checked + .txt_label .icon:before {
+  background-image: url("/assets/images/common/icon_checkbox_active.png");
+}
+.box_checkbox input:disabled + .txt_label .icon:before {
+  background-image: url("/assets/images/common/icon_checkbox_disabled.png");
+}

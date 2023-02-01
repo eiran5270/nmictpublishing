@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTopCtrl.css" />
+    <link rel="stylesheet" href="/styles/css/components/pagination.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">Node types</h2>
+
+            <div class="box_ctrl_btns">
+              <button type="button" class="btn_basic btn_blue"><span>Create</span></button>
+            </div>
+          </div>
+          <div class="box_top_ctrl">
+            <div class="right_area">
+              <button type="button" class="btn_basic btn_clear"><span>Clear</span></button>
+              <div class="box_input search">
+                <input type="text" placeholder="Keyword Search" />
+              </div>
+            </div>
+          </div>
+
+          <div class="box_table_wrap">
+            <table>
+              <caption>
+                ID, JobGroup, Name, #Jobs/#Tasks, Enabled, Snippet, Created/Updated, Actions 에 관한 표
+              </caption>
+              <colgroup>
+                <col style="width: 25%" />
+                <col style="width: 25%" />
+                <col style="width: 25%" />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="t_left">
+                    <button type="button" class="btn_sorting"><span>ID</span></button>
+                  </th>
+                  <th scope="col" class="t_left">
+                    <button type="button" class="btn_sorting"><span>JobGroup</span></button>
+                  </th>
+                  <th scope="col" class="t_left">
+                    <button type="button" class="btn_sorting"><span>Name</span></button>
+                  </th>
+                  <th scope="col" class="t_left">
+                    <button type="button" class="btn_sorting"><span>#Jobs/#Tasks</span></button>
+                  </th>
+                  <th scope="col" class="t_left">Enabled</th>
+                  <th scope="col" class="t_left">Snippet</th>
+                  <th scope="col" class="t_left">Created/Updated</th>
+                  <th scope="col" class="t_left">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="t_left"><span class="num">199</span></td>
+                  <td class="t_left">Company_Misc_0.1</td>
+                  <td class="t_left"><span class="col_blue">ABP bios cmd test</span></td>
+                  <td class="t_left"># Job : 0 <span class="sub02"># tasks : 10</span></td>
+                  <td>
+                    <i class="icon_chk"><span class="hidden">Enabled</span></i>
+                  </td>
+                  <td class="t_left"></td>
+                  <td class="t_left">
+                    2022-11-18 03:04:56<br />
+                    2022-11-18 03:04:56
+                  </td>
+                  <td>
+                    <button type="button" class="btn_basic btn_small btn_purple"><span>clone</span></button>
+                  </td>
+                </tr>
+                <tr class="no_data">
+                  <td colspan="8">
+                    <p>No Image Tags found.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+  </body>
+</html>

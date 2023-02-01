@@ -1,0 +1,92 @@
+.box_step {
+  position: relative;
+  margin-bottom: 72px;
+  padding-top: 28px;
+}
+.box_step:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: calc(100% + 80px);
+  height: 1px;
+  background-color: #e7ecf0;
+}
+.box_step ul {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.box_step ul:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 100%;
+  height: 1px;
+  background: #565656;
+}
+.box_step ul:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 17px;
+  width: 9px;
+  height: 17px;
+  background: url("/assets/images/common/icon_step_arrow.png") no-repeat right top;
+  background-size: 100%;
+}
+.box_step li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  width: 0;
+}
+.box_step li:nth-child(2) .step {
+  background-color: #c0bcff;
+}
+.box_step li:nth-child(3) .step {
+  background-color: #a7a1ff;
+}
+.box_step li:nth-child(4) .step {
+  background-color: #8f88ff;
+}
+.box_step li:nth-child(5) .step {
+  background-color: #7971fa;
+}
+.box_step li:nth-child(6) .step {
+  background-color: #5c53f3;
+}
+.box_step li:nth-child(7) .step {
+  background-color: #473ee9;
+}
+.box_step .step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #d6d3ff;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+.box_step strong {
+  display: block;
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #565656;
+}
+.box_step span {
+  display: block;
+  margin-top: 10px;
+  line-height: 17px;
+}

@@ -1,0 +1,40 @@
+.box_search_data {
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -40px;
+    right: 0;
+    bottom: 0;
+    width: calc(100% + 80px);
+    height: 1px;
+    background-color: #e7ecf0;
+  }
+  .label {
+    color: #333;
+  }
+  .search_form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 0 10px;
+  }
+  .box_input {
+    min-width: 495px;
+    max-width: 721px;
+    width: 100%;
+  }
+  .box_select {
+    width: 320px;
+  }
+}
+.total_count {
+  padding: 20px 0;
+  color: #333;
+  strong {
+    font-weight: 700;
+  }
+}

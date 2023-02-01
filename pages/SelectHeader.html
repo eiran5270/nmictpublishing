@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/tab.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTopCtrl.css" />
+    <link rel="stylesheet" href="/styles/css/components/pagination.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">Settings</h2>
+          </div>
+
+          <div class="box_tab_menu">
+            <div class="box_tab_anchors">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">General</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item active">
+                  <button type="button" class="tab_anchor">ForemanTasks</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">RemoteExecution</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Discoveres</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Ansible</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Monitoring</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">ForemanForwarding</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Authentication</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Notifications</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Provisioning</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Puppet</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Content</button>
+                </div>
+                <div class="swiper-slide tab_anchor_item">
+                  <button type="button" class="tab_anchor">Advance settings</button>
+                </div>
+              </div>
+            </div>
+            <div class="box_tab_container">
+              <div class="tab_cont" style="display: block">
+                <div class="box_top_ctrl">
+                  <div class="right_area">
+                    <button type="button" class="btn_basic btn_clear"><span>Clear</span></button>
+                    <div class="box_input search">
+                      <input type="text" placeholder="Keyword Search" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box_table_wrap">
+                  <table>
+                    <caption>
+                      Name ,Value ,Discription ,Architecture 에 관한 표
+                    </caption>
+                    <colgroup>
+                      <col style="width: 25%" />
+                      <col style="width: 25%" />
+                      <col style="width: 20px" />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col" class="t_left">
+                          <button type="button" class="btn_sorting"><span>Name</span></button>
+                        </th>
+                        <th scope="col" class="t_left">Value</th>
+                        <th scope="col" class="t_left"><span class="hidden">Edit</span></th>
+                        <th scope="col" class="t_left">Discription</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="t_left">Sync task timeout</td>
+                        <td class="t_left">Empty</td>
+                        <td class="t_left">
+                          <button type="button" class="btn_modify"><span class="hidden">수정</span></button>
+                        </td>
+                        <td class="t_left">Number of seconds to wait for synchronous tasks to finish.</td>
+                      </tr>
+                      <tr class="no_data">
+                        <td colspan="4">
+                          <p>No Image Tags found.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Swiper JS 스와이프 라이브러리용. fo작업시 필요없음 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+    <script>
+      var swiper = new Swiper(".box_tab_anchors", {
+        slidesPerView: "auto",
+      });
+    </script>
+  </body>
+</html>

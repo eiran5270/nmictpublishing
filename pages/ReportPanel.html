@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxGrid.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTopCtrl.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+
+    <link rel="stylesheet" href="/styles/css/pages/reportPanel.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap line">
+            <h2 class="title">Report panel</h2>
+          </div>
+
+          <div class="box_grid_wrapper">
+            <div class="box_grid_item">
+              <div class="grid_title">
+                <strong>Show log messages</strong>
+              </div>
+              <div class="grid_cont">
+                <div class="box_top_ctrl line">
+                  <div class="box_select mid02">
+                    <button type="button" class="btn_select"><span>All messages</span></button>
+                    <div class="options">
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                    </div>
+                  </div>
+                  <div class="right_area">
+                    <p>Reported at : 2022-11-22 07:12:36 UTC</p>
+                    <button type="button" class="btn_basic btn_gray"><span>Delete</span></button>
+                  </div>
+                </div>
+
+                <div class="box_table_wrap">
+                  <table>
+                    <caption>
+                      Level, Resource, Messages 에 관한 표
+                    </caption>
+                    <colgroup>
+                      <col style="width: 15%" />
+                      <col style="width: 15%" />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col" class="t_left">Level</th>
+                        <th scope="col" class="t_left">Resource</th>
+                        <th scope="col" class="t_left">Messages</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="t_left">
+                          <div class="box_flag_area">
+                            <span class="box_flag">notice</span>
+                          </div>
+                        </td>
+                        <td class="t_left">Puppet</td>
+                        <td class="t_left">Applied catalog in 0.15 seconds</td>
+                      </tr>
+
+                      <tr class="no_data">
+                        <td colspan="3">
+                          <p>내용없음 텍스트</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="box_grid_item">
+              <div class="grid_title">
+                <strong>Report Metrics</strong>
+              </div>
+              <div class="grid_cont">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 500px;
+                    background-color: #000;
+                    color: #fff;
+                  "
+                >
+                  Chart 영역
+                </div>
+              </div>
+            </div>
+
+            <div class="box_grid_item">
+              <div class="grid_title">
+                <strong>Report Status</strong>
+              </div>
+              <div class="grid_cont">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 500px;
+                    background-color: #000;
+                    color: #fff;
+                  "
+                >
+                  Chart 영역
+                </div>
+              </div>
+            </div>
+
+            <div class="box_grid_item">
+              <div class="grid_cont">
+                <div class="box_chart_total">
+                  <table>
+                    <caption>
+                      fact_generation ,plugin_sync ,convert_catalog ,catalog_application ,transaction_evaluation ,config_retrival ,Total 에
+                      관한 표
+                    </caption>
+                    <colgroup>
+                      <col style="width: 60%" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">fact_generation</th>
+                        <td>1.3479</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">plugin_sync</th>
+                        <td>1.3479</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">convert_catalog</th>
+                        <td>1.3479</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">catalog_application</th>
+                        <td>1.3479</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">transaction_evaluation</th>
+                        <td>1.3479</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">config_retrival</th>
+                        <td>1.3479</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <th scope="row">Total</th>
+                        <td>1.3479</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+  </body>
+</html>

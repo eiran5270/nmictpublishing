@@ -1,0 +1,41 @@
+.title_wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.title_wrap + .box_tab_menu {
+  margin-top: 16px;
+}
+.title_wrap .title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+}
+.title_wrap .box_ctrl_btns {
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+  margin-left: auto;
+}
+.title_wrap .box_ctrl_btns .box_checkbox ~ .box_checkbox {
+  margin-left: 14px;
+}
+.title_wrap .box_ctrl_btns .btn_basic {
+  width: 100%;
+}
+.title_wrap.line {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.title_wrap.line:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -40px;
+  right: 0;
+  bottom: 0;
+  width: calc(100% + 80px);
+  height: 1px;
+  background-color: #e7ecf0;
+}

@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 0 10px;
+  height: 71px;
+  padding: 15px 40px;
+  border-bottom: 1px solid #e7ecf0;
+}
+.header .btn_alarm {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  background: url("/assets/images/common/icon_alarm.png") center no-repeat;
+  background-size: 17px auto;
+}
+.header .btn_alarm:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #dc654c;
+}
+.header .box_select {
+  min-width: 165px;
+  width: auto;
+}
+.header .box_select.user .btn_select {
+  padding-left: 45px;
+  background: url("/assets/images/common/icon_user.png") no-repeat left 15px center;
+  background-size: 24px auto;
+}

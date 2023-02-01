@@ -1,0 +1,116 @@
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  & + .form_wrapper {
+    margin-top: 15px;
+  }
+  .form_label {
+    display: flex;
+    align-items: center;
+    .right_area {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      gap: 0 6px;
+    }
+  }
+  .label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333;
+    span {
+      position: relative;
+      padding-right: 7px;
+    }
+    &.required {
+      span:after {
+        content: "필수입력";
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 4px;
+        height: 4px;
+        background: #db392e;
+        border-radius: 50%;
+        color: transparent;
+        font-size: 1px;
+        line-height: 1px;
+        text-indent: -9999%;
+      }
+    }
+  }
+  .form_item {
+  }
+  &.row {
+    .label {
+      min-width: 137px;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    .form_item {
+      display: flex;
+      align-items: center;
+      .form_cont {
+        flex: 1;
+      }
+    }
+  }
+  &.freestyle {
+    gap: 20px 0;
+    .form_item {
+      .label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #565656;
+        &:before {
+          width: 3px;
+          height: 3px;
+        }
+      }
+      .sub_txt {
+        margin-top: 10px;
+      }
+      &.row {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        .label {
+          display: inline-block;
+          margin: 0;
+        }
+        .form_cont {
+          display: flex;
+          align-items: center;
+          gap: 0 10px;
+          .sub_txt {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  &.border {
+    padding: 22px 20px;
+    border: 1px solid #e7ecf0;
+    border-radius: 6px;
+  }
+  &.col5 {
+    flex-direction: row;
+    gap: 0 30px;
+    .form_item {
+      min-width: 180px;
+    }
+  }
+  .sub_txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #949495;
+  }
+}

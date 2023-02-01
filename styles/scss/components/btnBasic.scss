@@ -1,0 +1,77 @@
+.btn_basic {
+  display: inline-block;
+  min-width: 70px;
+  height: 30px;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #444;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #fff;
+  white-space: nowrap;
+  &.btn_small {
+    min-width: auto;
+    height: 25px;
+    padding: 0 7px;
+    border-color: #7e7e7e;
+  }
+  &.btn_blue {
+    background-color: #473ee9;
+    border-color: #473ee9;
+    color: #fff;
+  }
+  &.btn_gray {
+    background-color: #444;
+    color: #fff;
+  }
+  &.btn_gray02 {
+    background-color: #d6dadb;
+    border-color: #d6dadb;
+  }
+  &.btn_gray03 {
+    background-color: #eaf2f4;
+    border-color: #eaf2f4;
+  }
+  &.btn_purple {
+    color: #773bda;
+    border-color: #773bda;
+  }
+  &.btn_red {
+    color: #dc654c;
+    border-color: #dc654c;
+  }
+  &.btn_text {
+    min-width: auto;
+    height: auto;
+    padding: 0;
+    color: #333;
+    border: 0;
+    border-radius: 0;
+    line-height: 17px;
+  }
+  &:disabled {
+    background-color: #f7f7f7;
+    border-color: #e7ecf0;
+    color: #767676;
+    pointer-events: none;
+  }
+  //etc
+  &.btn_clear {
+    width: auto !important;
+    padding-left: 28px;
+    color: #473ee9;
+    border-color: #473ee9;
+    background: url("/assets/images/common/icon_filter.png") no-repeat left 8px center;
+    background-size: 16px 16px;
+  }
+  &.btn_export {
+    width: auto !important;
+    padding-left: 28px;
+    color: #fff;
+    border-color: #473ee9;
+    background: #473ee9 url("/assets/images/common/icon_export.png") no-repeat left 8px center;
+    background-size: 14px 14px;
+  }
+}

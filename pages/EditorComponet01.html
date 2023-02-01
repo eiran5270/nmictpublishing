@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/checkbox.css" />
+    <link rel="stylesheet" href="/styles/css/components/breadcrumb.css" />
+    <link rel="stylesheet" href="/styles/css/components/tab.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTableList.css" />
+    <link rel="stylesheet" href="/styles/css/components/formItem.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTopCtrl.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTextarea.css" />
+    <link rel="stylesheet" href="/styles/css/components/pagination.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap line">
+            <h2 class="title">Title</h2>
+
+            <div class="box_ctrl_btns">
+              <div class="box_select mid02">
+                <button type="button" class="btn_select"><span>Take Action</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- freestyle : 입력폼의 형태가 가로 세로가 혼합된 형태. -->
+          <div class="form_wrapper freestyle">
+            <div class="form_item">
+              <label for="ipt01" class="label required"><span>Name</span></label>
+              <div class="form_cont">
+                <div class="box_input">
+                  <input type="text" id="ipt01" />
+                  <div class="btn_area">
+                    <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form_item row">
+              <strong class="label"><span>Default</span></strong>
+              <div class="form_cont">
+                <div class="box_checkbox">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="txt_label">
+                      <i class="icon"></i>
+                      <em class="label hidden">checked </em>
+                    </span>
+                  </label>
+                </div>
+                <p class="sub_txt">Default templates are automatically added to new organizatons and locations</p>
+              </div>
+            </div>
+
+            <div class="form_item row">
+              <strong class="label"><span>Snippet</span></strong>
+              <div class="form_cont">
+                <div class="box_checkbox">
+                  <label>
+                    <input type="checkbox" />
+                    <span class="txt_label">
+                      <i class="icon"></i>
+                      <em class="label hidden">checked </em>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form_item row">
+              <strong class="label"><span>Operating System Family</span></strong>
+              <div class="form_cont">
+                <div class="box_select mid">
+                  <button type="button" class="btn_select"><span>Choose a family</span></button>
+                  <div class="options">
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                    <button type="button" class="option"><span>test</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form_item">
+              <strong class="label"><span>Template</span></strong>
+              <div class="form_cont">
+                <div class="box_code_editor">
+                  <div class="box_tab_menu">
+                    <div class="box_tab_anchors">
+                      <div class="tab_anchor_item active">
+                        <button type="button" class="tab_anchor">Editor</button>
+                      </div>
+                      <div class="tab_anchor_item">
+                        <button type="button" class="tab_anchor">Changes</button>
+                      </div>
+                      <div class="tab_anchor_item">
+                        <button type="button" class="tab_anchor">Preview</button>
+                      </div>
+                    </div>
+                    <div class="box_tab_container">
+                      <div class="tab_cont" style="display: block">
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 400px;
+                            background-color: #333;
+                            color: #fff;
+                          "
+                        >
+                          에디터 영역
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form_item">
+              <label for="ipt03" class="label"><span>Description</span></label>
+              <div class="form_cont">
+                <div class="box_textarea">
+                  <textarea placeholder="test"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="form_item">
+              <strong class="label"><span>Audit Comment</span></strong>
+              <div class="form_cont">
+                <div class="box_textarea">
+                  <textarea placeholder="test"></textarea>
+                </div>
+                <p class="sub_txt">The Audit Comment field is saved with the template auditing to document the template changes</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Swiper JS 스와이프 라이브러리용. fo작업시 필요없음 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+
+    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
+    <script>
+      var swiper = new Swiper(".box_tab_anchors", {
+        slidesPerView: "auto",
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "liveServer.settings.port": 5501,
+  "liveSassCompile.settings.formats": [
+    {
+      "extensionName": ".css",
+      "savePath": null,
+      "savePathSegmentKeys": ["scss"],
+      "savePathReplaceSegmentsWith": "css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false
+}

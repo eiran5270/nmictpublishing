@@ -1,0 +1,22 @@
+.box_breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 20px;
+  a,
+  strong {
+    display: inline-block;
+    color: #565656;
+  }
+  a {
+    padding-right: 21px;
+    background: url("/assets/images/common/icon_arrow_right_small.png") no-repeat right 8px top 7px;
+    background-size: 4px auto;
+  }
+  & + .box_top_ctrl {
+    margin-top: 0;
+    padding: 0;
+    &:before {
+      display: none;
+    }
+  }
+}

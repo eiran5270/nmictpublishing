@@ -1,0 +1,128 @@
+.box_select {
+  position: relative;
+  max-width: 680px;
+  width: 100%;
+  height: 40px;
+  .btn_select {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 45px 0 15px;
+    border: 1px solid #e7ecf0;
+    color: #565656;
+    font-weight: 500;
+    line-height: 40px;
+    border-radius: 4px;
+    text-align: left;
+    letter-spacing: -0.035em;
+    white-space: nowrap;
+    z-index: 2;
+    background-color: #fff;
+    span {
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      width: 12px;
+      height: 8px;
+      transform: translateY(-50%);
+      background: url("/assets/images/common/icon_arrow_bottom_black.png") no-repeat;
+      background-size: 100%;
+    }
+  }
+  .options {
+    display: none;
+    position: absolute;
+    top: calc(100% - 2px);
+    width: 100%;
+    padding-top: 2px;
+    border: 1px solid #c8c8c8;
+    border-top: 0;
+    border-radius: 0 0 3px 3px;
+    background-color: #fff;
+    z-index: 3;
+    .option {
+      display: block;
+      width: 100%;
+      height: 33px;
+      padding: 0 14px;
+      color: #333333;
+      text-align: left;
+    }
+    span {
+      white-space: nowrap;
+    }
+  }
+  &.mid {
+    height: 34px;
+    .btn_select {
+      font-weight: 400;
+      border-color: #c8c8c8;
+      line-height: 34px;
+    }
+  }
+  &.mid02 {
+    height: 30px;
+    .btn_select {
+      font-weight: 400;
+      border-color: #c8c8c8;
+      line-height: 29px;
+    }
+  }
+  &.small {
+    max-width: 200px;
+    height: 25px;
+    .btn_select {
+      padding: 0 29px 0 10px;
+      line-height: 25px;
+      &:after {
+        right: 10px;
+      }
+    }
+    &:not(.active) {
+      .btn_select:after {
+        top: calc(50% + 2px);
+      }
+    }
+  }
+  &.top {
+    .options {
+      top: initial;
+      bottom: calc(100% - 2px);
+      padding-bottom: 2px;
+      border: 1px solid #c8c8c8;
+      border-bottom: 0;
+      border-radius: 3px 3px 0 0;
+    }
+  }
+  &.active {
+    .btn_select {
+      border-color: #333;
+      z-index: 4;
+      &:after {
+        transform: rotate(180deg) translateY(50%);
+      }
+    }
+    .options {
+      display: block;
+    }
+  }
+  &.disabled {
+    .btn_select {
+      background-color: #f7f7f7;
+      color: #767676;
+      pointer-events: none;
+    }
+  }
+  &.w200 {
+    width: 200px;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/css/common.css" />
+    <link rel="stylesheet" href="/styles/css/components/menu.css" />
+    <link rel="stylesheet" href="/styles/css/components/header.css" />
+    <link rel="stylesheet" href="/styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="/styles/css/components/inputBox.css" />
+
+    <link rel="stylesheet" href="/styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="/styles/css/components/title.css" />
+    <link rel="stylesheet" href="/styles/css/components/table.css" />
+    <link rel="stylesheet" href="/styles/css/components/boxTopCtrl.css" />
+    <link rel="stylesheet" href="/styles/css/components/pagination.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="/_pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="/_pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="title_wrap">
+            <h2 class="title">Locations</h2>
+
+            <div class="box_ctrl_btns">
+              <button type="button" class="btn_basic btn_blue"><span>Create</span></button>
+            </div>
+          </div>
+
+          <div class="box_top_ctrl">
+            <div class="right_area">
+              <button type="button" class="btn_basic btn_clear"><span>Clear</span></button>
+              <div class="box_input search">
+                <input type="text" placeholder="Keyword Search" />
+              </div>
+            </div>
+          </div>
+
+          <div class="box_table_wrap fixed_table">
+            <table>
+              <caption>
+                Name ,Title ,Created / Updated ,Actions 에 관한 표
+              </caption>
+              <colgroup>
+                <col style="width: 25%" />
+                <col style="width: 17%" />
+                <col />
+                <col style="width: 13%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="t_left">Name</th>
+                  <th scope="col" class="t_left">Title</th>
+                  <th scope="col" class="t_left">Created / Updated</th>
+                  <th scope="col" class="t_left">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="t_left">Ansible Roles Manager</td>
+                  <td class="t_left"><strong class="col_blue">Research</strong></td>
+                  <td class="t_left">
+                    2022-11-18 03:04:56<br />
+                    2022-11-18 03:04:56
+                  </td>
+                  <td class="t_left">
+                    <button type="button" class="btn_basic btn_small btn_purple"><span>clone</span></button>
+                  </td>
+                </tr>
+                <tr class="no_data">
+                  <td colspan="4">
+                    <p>내용없음 텍스트</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="box_pagination">
+            <button type="button" class="btn_page prev">
+              <span class="hidden">이전</span>
+            </button>
+
+            <strong class="btn_num">1 </strong>
+            <button class="btn_num">2</button>
+            <button type="button" class="btn_page next">
+              <span class="hidden">다음</span>
+            </button>
+            <div class="page_total">
+              <div class="box_select mid02">
+                <button type="button" class="btn_select"><span>100</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/_pub/common.js"></script>
+    <!-- publishing 전용 include -->
+  </body>
+</html>
