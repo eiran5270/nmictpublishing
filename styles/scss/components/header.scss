@@ -13,7 +13,7 @@
     width: 40px;
     height: 40px;
     margin-right: 20px;
-    background: url("../assets/images/common/icon_alarm.png") center no-repeat;
+    background: url("../../assets/images/common/icon_alarm.png") center no-repeat;
     background-size: 17px auto;
     &:after {
       content: "";
@@ -33,7 +33,7 @@
     &.user {
       .btn_select {
         padding-left: 45px;
-        background: url("../assets/images/common/icon_user.png") no-repeat left 15px center;
+        background: url("../../assets/images/common/icon_user.png") no-repeat left 15px center;
         background-size: 24px auto;
       }
     }
