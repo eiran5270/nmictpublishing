@@ -9,7 +9,7 @@
 .side_bar .logo {
   width: 100%;
   height: 71px;
-  background: #473ee9 url("../../assets/images/common/logo_small.png") no-repeat;
+  background: #473ee9 url("../assets/images/common/logo_small.png") no-repeat;
   background-size: contain;
 }
 .side_bar .side_menu_list {
@@ -33,40 +33,40 @@
   color: #fff;
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon01, .side_bar .menu_item:hover .menu_anchor .icon.icon01 {
-  background-image: url("../../assets/images/common/icon_menu01_on.png");
+  background-image: url("../assets/images/common/icon_menu01_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon02, .side_bar .menu_item:hover .menu_anchor .icon.icon02 {
-  background-image: url("../../assets/images/common/icon_menu02_on.png");
+  background-image: url("../assets/images/common/icon_menu02_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon03, .side_bar .menu_item:hover .menu_anchor .icon.icon03 {
-  background-image: url("../../assets/images/common/icon_menu03_on.png");
+  background-image: url("../assets/images/common/icon_menu03_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon04, .side_bar .menu_item:hover .menu_anchor .icon.icon04 {
-  background-image: url("../../assets/images/common/icon_menu04_on.png");
+  background-image: url("../assets/images/common/icon_menu04_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon05, .side_bar .menu_item:hover .menu_anchor .icon.icon05 {
-  background-image: url("../../assets/images/common/icon_menu05_on.png");
+  background-image: url("../assets/images/common/icon_menu05_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon06, .side_bar .menu_item:hover .menu_anchor .icon.icon06 {
-  background-image: url("../../assets/images/common/icon_menu06_on.png");
+  background-image: url("../assets/images/common/icon_menu06_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon07, .side_bar .menu_item:hover .menu_anchor .icon.icon07 {
-  background-image: url("../../assets/images/common/icon_menu07_on.png");
+  background-image: url("../assets/images/common/icon_menu07_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon08, .side_bar .menu_item:hover .menu_anchor .icon.icon08 {
-  background-image: url("../../assets/images/common/icon_menu08_on.png");
+  background-image: url("../assets/images/common/icon_menu08_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon09, .side_bar .menu_item:hover .menu_anchor .icon.icon09 {
-  background-image: url("../../assets/images/common/icon_menu09_on.png");
+  background-image: url("../assets/images/common/icon_menu09_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon10, .side_bar .menu_item:hover .menu_anchor .icon.icon10 {
-  background-image: url("../../assets/images/common/icon_menu10_on.png");
+  background-image: url("../assets/images/common/icon_menu10_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon11, .side_bar .menu_item:hover .menu_anchor .icon.icon11 {
-  background-image: url("../../assets/images/common/icon_menu11_on.png");
+  background-image: url("../assets/images/common/icon_menu11_on.png");
 }
 .side_bar .menu_item.active .menu_anchor .icon.icon12, .side_bar .menu_item:hover .menu_anchor .icon.icon12 {
-  background-image: url("../../assets/images/common/icon_menu12_on.png");
+  background-image: url("../assets/images/common/icon_menu12_on.png");
 }
 .side_bar .menu_item:hover .box_sub_menu {
   display: block;
@@ -92,40 +92,40 @@
   background-size: 100%;
 }
 .side_bar .menu_anchor .icon.icon01 {
-  background-image: url("../../assets/images/common/icon_menu01_off.png");
+  background-image: url("../assets/images/common/icon_menu01_off.png");
 }
 .side_bar .menu_anchor .icon.icon02 {
-  background-image: url("../../assets/images/common/icon_menu02_off.png");
+  background-image: url("../assets/images/common/icon_menu02_off.png");
 }
 .side_bar .menu_anchor .icon.icon03 {
-  background-image: url("../../assets/images/common/icon_menu03_off.png");
+  background-image: url("../assets/images/common/icon_menu03_off.png");
 }
 .side_bar .menu_anchor .icon.icon04 {
-  background-image: url("../../assets/images/common/icon_menu04_off.png");
+  background-image: url("../assets/images/common/icon_menu04_off.png");
 }
 .side_bar .menu_anchor .icon.icon05 {
-  background-image: url("../../assets/images/common/icon_menu05_off.png");
+  background-image: url("../assets/images/common/icon_menu05_off.png");
 }
 .side_bar .menu_anchor .icon.icon06 {
-  background-image: url("../../assets/images/common/icon_menu06_off.png");
+  background-image: url("../assets/images/common/icon_menu06_off.png");
 }
 .side_bar .menu_anchor .icon.icon07 {
-  background-image: url("../../assets/images/common/icon_menu07_off.png");
+  background-image: url("../assets/images/common/icon_menu07_off.png");
 }
 .side_bar .menu_anchor .icon.icon08 {
-  background-image: url("../../assets/images/common/icon_menu08_off.png");
+  background-image: url("../assets/images/common/icon_menu08_off.png");
 }
 .side_bar .menu_anchor .icon.icon09 {
-  background-image: url("../../assets/images/common/icon_menu09_off.png");
+  background-image: url("../assets/images/common/icon_menu09_off.png");
 }
 .side_bar .menu_anchor .icon.icon10 {
-  background-image: url("../../assets/images/common/icon_menu10_off.png");
+  background-image: url("../assets/images/common/icon_menu10_off.png");
 }
 .side_bar .menu_anchor .icon.icon11 {
-  background-image: url("../../assets/images/common/icon_menu11_off.png");
+  background-image: url("../assets/images/common/icon_menu11_off.png");
 }
 .side_bar .menu_anchor .icon.icon12 {
-  background-image: url("../../assets/images/common/icon_menu12_off.png");
+  background-image: url("../assets/images/common/icon_menu12_off.png");
 }
 .side_bar .menu_anchor .menu_name {
   display: none;
@@ -185,7 +185,7 @@
   width: 6px;
   height: 10px;
   margin: -5px 0 0 0px;
-  background: url("../../assets/images/common/icon_arrow_right_white.png") no-repeat center;
+  background: url("../assets/images/common/icon_arrow_right_white.png") no-repeat center;
   background-size: 100%;
 }
 .side_bar .btn_ctrl_sidebar:hover {
@@ -196,13 +196,13 @@
   width: 261px;
 }
 .side_bar.open .logo {
-  background-image: url("../../assets/images/common/logo_default.png");
+  background-image: url("../assets/images/common/logo_default.png");
 }
 .side_bar.open .side_menu_list {
   padding: 26px 10px;
 }
 .side_bar.open .menu_item.active button.menu_anchor {
-  background: url("../../assets/images/common/icon_arrow_bottom_on.png") no-repeat right 20px center;
+  background: url("../assets/images/common/icon_arrow_bottom_on.png") no-repeat right 20px center;
   background-size: 12px auto;
 }
 .side_bar.open .menu_item.active .box_sub_menu {
@@ -224,7 +224,7 @@
   display: none;
 }
 .side_bar.open button.menu_anchor {
-  background: url("../../assets/images/common/icon_arrow_right_off.png") no-repeat right 20px center;
+  background: url("../assets/images/common/icon_arrow_right_off.png") no-repeat right 20px center;
   background-size: auto 12px;
 }
 .side_bar.open .box_sub_menu {

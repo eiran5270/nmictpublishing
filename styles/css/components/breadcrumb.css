@@ -10,7 +10,7 @@
 }
 .box_breadcrumb a {
   padding-right: 21px;
-  background: url("../../assets/images/common/icon_arrow_right_small.png") no-repeat right 8px top 7px;
+  background: url("../assets/images/common/icon_arrow_right_small.png") no-repeat right 8px top 7px;
   background-size: 4px auto;
 }
 .box_breadcrumb + .box_top_ctrl {

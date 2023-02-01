@@ -30,7 +30,7 @@
   font-weight: 500;
   font-size: 16px;
   color: #333;
-  background: url("../../assets/images/common/icon_arrow_double.png") no-repeat left center;
+  background: url("../assets/images/common/icon_arrow_double.png") no-repeat left center;
   background-size: auto 12px;
 }
 .box_table_list table {
@@ -92,13 +92,13 @@
 }
 .box_table_list .box_file_upload .box_file_btns .btn_file.add {
   background-color: #473ee9;
-  background-image: url("../../assets/images/common/icon_file_add.png");
+  background-image: url("../assets/images/common/icon_file_add.png");
 }
 .box_table_list .box_file_upload .box_file_btns .btn_file.upload {
-  background-image: url("../../assets/images/common/icon_file_upload.png");
+  background-image: url("../assets/images/common/icon_file_upload.png");
 }
 .box_table_list .box_file_upload .box_file_btns .btn_file.cancel {
-  background-image: url("../../assets/images/common/icon_file_cancel.png");
+  background-image: url("../assets/images/common/icon_file_cancel.png");
 }
 .box_table_list .box_file_upload .files {
   position: relative;

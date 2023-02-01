@@ -29,7 +29,7 @@
     font-weight: 500;
     font-size: 16px;
     color: #333;
-    background: url("../../assets/images/common/icon_arrow_double.png") no-repeat left center;
+    background: url("../assets/images/common/icon_arrow_double.png") no-repeat left center;
     background-size: auto 12px;
   }
   table {
@@ -90,13 +90,13 @@
         background-size: 16px 16px;
         &.add {
           background-color: #473ee9;
-          background-image: url("../../assets/images/common/icon_file_add.png");
+          background-image: url("../assets/images/common/icon_file_add.png");
         }
         &.upload {
-          background-image: url("../../assets/images/common/icon_file_upload.png");
+          background-image: url("../assets/images/common/icon_file_upload.png");
         }
         &.cancel {
-          background-image: url("../../assets/images/common/icon_file_cancel.png");
+          background-image: url("../assets/images/common/icon_file_cancel.png");
         }
       }
     }

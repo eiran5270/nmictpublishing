@@ -22,7 +22,7 @@
   left: 0;
   top: 0;
   box-sizing: border-box;
-  background: url("../../assets/images/common/icon_checkbox_default.png") no-repeat;
+  background: url("../assets/images/common/icon_checkbox_default.png") no-repeat;
   background-size: 100%;
 }
 .box_checkbox .txt_label .label {
@@ -53,8 +53,8 @@
   opacity: 0;
 }
 .box_checkbox input:checked + .txt_label .icon:before {
-  background-image: url("../../assets/images/common/icon_checkbox_active.png");
+  background-image: url("../assets/images/common/icon_checkbox_active.png");
 }
 .box_checkbox input:disabled + .txt_label .icon:before {
-  background-image: url("../../assets/images/common/icon_checkbox_disabled.png");
+  background-image: url("../assets/images/common/icon_checkbox_disabled.png");
 }

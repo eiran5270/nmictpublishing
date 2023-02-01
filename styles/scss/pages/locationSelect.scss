@@ -43,16 +43,16 @@
       background-repeat: no-repeat;
       background-size: 20px 20px;
       &.right {
-        background-image: url("../../assets/images/icon_select_arrow01.png");
+        background-image: url("../assets/images/icon_select_arrow01.png");
       }
       &.right_all {
-        background-image: url("../../assets/images/icon_select_arrow02.png");
+        background-image: url("../assets/images/icon_select_arrow02.png");
       }
       &.left {
-        background-image: url("../../assets/images/icon_select_arrow03.png");
+        background-image: url("../assets/images/icon_select_arrow03.png");
       }
       &.left_all {
-        background-image: url("../../assets/images/icon_select_arrow04.png");
+        background-image: url("../assets/images/icon_select_arrow04.png");
       }
       &:disabled {
         background-color: #7ba8e5;
