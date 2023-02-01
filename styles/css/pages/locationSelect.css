@@ -45,16 +45,16 @@
   background-size: 20px 20px;
 }
 .box_selected_location .box_btns .btn_move.right {
-  background-image: url("../assets/images/icon_select_arrow01.png");
+  background-image: url("../../../assets/images/icon_select_arrow01.png");
 }
 .box_selected_location .box_btns .btn_move.right_all {
-  background-image: url("../assets/images/icon_select_arrow02.png");
+  background-image: url("../../../assets/images/icon_select_arrow02.png");
 }
 .box_selected_location .box_btns .btn_move.left {
-  background-image: url("../assets/images/icon_select_arrow03.png");
+  background-image: url("../../../assets/images/icon_select_arrow03.png");
 }
 .box_selected_location .box_btns .btn_move.left_all {
-  background-image: url("../assets/images/icon_select_arrow04.png");
+  background-image: url("../../../assets/images/icon_select_arrow04.png");
 }
 .box_selected_location .box_btns .btn_move:disabled {
   background-color: #7ba8e5;
