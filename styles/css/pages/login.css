@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  background: url("/assets/images/bg_login.jpg") no-repeat center;
+  background: url("../../assets/images/bg_login.jpg") no-repeat center;
   background-size: cover;
   color: #fff;
 }

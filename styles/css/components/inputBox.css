@@ -32,13 +32,14 @@
   width: 170px;
   height: 30px;
   padding-left: 30px;
-  background: url("/assets/images/common/icon_search.png") no-repeat left 9px center;
+  background: url("../../assets/images/common/icon_search.png") no-repeat left 9px center;
   background-size: 16px 16px;
 }
 .box_input.small {
   height: 30px;
 }
-.box_input.focus:not(.disabled), .box_input:hover:not(.disabled) {
+.box_input.focus:not(.disabled),
+.box_input:hover:not(.disabled) {
   border-color: #333;
 }
 .box_input.disabled {
@@ -50,10 +51,12 @@
   background: #f7f7f7;
   color: #767676;
 }
-.box_input.disabled textarea::-moz-placeholder, .box_input.disabled input::-moz-placeholder {
+.box_input.disabled textarea::-moz-placeholder,
+.box_input.disabled input::-moz-placeholder {
   color: #767676;
 }
-.box_input.disabled textarea:-ms-input-placeholder, .box_input.disabled input:-ms-input-placeholder {
+.box_input.disabled textarea:-ms-input-placeholder,
+.box_input.disabled input:-ms-input-placeholder {
   color: #767676;
 }
 .box_input.disabled textarea::placeholder,
@@ -76,6 +79,6 @@
   display: block;
   min-width: 20px;
   height: 20px;
-  background: url("/assets/images/common/btn_input_del.png") no-repeat;
+  background: url("../../assets/images/common/btn_input_del.png") no-repeat;
   background-size: 100%;
 }

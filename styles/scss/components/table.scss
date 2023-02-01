@@ -42,7 +42,7 @@
             top: 2px;
             width: 12px;
             height: 12px;
-            background: url("/assets/images/common/icon_transfer.png") no-repeat;
+            background: url("../../assets/images/common/icon_transfer.png") no-repeat;
             background-size: 12px 12px;
           }
         }
@@ -50,7 +50,7 @@
           span {
             &:before {
               content: "";
-              background-image: url("/assets/images/common/icon_sorting.png");
+              background-image: url("../../assets/images/common/icon_sorting.png");
             }
           }
         }
@@ -152,14 +152,14 @@
     display: inline-block;
     width: 12px;
     height: 10px;
-    background: url("/assets/images/common/icon_check_enabled.png") no-repeat;
+    background: url("../../assets/images/common/icon_check_enabled.png") no-repeat;
     background-size: 12px 10px;
   }
   .icon_triangle {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: url("/assets/images/common/icon_triangle.png") no-repeat;
+    background: url("../../assets/images/common/icon_triangle.png") no-repeat;
     background-size: 100%;
   }
   .box_flag_area {
@@ -180,7 +180,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url("/assets/images/common/btn_modify.png") no-repeat center;
+    background: url("../../assets/images/common/btn_modify.png") no-repeat center;
     background-size: 11px 12px;
   }
   .col_blue {
@@ -193,10 +193,10 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url("/assets/images/common/icon_locked.png") no-repeat;
+    background: url("../../assets/images/common/icon_locked.png") no-repeat;
     background-size: 16px 16px;
     &.unlock {
-      background-image: url("/assets/images/common/icon_unlocked.png");
+      background-image: url("../../assets/images/common/icon_unlocked.png");
     }
   }
   .tbl_toggle_anchor {
@@ -214,7 +214,7 @@
       height: 8px;
       margin-top: -4px;
       transform: rotate(-90deg);
-      background: url("/assets/images/common/icon_arrow_bottom_gray.png") no-repeat;
+      background: url("../../assets/images/common/icon_arrow_bottom_gray.png") no-repeat;
       background-size: 100%;
     }
   }
@@ -258,7 +258,7 @@
     font-weight: 500;
     color: #333;
     line-height: 29px;
-    background: url("/assets/images/common/icon_plus.png") no-repeat left 10px center;
+    background: url("../../assets/images/common/icon_plus.png") no-repeat left 10px center;
     background-size: 16px 16px;
     border: 1px solid #c8c8c8;
     border-radius: 4px;

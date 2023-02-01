@@ -2,22 +2,22 @@
 @font-face {
   font-family: "pretendard";
   font-weight: 400;
-  src: local("pretendard"), url("/assets/fonts/Pretendard-Regular.woff") format("woff");
+  src: local("pretendard"), url("../../assets/fonts/Pretendard-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "pretendard";
   font-weight: 500;
-  src: local("pretendard"), url("/assets/fonts/Pretendard-Medium.woff") format("woff");
+  src: local("pretendard"), url("../../assets/fonts/Pretendard-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "pretendard";
   font-weight: 600;
-  src: local("pretendard"), url("/assets/fonts/Pretendard-SemiBold.woff") format("woff");
+  src: local("pretendard"), url("../../assets/fonts/Pretendard-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "pretendard";
   font-weight: 700;
-  src: local("pretendard"), url("/assets/fonts/Pretendard-Bold.woff") format("woff");
+  src: local("pretendard"), url("../../assets/fonts/Pretendard-Bold.woff") format("woff");
 }
 
 /* reset */

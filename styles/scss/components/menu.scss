@@ -8,7 +8,7 @@
   .logo {
     width: 100%;
     height: 71px;
-    background: #473ee9 url("/assets/images/common/logo_small.png") no-repeat;
+    background: #473ee9 url("../../assets/images/common/logo_small.png") no-repeat;
     background-size: contain;
   }
   .side_menu_list {
@@ -33,40 +33,40 @@
         color: #fff;
         .icon {
           &.icon01 {
-            background-image: url("/assets/images/common/icon_menu01_on.png");
+            background-image: url("../../assets/images/common/icon_menu01_on.png");
           }
           &.icon02 {
-            background-image: url("/assets/images/common/icon_menu02_on.png");
+            background-image: url("../../assets/images/common/icon_menu02_on.png");
           }
           &.icon03 {
-            background-image: url("/assets/images/common/icon_menu03_on.png");
+            background-image: url("../../assets/images/common/icon_menu03_on.png");
           }
           &.icon04 {
-            background-image: url("/assets/images/common/icon_menu04_on.png");
+            background-image: url("../../assets/images/common/icon_menu04_on.png");
           }
           &.icon05 {
-            background-image: url("/assets/images/common/icon_menu05_on.png");
+            background-image: url("../../assets/images/common/icon_menu05_on.png");
           }
           &.icon06 {
-            background-image: url("/assets/images/common/icon_menu06_on.png");
+            background-image: url("../../assets/images/common/icon_menu06_on.png");
           }
           &.icon07 {
-            background-image: url("/assets/images/common/icon_menu07_on.png");
+            background-image: url("../../assets/images/common/icon_menu07_on.png");
           }
           &.icon08 {
-            background-image: url("/assets/images/common/icon_menu08_on.png");
+            background-image: url("../../assets/images/common/icon_menu08_on.png");
           }
           &.icon09 {
-            background-image: url("/assets/images/common/icon_menu09_on.png");
+            background-image: url("../../assets/images/common/icon_menu09_on.png");
           }
           &.icon10 {
-            background-image: url("/assets/images/common/icon_menu10_on.png");
+            background-image: url("../../assets/images/common/icon_menu10_on.png");
           }
           &.icon11 {
-            background-image: url("/assets/images/common/icon_menu11_on.png");
+            background-image: url("../../assets/images/common/icon_menu11_on.png");
           }
           &.icon12 {
-            background-image: url("/assets/images/common/icon_menu12_on.png");
+            background-image: url("../../assets/images/common/icon_menu12_on.png");
           }
         }
       }
@@ -96,40 +96,40 @@
       background-repeat: no-repeat;
       background-size: 100%;
       &.icon01 {
-        background-image: url("/assets/images/common/icon_menu01_off.png");
+        background-image: url("../../assets/images/common/icon_menu01_off.png");
       }
       &.icon02 {
-        background-image: url("/assets/images/common/icon_menu02_off.png");
+        background-image: url("../../assets/images/common/icon_menu02_off.png");
       }
       &.icon03 {
-        background-image: url("/assets/images/common/icon_menu03_off.png");
+        background-image: url("../../assets/images/common/icon_menu03_off.png");
       }
       &.icon04 {
-        background-image: url("/assets/images/common/icon_menu04_off.png");
+        background-image: url("../../assets/images/common/icon_menu04_off.png");
       }
       &.icon05 {
-        background-image: url("/assets/images/common/icon_menu05_off.png");
+        background-image: url("../../assets/images/common/icon_menu05_off.png");
       }
       &.icon06 {
-        background-image: url("/assets/images/common/icon_menu06_off.png");
+        background-image: url("../../assets/images/common/icon_menu06_off.png");
       }
       &.icon07 {
-        background-image: url("/assets/images/common/icon_menu07_off.png");
+        background-image: url("../../assets/images/common/icon_menu07_off.png");
       }
       &.icon08 {
-        background-image: url("/assets/images/common/icon_menu08_off.png");
+        background-image: url("../../assets/images/common/icon_menu08_off.png");
       }
       &.icon09 {
-        background-image: url("/assets/images/common/icon_menu09_off.png");
+        background-image: url("../../assets/images/common/icon_menu09_off.png");
       }
       &.icon10 {
-        background-image: url("/assets/images/common/icon_menu10_off.png");
+        background-image: url("../../assets/images/common/icon_menu10_off.png");
       }
       &.icon11 {
-        background-image: url("/assets/images/common/icon_menu11_off.png");
+        background-image: url("../../assets/images/common/icon_menu11_off.png");
       }
       &.icon12 {
-        background-image: url("/assets/images/common/icon_menu12_off.png");
+        background-image: url("../../assets/images/common/icon_menu12_off.png");
       }
     }
     .menu_name {
@@ -190,7 +190,7 @@
       width: 6px;
       height: 10px;
       margin: -5px 0 0 0px;
-      background: url("/assets/images/common/icon_arrow_right_white.png") no-repeat center;
+      background: url("../../assets/images/common/icon_arrow_right_white.png") no-repeat center;
       background-size: 100%;
     }
     &:hover {
@@ -201,7 +201,7 @@
     min-width: 261px;
     width: 261px;
     .logo {
-      background-image: url("/assets/images/common/logo_default.png");
+      background-image: url("../../assets/images/common/logo_default.png");
     }
     .side_menu_list {
       padding: 26px 10px;
@@ -209,7 +209,7 @@
     .menu_item {
       &.active {
         button.menu_anchor {
-          background: url("/assets/images/common/icon_arrow_bottom_on.png") no-repeat right 20px center;
+          background: url("../../assets/images/common/icon_arrow_bottom_on.png") no-repeat right 20px center;
           background-size: 12px auto;
         }
         .box_sub_menu {
@@ -233,7 +233,7 @@
       }
     }
     button.menu_anchor {
-      background: url("/assets/images/common/icon_arrow_right_off.png") no-repeat right 20px center;
+      background: url("../../assets/images/common/icon_arrow_right_off.png") no-repeat right 20px center;
       background-size: auto 12px;
     }
     .box_sub_menu {
