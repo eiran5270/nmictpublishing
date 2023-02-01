@@ -26,60 +26,46 @@
   position: relative;
   border-radius: 6px;
 }
-.side_bar .menu_item.active,
-.side_bar .menu_item:hover {
+.side_bar .menu_item.active, .side_bar .menu_item:hover {
   background-color: #25262b;
 }
-.side_bar .menu_item.active .menu_anchor,
-.side_bar .menu_item:hover .menu_anchor {
+.side_bar .menu_item.active .menu_anchor, .side_bar .menu_item:hover .menu_anchor {
   color: #fff;
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon01,
-.side_bar .menu_item:hover .menu_anchor .icon.icon01 {
+.side_bar .menu_item.active .menu_anchor .icon.icon01, .side_bar .menu_item:hover .menu_anchor .icon.icon01 {
   background-image: url("../../assets/images/common/icon_menu01_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon02,
-.side_bar .menu_item:hover .menu_anchor .icon.icon02 {
+.side_bar .menu_item.active .menu_anchor .icon.icon02, .side_bar .menu_item:hover .menu_anchor .icon.icon02 {
   background-image: url("../../assets/images/common/icon_menu02_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon03,
-.side_bar .menu_item:hover .menu_anchor .icon.icon03 {
+.side_bar .menu_item.active .menu_anchor .icon.icon03, .side_bar .menu_item:hover .menu_anchor .icon.icon03 {
   background-image: url("../../assets/images/common/icon_menu03_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon04,
-.side_bar .menu_item:hover .menu_anchor .icon.icon04 {
+.side_bar .menu_item.active .menu_anchor .icon.icon04, .side_bar .menu_item:hover .menu_anchor .icon.icon04 {
   background-image: url("../../assets/images/common/icon_menu04_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon05,
-.side_bar .menu_item:hover .menu_anchor .icon.icon05 {
+.side_bar .menu_item.active .menu_anchor .icon.icon05, .side_bar .menu_item:hover .menu_anchor .icon.icon05 {
   background-image: url("../../assets/images/common/icon_menu05_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon06,
-.side_bar .menu_item:hover .menu_anchor .icon.icon06 {
+.side_bar .menu_item.active .menu_anchor .icon.icon06, .side_bar .menu_item:hover .menu_anchor .icon.icon06 {
   background-image: url("../../assets/images/common/icon_menu06_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon07,
-.side_bar .menu_item:hover .menu_anchor .icon.icon07 {
+.side_bar .menu_item.active .menu_anchor .icon.icon07, .side_bar .menu_item:hover .menu_anchor .icon.icon07 {
   background-image: url("../../assets/images/common/icon_menu07_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon08,
-.side_bar .menu_item:hover .menu_anchor .icon.icon08 {
+.side_bar .menu_item.active .menu_anchor .icon.icon08, .side_bar .menu_item:hover .menu_anchor .icon.icon08 {
   background-image: url("../../assets/images/common/icon_menu08_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon09,
-.side_bar .menu_item:hover .menu_anchor .icon.icon09 {
+.side_bar .menu_item.active .menu_anchor .icon.icon09, .side_bar .menu_item:hover .menu_anchor .icon.icon09 {
   background-image: url("../../assets/images/common/icon_menu09_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon10,
-.side_bar .menu_item:hover .menu_anchor .icon.icon10 {
+.side_bar .menu_item.active .menu_anchor .icon.icon10, .side_bar .menu_item:hover .menu_anchor .icon.icon10 {
   background-image: url("../../assets/images/common/icon_menu10_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon11,
-.side_bar .menu_item:hover .menu_anchor .icon.icon11 {
+.side_bar .menu_item.active .menu_anchor .icon.icon11, .side_bar .menu_item:hover .menu_anchor .icon.icon11 {
   background-image: url("../../assets/images/common/icon_menu11_on.png");
 }
-.side_bar .menu_item.active .menu_anchor .icon.icon12,
-.side_bar .menu_item:hover .menu_anchor .icon.icon12 {
+.side_bar .menu_item.active .menu_anchor .icon.icon12, .side_bar .menu_item:hover .menu_anchor .icon.icon12 {
   background-image: url("../../assets/images/common/icon_menu12_on.png");
 }
 .side_bar .menu_item:hover .box_sub_menu {
@@ -159,8 +145,7 @@
 .side_bar .sub_menu_item {
   white-space: nowrap;
 }
-.side_bar .sub_menu_item.active,
-.side_bar .sub_menu_item:hover {
+.side_bar .sub_menu_item.active, .side_bar .sub_menu_item:hover {
   color: #fff;
 }
 .side_bar .sub_menu_item .sub_menu_anchor {
@@ -257,8 +242,7 @@
 .side_bar.open .sub_menu_item {
   cursor: pointer;
 }
-.side_bar.open .sub_menu_item.active,
-.side_bar.open .sub_menu_item:hover {
+.side_bar.open .sub_menu_item.active, .side_bar.open .sub_menu_item:hover {
   color: #fff;
 }
 .side_bar.open .btn_ctrl_sidebar {
