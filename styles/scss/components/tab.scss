@@ -1,13 +1,14 @@
 .box_tab_menu {
-  overflow: hidden;
   width: 100%;
-  border: 1px solid #e7ecf0;
-  border-radius: 6px;
   .box_tab_anchors {
     display: flex;
     position: relative;
+    overflow: hidden;
     height: 40px;
     background: #f7f8f9;
+    border: 1px solid #e7ecf0;
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
     // border-bottom: 1px solid #e7ecf0;
     &:before {
       content: "";
@@ -52,19 +53,21 @@
     }
   }
   .box_tab_container {
+    border: 1px solid #e7ecf0;
+    border-top: 0;
+    border-radius: 0 0 6px 6px;
     .tab_cont {
       display: none;
       padding: 20px;
     }
   }
   &.line {
-    overflow: initial;
-    border: 0;
     .box_tab_anchors {
       position: relative;
       margin: 0 -20px;
       padding: 0 20px;
       background-color: #fff;
+      border: 0;
       .tab_anchor_item {
         margin: 0;
         border: 0;
@@ -94,17 +97,17 @@
       }
     }
     .box_tab_container {
+      border: 0;
       .tab_cont {
         padding: 20px 0 0;
       }
     }
   }
   .box_code_editor & {
-    overflow: auto;
-    border-top: 0;
-    border-radius: 0;
     .box_tab_anchors {
       background-color: #fff;
+      border-radius: 0;
+      border-top: 0;
       &:before {
         top: 0;
         bottom: initial;
