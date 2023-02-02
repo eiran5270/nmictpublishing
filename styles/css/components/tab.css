@@ -78,6 +78,7 @@
   color: #666;
   font-weight: 400;
   font-size: 14px;
+  border: 0 !important;
 }
 .box_tab_menu.line .box_tab_anchors .tab_anchor:before {
   content: "";
