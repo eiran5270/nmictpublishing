@@ -1,7 +1,6 @@
 const publish = {
   init: function () {
     this.include();
-    console.log(document.querySelectorAll(".btn_select"));
   },
   include: function (callback) {
     var allElements = document.getElementsByTagName("*");
@@ -23,6 +22,9 @@ const publish = {
       publish.menuOpenToggle();
       if (document.querySelectorAll(".btn_select").length) {
         this.selectToggle();
+      }
+      if (document.querySelectorAll(".box_file_upload").length) {
+        this.fileAdd();
       }
     }, "1000");
   },
@@ -63,7 +65,7 @@ const publish = {
         });
         const optionHeight = curr.closest(".box_select").querySelector(".options").clientHeight;
 
-        if (doHeight < elTop + elHeight + optionHeight + 200) {
+        if (doHeight < elTop + elHeight + optionHeight + 200 || curr.closest(".page_total")) {
           curr.closest(".box_select").classList.add("top");
         } else {
           curr.closest(".box_select").classList.remove("top");
@@ -75,6 +77,31 @@ const publish = {
           }
         });
       });
+    });
+  },
+  fileAdd: function () {
+    const uploadBox = document.querySelector(".box_file_upload");
+    const inputFiles = document.querySelector("#inputFiles");
+    const fileBox = document.querySelector(".box_file_upload .file_list");
+
+    /* 박스 안에 Drag를 하고 있을 때 */
+    uploadBox.addEventListener("dragover", (e) => {
+      e.preventDefault();
+    });
+
+    const onFileHandler = (file) => {
+      fileBox.innerHTML += `<p>${file}</p>`;
+    };
+
+    uploadBox.addEventListener("drop", (e) => {
+      e.preventDefault();
+      const file = e.dataTransfer.files[0].name;
+      onFileHandler(file);
+    });
+    inputFiles.addEventListener("change", (e) => {
+      const file = e.target.files[0].name;
+      onFileHandler(file);
+      fileBox.querySelectorAll("p").length ? fileBox.classList.add("upload") : fileBox.classList.remove("upload");
     });
   },
 };

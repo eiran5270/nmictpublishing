@@ -5,27 +5,18 @@
     <title>NAMU ICT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
-
     <link rel="stylesheet" href="../styles/css/common.css" />
     <link rel="stylesheet" href="../styles/css/components/menu.css" />
     <link rel="stylesheet" href="../styles/css/components/Header.css" />
-    <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
-    <link rel="stylesheet" href="../styles/css/components/inputBox.css" />
 
     <link rel="stylesheet" href="../styles/css/components/btnBasic.css" />
     <link rel="stylesheet" href="../styles/css/components/title.css" />
     <link rel="stylesheet" href="../styles/css/components/checkbox.css" />
-    <link rel="stylesheet" href="../styles/css/components/breadcrumb.css" />
     <link rel="stylesheet" href="../styles/css/components/tab.css" />
-    <link rel="stylesheet" href="../styles/css/components/boxTableList.css" />
     <link rel="stylesheet" href="../styles/css/components/formItem.css" />
-    <link rel="stylesheet" href="../styles/css/components/boxTopCtrl.css" />
     <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
     <link rel="stylesheet" href="../styles/css/components/inputBox.css" />
     <link rel="stylesheet" href="../styles/css/components/boxTextarea.css" />
-    <link rel="stylesheet" href="../styles/css/components/pagination.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -82,13 +73,12 @@
             </div>
           </div>
 
-          <!-- freestyle : 입력폼의 형태가 가로 세로가 혼합된 형태. -->
-          <div class="form_wrapper freestyle col5">
+          <div class="form_wrapper style01 col5">
             <div class="form_item">
               <strong class="label"><span>Locations</span></strong>
               <div class="form_cont">
-                <div class="box_select mid">
-                  <button type="button" class="btn_select"><span>Choose a family</span></button>
+                <div class="box_select mid02">
+                  <button type="button" class="btn_select"><span>Select Locations</span></button>
                   <div class="options">
                     <button type="button" class="option"><span>test</span></button>
                     <button type="button" class="option"><span>test</span></button>
@@ -103,8 +93,8 @@
             <div class="form_item">
               <strong class="label"><span>Organizations</span></strong>
               <div class="form_cont">
-                <div class="box_select mid">
-                  <button type="button" class="btn_select"><span>Choose a family</span></button>
+                <div class="box_select mid02">
+                  <button type="button" class="btn_select"><span>Select Organizations</span></button>
                   <div class="options">
                     <button type="button" class="option"><span>test</span></button>
                     <button type="button" class="option"><span>test</span></button>
@@ -119,8 +109,8 @@
             <div class="form_item">
               <strong class="label"><span>Manufacturer</span></strong>
               <div class="form_cont">
-                <div class="box_select mid">
-                  <button type="button" class="btn_select"><span>Choose a family</span></button>
+                <div class="box_select mid02">
+                  <button type="button" class="btn_select"><span>Companies Location</span></button>
                   <div class="options">
                     <button type="button" class="option"><span>test</span></button>
                     <button type="button" class="option"><span>test</span></button>
@@ -135,8 +125,8 @@
             <div class="form_item">
               <strong class="label"><span>Model</span></strong>
               <div class="form_cont">
-                <div class="box_select mid">
-                  <button type="button" class="btn_select"><span>Choose a family</span></button>
+                <div class="box_select mid02">
+                  <button type="button" class="btn_select"><span>Misc</span></button>
                   <div class="options">
                     <button type="button" class="option"><span>test</span></button>
                     <button type="button" class="option"><span>test</span></button>
@@ -151,8 +141,8 @@
             <div class="form_item">
               <strong class="label"><span>Version</span></strong>
               <div class="form_cont">
-                <div class="box_select mid">
-                  <button type="button" class="btn_select"><span>Choose a family</span></button>
+                <div class="box_select mid02">
+                  <button type="button" class="btn_select"><span>0.1</span></button>
                   <div class="options">
                     <button type="button" class="option"><span>test</span></button>
                     <button type="button" class="option"><span>test</span></button>
@@ -166,11 +156,11 @@
             </div>
           </div>
 
-          <div class="form_wrapper freestyle">
+          <div class="form_wrapper style01">
             <div class="form_item">
               <label for="ipt01" class="label required"><span>Name</span></label>
               <div class="form_cont">
-                <div class="box_input">
+                <div class="box_input small">
                   <input type="text" id="ipt01" />
                   <div class="btn_area">
                     <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
@@ -178,57 +168,8 @@
                 </div>
               </div>
             </div>
-
-            <div class="form_item row">
-              <strong class="label"><span>Default</span></strong>
-              <div class="form_cont">
-                <div class="box_checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <span class="txt_label">
-                      <i class="icon"></i>
-                      <em class="label hidden">checked </em>
-                    </span>
-                  </label>
-                </div>
-                <p class="sub_txt">Default templates are automatically added to new organizatons and locations</p>
-              </div>
-            </div>
-
-            <div class="form_item row">
-              <strong class="label"><span>Snippet</span></strong>
-              <div class="form_cont">
-                <div class="box_checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <span class="txt_label">
-                      <i class="icon"></i>
-                      <em class="label hidden">checked </em>
-                    </span>
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form_item row">
-              <strong class="label"><span>Operating System Family</span></strong>
-              <div class="form_cont">
-                <div class="box_select mid">
-                  <button type="button" class="btn_select"><span>Choose a family</span></button>
-                  <div class="options">
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div class="form_item">
-              <strong class="label"><span>Operating System Family</span></strong>
+              <strong class="label"><span>Template</span></strong>
               <div class="form_cont">
                 <div class="box_code_editor">
                   <div class="box_tab_menu">
@@ -269,16 +210,16 @@
               <label for="ipt03" class="label"><span>Description</span></label>
               <div class="form_cont">
                 <div class="box_textarea">
-                  <textarea placeholder="test"></textarea>
+                  <textarea placeholder="test" id="ipt03"></textarea>
                 </div>
               </div>
             </div>
 
             <div class="form_item">
-              <strong class="label"><span>Audit Comment</span></strong>
+              <label for="ipt04" class="label"><span>Audit Comment</span></label>
               <div class="form_cont">
                 <div class="box_textarea">
-                  <textarea placeholder="test"></textarea>
+                  <textarea placeholder="test" id="ipt04"></textarea>
                 </div>
                 <p class="sub_txt">The Audit Comment field is saved with the template auditing to document the template changes</p>
               </div>

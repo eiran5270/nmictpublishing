@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../styles/css/components/title.css" />
     <link rel="stylesheet" href="../styles/css/components/table.css" />
     <link rel="stylesheet" href="../styles/css/components/boxTopCtrl.css" />
-    <link rel="stylesheet" href="../styles/css/components/pagination.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -36,7 +35,7 @@
             <div class="right_area">
               <button type="button" class="btn_basic btn_clear"><span>Clear</span></button>
               <div class="box_input search">
-                <input type="text" placeholder="Keyword Search" />
+                <input type="text" title="input keyword" placeholder="Keyword Search" />
               </div>
             </div>
           </div>
@@ -47,10 +46,14 @@
                 ID, JobGroup, Name, #Jobs/#Tasks, Enabled, Snippet, Created/Updated, Actions 에 관한 표
               </caption>
               <colgroup>
+                <col style="width: 15%" />
+                <col style="width: 20%" />
                 <col style="width: 25%" />
-                <col style="width: 25%" />
-                <col style="width: 25%" />
+                <col style="width: 15%" />
+                <col style="width: 10%" />
                 <col />
+                <col style="width: 15%" />
+                <col style="width: 15%" />
               </colgroup>
               <thead>
                 <tr>

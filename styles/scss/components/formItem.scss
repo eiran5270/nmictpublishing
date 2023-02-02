@@ -60,7 +60,7 @@
       }
     }
   }
-  &.freestyle {
+  &.style01 {
     gap: 20px 0;
     .form_item {
       .label {
@@ -75,6 +75,9 @@
       }
       .sub_txt {
         margin-top: 10px;
+      }
+      .box_input {
+        max-width: 100%;
       }
       &.row {
         display: flex;
@@ -104,7 +107,8 @@
     flex-direction: row;
     gap: 0 30px;
     .form_item {
-      min-width: 180px;
+      flex: 1;
+      width: 100%;
     }
   }
   .sub_txt {
@@ -112,5 +116,8 @@
     font-size: 14px;
     line-height: 17px;
     color: #949495;
+  }
+  .tab_cont & {
+    padding-top: 10px;
   }
 }

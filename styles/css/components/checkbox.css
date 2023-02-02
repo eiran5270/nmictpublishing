@@ -27,7 +27,7 @@
 }
 .box_checkbox .txt_label .label {
   display: inline-block;
-  padding-left: 22px;
+  padding-left: 8px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -56,5 +56,8 @@
   background-image: url("../../../assets/images/common/icon_checkbox_active.png");
 }
 .box_checkbox input:disabled + .txt_label .icon:before {
+  background-image: url("../../../assets/images/common/icon_checkbox_disabled02.png");
+}
+.box_checkbox input:disabled:checked + .txt_label .icon:before {
   background-image: url("../../../assets/images/common/icon_checkbox_disabled.png");
 }

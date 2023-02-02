@@ -8,20 +8,17 @@
     <link rel="stylesheet" href="../styles/css/common.css" />
     <link rel="stylesheet" href="../styles/css/components/menu.css" />
     <link rel="stylesheet" href="../styles/css/components/Header.css" />
-    <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
-    <link rel="stylesheet" href="../styles/css/components/inputBox.css" />
 
     <link rel="stylesheet" href="../styles/css/components/btnBasic.css" />
     <link rel="stylesheet" href="../styles/css/components/title.css" />
     <link rel="stylesheet" href="../styles/css/components/breadcrumb.css" />
-    <link rel="stylesheet" href="../styles/css/components/tab.css" />
+    >
     <link rel="stylesheet" href="../styles/css/components/boxTableList.css" />
     <link rel="stylesheet" href="../styles/css/components/boxTopCtrl.css" />
     <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
     <link rel="stylesheet" href="../styles/css/components/checkBox.css" />
     <link rel="stylesheet" href="../styles/css/components/inputBox.css" />
     <link rel="stylesheet" href="../styles/css/components/boxTextarea.css" />
-    <link rel="stylesheet" href="../styles/css/components/pagination.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -75,10 +72,10 @@
                 </colgroup>
                 <tbody>
                   <tr>
-                    <th scope="row">Name</th>
+                    <th scope="row"><label for="name">Name</label></th>
                     <td>
                       <div class="box_input small">
-                        <input type="text" value="BaseOS" />
+                        <input type="text" value="BaseOS" id="name" />
                       </div>
                     </td>
                   </tr>
@@ -87,10 +84,10 @@
                     <td>Base OS</td>
                   </tr>
                   <tr>
-                    <th scope="row">Description</th>
+                    <th scope="row"><label for="ipt01">Description</label></th>
                     <td>
                       <div class="box_textarea">
-                        <textarea placeholder="test"></textarea>
+                        <textarea placeholder="test" id="ipt01"></textarea>
                       </div>
                     </td>
                   </tr>
@@ -179,15 +176,15 @@
                     <td>
                       <ul class="sub_form">
                         <li>
-                          <label for="" class="subject">Upstream Username</label>
+                          <label for="ipt02" class="subject">Upstream Username</label>
                           <div class="box_input small">
                             <input type="text" id="ipt02" />
                           </div>
                         </li>
                         <li>
-                          <label for="" class="subject">Passwaord</label>
+                          <label for="ipt03" class="subject">Passwaord</label>
                           <div class="box_input small">
-                            <input type="text" id="ipt02" />
+                            <input type="password" id="ipt03" />
                           </div>
                         </li>
                       </ul>
@@ -354,8 +351,10 @@
                   <button type="button" class="btn_file cancel"><span>Cancel</span></button>
                 </div>
                 <div class="files">
-                  <span>Drag and drop files to here to upload</span>
                   <input type="file" id="inputFiles" />
+                  <div class="file_list">
+                    <span>Drag and drop files to here to upload</span>
+                  </div>
                 </div>
               </div>
 
@@ -398,31 +397,5 @@
     </div>
     <script src="../pub/common.js"></script>
     <!-- publishing 전용 include -->
-    <script>
-      const uploadBox = document.querySelector(".box_file_upload");
-      const fileBox = document.querySelector(".box_file_upload .files");
-
-      /* 박스 안에 Drag를 하고 있을 때 */
-      uploadBox.addEventListener("dragover", (e) => {
-        e.preventDefault();
-        console.log("over");
-      });
-
-      /* 박스 안에서 Drag를 Drop했을 때 */
-      uploadBox.addEventListener("drop", (e) => {
-        e.preventDefault();
-        console.log(e.dataTransfer && e.dataTransfer.files);
-        // const files = e.dataTransfer && e.dataTransfer.files;
-
-        // if (files != null) {
-        //   fileBox.innerHTML = "";
-        //   for (let i = 0, len = files.length; i < len; i++) {
-        //     fileBox.innerHTML += "<p>" + files[i].name + "</p>";
-        //   }
-        // } else {
-        //   alert("ERROR");
-        // }
-      });
-    </script>
   </body>
 </html>

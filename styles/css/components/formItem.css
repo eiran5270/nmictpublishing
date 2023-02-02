@@ -55,37 +55,40 @@
 .form_wrapper.row .form_item .form_cont {
   flex: 1;
 }
-.form_wrapper.freestyle {
+.form_wrapper.style01 {
   gap: 20px 0;
 }
-.form_wrapper.freestyle .form_item .label {
+.form_wrapper.style01 .form_item .label {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #565656;
 }
-.form_wrapper.freestyle .form_item .label:before {
+.form_wrapper.style01 .form_item .label:before {
   width: 3px;
   height: 3px;
 }
-.form_wrapper.freestyle .form_item .sub_txt {
+.form_wrapper.style01 .form_item .sub_txt {
   margin-top: 10px;
 }
-.form_wrapper.freestyle .form_item.row {
+.form_wrapper.style01 .form_item .box_input {
+  max-width: 100%;
+}
+.form_wrapper.style01 .form_item.row {
   display: flex;
   align-items: center;
   gap: 0 10px;
 }
-.form_wrapper.freestyle .form_item.row .label {
+.form_wrapper.style01 .form_item.row .label {
   display: inline-block;
   margin: 0;
 }
-.form_wrapper.freestyle .form_item.row .form_cont {
+.form_wrapper.style01 .form_item.row .form_cont {
   display: flex;
   align-items: center;
   gap: 0 10px;
 }
-.form_wrapper.freestyle .form_item.row .form_cont .sub_txt {
+.form_wrapper.style01 .form_item.row .form_cont .sub_txt {
   margin-top: 0;
 }
 .form_wrapper.border {
@@ -98,11 +101,15 @@
   gap: 0 30px;
 }
 .form_wrapper.col5 .form_item {
-  min-width: 180px;
+  flex: 1;
+  width: 100%;
 }
 .form_wrapper .sub_txt {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #949495;
+}
+.tab_cont .form_wrapper {
+  padding-top: 10px;
 }

@@ -11,21 +11,15 @@
     <link rel="stylesheet" href="../styles/css/common.css" />
     <link rel="stylesheet" href="../styles/css/components/menu.css" />
     <link rel="stylesheet" href="../styles/css/components/Header.css" />
-    <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
-    <link rel="stylesheet" href="../styles/css/components/inputBox.css" />
 
     <link rel="stylesheet" href="../styles/css/components/btnBasic.css" />
     <link rel="stylesheet" href="../styles/css/components/title.css" />
     <link rel="stylesheet" href="../styles/css/components/checkbox.css" />
-    <link rel="stylesheet" href="../styles/css/components/breadcrumb.css" />
     <link rel="stylesheet" href="../styles/css/components/tab.css" />
-    <link rel="stylesheet" href="../styles/css/components/boxTableList.css" />
     <link rel="stylesheet" href="../styles/css/components/formItem.css" />
-    <link rel="stylesheet" href="../styles/css/components/boxTopCtrl.css" />
     <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
     <link rel="stylesheet" href="../styles/css/components/inputBox.css" />
     <link rel="stylesheet" href="../styles/css/components/boxTextarea.css" />
-    <link rel="stylesheet" href="../styles/css/components/pagination.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -40,21 +34,6 @@
             <h2 class="title">Title</h2>
 
             <div class="box_ctrl_btns">
-              <div class="box_select mid02">
-                <button type="button" class="btn_select"><span>Take Action</span></button>
-                <div class="options">
-                  <button type="button" class="option"><span>test</span></button>
-                  <button type="button" class="option"><span>test</span></button>
-                  <button type="button" class="option"><span>test</span></button>
-                  <button type="button" class="option"><span>test</span></button>
-                  <button type="button" class="option"><span>test</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="box_top_ctrl">
-            <div class="right_area">
               <button type="button" class="btn_basic btn_blue"><span>Submit</span></button>
               <button type="button" class="btn_basic btn_gray"><span>Cancel</span></button>
             </div>
@@ -79,12 +58,11 @@
             </div>
             <div class="box_tab_container">
               <div class="tab_cont" style="display: block">
-                <!-- freestyle : 입력폼의 형태가 가로 세로가 혼합된 형태. -->
-                <div class="form_wrapper freestyle">
+                <div class="form_wrapper style01">
                   <div class="form_item">
                     <label for="ipt01" class="label required"><span>Name</span></label>
                     <div class="form_cont">
-                      <div class="box_input">
+                      <div class="box_input small">
                         <input type="text" id="ipt01" />
                         <div class="btn_area">
                           <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
@@ -114,7 +92,7 @@
                     <div class="form_cont">
                       <div class="box_checkbox">
                         <label>
-                          <input type="checkbox" />
+                          <input type="checkbox" disabled />
                           <span class="txt_label">
                             <i class="icon"></i>
                             <em class="label hidden">checked </em>
@@ -127,7 +105,7 @@
                   <div class="form_item row">
                     <strong class="label"><span>Operating System Family</span></strong>
                     <div class="form_cont">
-                      <div class="box_select mid">
+                      <div class="box_select mid02">
                         <button type="button" class="btn_select"><span>Choose a family</span></button>
                         <div class="options">
                           <button type="button" class="option"><span>test</span></button>
@@ -161,16 +139,16 @@
                     <label for="ipt03" class="label"><span>Description</span></label>
                     <div class="form_cont">
                       <div class="box_textarea">
-                        <textarea placeholder="test"></textarea>
+                        <textarea placeholder="test" id="ipt03"></textarea>
                       </div>
                     </div>
                   </div>
 
                   <div class="form_item">
-                    <strong class="label"><span>Audit Comment</span></strong>
+                    <label for="ipt04" class="label"><span>Audit Comment</span></label>
                     <div class="form_cont">
                       <div class="box_textarea">
-                        <textarea placeholder="test"></textarea>
+                        <textarea placeholder="test" id="ipt04"></textarea>
                       </div>
                       <p class="sub_txt">The Audit Comment field is saved with the template auditing to document the template changes</p>
                     </div>

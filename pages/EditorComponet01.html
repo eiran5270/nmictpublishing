@@ -5,27 +5,17 @@
     <title>NAMU ICT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
-
     <link rel="stylesheet" href="../styles/css/common.css" />
     <link rel="stylesheet" href="../styles/css/components/menu.css" />
     <link rel="stylesheet" href="../styles/css/components/Header.css" />
-    <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
-    <link rel="stylesheet" href="../styles/css/components/inputBox.css" />
 
     <link rel="stylesheet" href="../styles/css/components/btnBasic.css" />
     <link rel="stylesheet" href="../styles/css/components/title.css" />
-    <link rel="stylesheet" href="../styles/css/components/checkbox.css" />
-    <link rel="stylesheet" href="../styles/css/components/breadcrumb.css" />
     <link rel="stylesheet" href="../styles/css/components/tab.css" />
-    <link rel="stylesheet" href="../styles/css/components/boxTableList.css" />
     <link rel="stylesheet" href="../styles/css/components/formItem.css" />
-    <link rel="stylesheet" href="../styles/css/components/boxTopCtrl.css" />
     <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
     <link rel="stylesheet" href="../styles/css/components/inputBox.css" />
     <link rel="stylesheet" href="../styles/css/components/boxTextarea.css" />
-    <link rel="stylesheet" href="../styles/css/components/pagination.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -37,10 +27,10 @@
 
         <main class="container">
           <div class="title_wrap line">
-            <h2 class="title">Title</h2>
+            <h2 class="title">Bios Setup Workflow Create</h2>
 
             <div class="box_ctrl_btns">
-              <div class="box_select mid02">
+              <div class="box_select mid">
                 <button type="button" class="btn_select"><span>Take Action</span></button>
                 <div class="options">
                   <button type="button" class="option"><span>test</span></button>
@@ -53,63 +43,14 @@
             </div>
           </div>
 
-          <!-- freestyle : 입력폼의 형태가 가로 세로가 혼합된 형태. -->
-          <div class="form_wrapper freestyle">
+          <div class="form_wrapper style01">
             <div class="form_item">
               <label for="ipt01" class="label required"><span>Name</span></label>
               <div class="form_cont">
-                <div class="box_input">
+                <div class="box_input small">
                   <input type="text" id="ipt01" />
                   <div class="btn_area">
                     <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="form_item row">
-              <strong class="label"><span>Default</span></strong>
-              <div class="form_cont">
-                <div class="box_checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <span class="txt_label">
-                      <i class="icon"></i>
-                      <em class="label hidden">checked </em>
-                    </span>
-                  </label>
-                </div>
-                <p class="sub_txt">Default templates are automatically added to new organizatons and locations</p>
-              </div>
-            </div>
-
-            <div class="form_item row">
-              <strong class="label"><span>Snippet</span></strong>
-              <div class="form_cont">
-                <div class="box_checkbox">
-                  <label>
-                    <input type="checkbox" />
-                    <span class="txt_label">
-                      <i class="icon"></i>
-                      <em class="label hidden">checked </em>
-                    </span>
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form_item row">
-              <strong class="label"><span>Operating System Family</span></strong>
-              <div class="form_cont">
-                <div class="box_select mid">
-                  <button type="button" class="btn_select"><span>Choose a family</span></button>
-                  <div class="options">
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
-                    <button type="button" class="option"><span>test</span></button>
                   </div>
                 </div>
               </div>
@@ -157,16 +98,16 @@
               <label for="ipt03" class="label"><span>Description</span></label>
               <div class="form_cont">
                 <div class="box_textarea">
-                  <textarea placeholder="test"></textarea>
+                  <textarea placeholder="test" id="ipt03"></textarea>
                 </div>
               </div>
             </div>
 
             <div class="form_item">
-              <strong class="label"><span>Audit Comment</span></strong>
+              <label for="ipt04" class="label"><span>Audit Comment</span></label>
               <div class="form_cont">
                 <div class="box_textarea">
-                  <textarea placeholder="test"></textarea>
+                  <textarea placeholder="test" id="ipt04"></textarea>
                 </div>
                 <p class="sub_txt">The Audit Comment field is saved with the template auditing to document the template changes</p>
               </div>
@@ -175,17 +116,7 @@
         </main>
       </div>
     </div>
-    <!-- Swiper JS 스와이프 라이브러리용. fo작업시 필요없음 -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
     <script src="../pub/common.js"></script>
     <!-- publishing 전용 include -->
-
-    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
-    <script>
-      var swiper = new Swiper(".box_tab_anchors", {
-        slidesPerView: "auto",
-      });
-    </script>
   </body>
 </html>

@@ -8,6 +8,7 @@
 }
 .box_selected_location .box_grid_item .grid_cont {
   overflow-y: auto;
+  overflow-x: hidden;
   height: 328px;
 }
 .box_selected_location .box_select_list {

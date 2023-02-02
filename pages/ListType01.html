@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../styles/css/components/title.css" />
     <link rel="stylesheet" href="../styles/css/components/table.css" />
     <link rel="stylesheet" href="../styles/css/components/boxTopCtrl.css" />
-    <link rel="stylesheet" href="../styles/css/components/pagination.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -37,7 +36,7 @@
             <div class="right_area">
               <button type="button" class="btn_basic btn_clear"><span>Clear</span></button>
               <div class="box_input search">
-                <input type="text" placeholder="Keyword Search" />
+                <input type="text" title="input keyword" placeholder="Keyword Search" />
               </div>
             </div>
           </div>
@@ -48,10 +47,10 @@
                 Name ,Title ,Created / Updated ,Actions 에 관한 표
               </caption>
               <colgroup>
-                <col style="width: 25%" />
-                <col style="width: 17%" />
+                <col style="width: 20%" />
+                <col style="width: 20%" />
                 <col />
-                <col style="width: 13%" />
+                <col style="width: 10%" />
               </colgroup>
               <thead>
                 <tr>
@@ -80,30 +79,6 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-          <div class="box_pagination">
-            <button type="button" class="btn_page prev">
-              <span class="hidden">이전</span>
-            </button>
-
-            <strong class="btn_num">1 </strong>
-            <button class="btn_num">2</button>
-            <button type="button" class="btn_page next">
-              <span class="hidden">다음</span>
-            </button>
-            <div class="page_total">
-              <div class="box_select mid02">
-                <button type="button" class="btn_select"><span>100</span></button>
-                <div class="options">
-                  <button type="button" class="option"><span>test</span></button>
-                  <button type="button" class="option"><span>test</span></button>
-                  <button type="button" class="option"><span>test</span></button>
-                  <button type="button" class="option"><span>test</span></button>
-                  <button type="button" class="option"><span>test</span></button>
-                  <button type="button" class="option"><span>test</span></button>
-                </div>
-              </div>
-            </div>
           </div>
         </main>
       </div>

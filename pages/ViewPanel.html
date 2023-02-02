@@ -237,8 +237,9 @@
                   <button type="button" class="btn_file cancel"><span>Cancel</span></button>
                 </div>
                 <div class="files">
-                  <span>Drag and drop files to here to upload</span>
-                  <input type="file" id="inputFiles" />
+                  <div class="file_list">
+                    <span>Drag and drop files to here to upload</span>
+                  </div>
                 </div>
               </div>
 
@@ -281,31 +282,5 @@
     </div>
     <script src="../pub/common.js"></script>
     <!-- publishing 전용 include -->
-    <script>
-      const uploadBox = document.querySelector(".box_file_upload");
-      const fileBox = document.querySelector(".box_file_upload .files");
-
-      /* 박스 안에 Drag를 하고 있을 때 */
-      uploadBox.addEventListener("dragover", (e) => {
-        e.preventDefault();
-        console.log("over");
-      });
-
-      /* 박스 안에서 Drag를 Drop했을 때 */
-      uploadBox.addEventListener("drop", (e) => {
-        e.preventDefault();
-        console.log(e.dataTransfer && e.dataTransfer.files);
-        // const files = e.dataTransfer && e.dataTransfer.files;
-
-        // if (files != null) {
-        //   fileBox.innerHTML = "";
-        //   for (let i = 0, len = files.length; i < len; i++) {
-        //     fileBox.innerHTML += "<p>" + files[i].name + "</p>";
-        //   }
-        // } else {
-        //   alert("ERROR");
-        // }
-      });
-    </script>
   </body>
 </html>
