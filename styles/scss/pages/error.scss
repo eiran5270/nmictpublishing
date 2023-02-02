@@ -1,0 +1,32 @@
+.box_error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f9f9f9;
+  strong {
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  p {
+    margin-top: 10px;
+    color: #959595;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .btn_error {
+    display: inline-block;
+    height: 30px;
+    margin-top: 25px;
+    padding: 0 20px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 29px;
+    color: #959595;
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NAMU ICT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/css/common.css" />
+    <link rel="stylesheet" href="../styles/css/components/menu.css" />
+    <link rel="stylesheet" href="../styles/css/components/Header.css" />
+    <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
+
+    <link rel="stylesheet" href="../styles/css/components/Loading.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <template data-include-path="../pub/include/Menu.html"></template>
+      <!-- menu include -->
+      <div class="page_wrapper">
+        <template data-include-path="../pub/include/Header.html"></template>
+        <!-- header include -->
+
+        <main class="container">
+          <div class="box_loading">
+            <div class="loading"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../pub/common.js"></script>
+    <!-- publishing 전용 include -->
+  </body>
+</html>

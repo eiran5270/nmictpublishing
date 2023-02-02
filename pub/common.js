@@ -65,7 +65,7 @@ const publish = {
         });
         const optionHeight = curr.closest(".box_select").querySelector(".options").clientHeight;
 
-        if (doHeight < elTop + elHeight + optionHeight + 200 || curr.closest(".page_total")) {
+        if (doHeight < elTop + elHeight + optionHeight + 200 || (curr.closest(".grid_cont") && curr.closest(".page_total"))) {
           curr.closest(".box_select").classList.add("top");
         } else {
           curr.closest(".box_select").classList.remove("top");
