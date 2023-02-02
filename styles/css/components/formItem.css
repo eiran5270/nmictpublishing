@@ -71,7 +71,8 @@
 .form_wrapper.style01 .form_item .sub_txt {
   margin-top: 10px;
 }
-.form_wrapper.style01 .form_item .box_input {
+.form_wrapper.style01 .form_item .box_input,
+.form_wrapper.style01 .form_item .box_textarea {
   max-width: 100%;
 }
 .form_wrapper.style01 .form_item.row {

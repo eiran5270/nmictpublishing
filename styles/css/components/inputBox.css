@@ -38,7 +38,7 @@
 .box_input.small {
   height: 30px;
 }
-.box_input.focus:not(.disabled), .box_input:hover:not(.disabled) {
+.box_input.focus:not(.disabled, .error), .box_input:hover:not(.disabled, .error) {
   border-color: #333;
 }
 .box_input.disabled {

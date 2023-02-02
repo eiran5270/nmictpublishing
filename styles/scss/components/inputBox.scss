@@ -31,8 +31,8 @@
   &.small {
     height: 30px;
   }
-  &.focus:not(.disabled),
-  &:hover:not(.disabled) {
+  &.focus:not(.disabled, .error),
+  &:hover:not(.disabled, .error) {
     border-color: #333;
   }
   &.disabled {

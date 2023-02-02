@@ -1,4 +1,5 @@
 .box_textarea {
+  max-width: 680px;
   height: 90px;
 }
 .box_textarea textarea {
@@ -14,4 +15,5 @@
 }
 .box_textarea.error textarea {
   border-color: #db392e;
+  color: #db392e;
 }

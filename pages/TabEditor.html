@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../styles/css/components/breadcrumb.css" />
     <link rel="stylesheet" href="../styles/css/components/tab.css" />
     <link rel="stylesheet" href="../styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="../styles/css/components/boxTextarea.css" />
     <link rel="stylesheet" href="../styles/css/components/inputBox.css" />
     <link rel="stylesheet" href="../styles/css/components/formItem.css" />
   </head>
@@ -181,11 +182,19 @@
                   <div class="form_item">
                     <label for="ipt01" class="label required"><span>input 테스트용</span></label>
                     <div class="form_cont">
-                      <div class="box_input">
+                      <div class="box_input error">
                         <input type="text" id="ipt01" />
                         <div class="btn_area">
                           <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form_item">
+                    <label for="ipt02" class="label required"><span>textarea 테스트용</span></label>
+                    <div class="form_cont">
+                      <div class="box_textarea error">
+                        <textarea placeholder="test" id="ipt02"></textarea>
                       </div>
                     </div>
                   </div>
