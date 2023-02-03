@@ -19,6 +19,7 @@
       line-height: 17px;
       color: #444444;
       background-color: #fff;
+      text-align: left;
       &:first-child {
         padding-left: 20px;
       }
@@ -31,6 +32,7 @@
         font-weight: 500;
         line-height: 17px;
         color: #444444;
+        text-align: left;
         span {
           position: relative;
           padding-right: 16px;
@@ -236,12 +238,15 @@
   }
   .t_left {
     text-align: left;
-    .btn_sorting {
-      text-align: left;
-    }
   }
   .t_right {
     text-align: right;
+  }
+  .t_center {
+    text-align: center;
+    .btn_sorting {
+      text-align: center;
+    }
   }
 }
 .box_table_btns {

@@ -9,7 +9,7 @@
   width: 380px;
 }
 .box_grid_wrapper .box_chart_total {
-  border-bottom: 1px solid #e7ecf0;
+  border-bottom: 1px solid #bebebe;
 }
 .box_grid_wrapper .box_chart_total th,
 .box_grid_wrapper .box_chart_total td {
@@ -22,6 +22,10 @@
 }
 .box_grid_wrapper .box_chart_total td {
   text-align: right;
+}
+.box_grid_wrapper .box_chart_total tfoot th,
+.box_grid_wrapper .box_chart_total tfoot td {
+  border-top-color: #bebebe;
 }
 .box_grid_wrapper .box_chart_total tfoot th {
   font-weight: 500;

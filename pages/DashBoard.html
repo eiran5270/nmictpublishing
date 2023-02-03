@@ -5,9 +5,6 @@
     <title>NAMU ICT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
-
     <link rel="stylesheet" href="../styles/css/common.css" />
     <link rel="stylesheet" href="../styles/css/components/menu.css" />
     <link rel="stylesheet" href="../styles/css/components/Header.css" />
@@ -48,21 +45,19 @@
           </div>
 
           <div class="box_tab_menu">
-            <!-- ver1.1 탭 슬라이드적용 -->
+            <!-- ver1.1 탭 구조 변경 -->
             <div class="box_tab_anchors">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide tab_anchor_item active">
-                  <button type="button" class="tab_anchor">Machine Summary</button>
-                </div>
-                <div class="swiper-slide tab_anchor_item">
-                  <button type="button" class="tab_anchor">BIOS Config</button>
-                </div>
-                <div class="swiper-slide tab_anchor_item">
-                  <button type="button" class="tab_anchor">Checkpoint</button>
-                </div>
-                <div class="swiper-slide tab_anchor_item">
-                  <button type="button" class="tab_anchor">System</button>
-                </div>
+              <div class="tab_anchor_item active">
+                <button type="button" class="tab_anchor">Machine Summary</button>
+              </div>
+              <div class="tab_anchor_item">
+                <button type="button" class="tab_anchor">BIOS Config</button>
+              </div>
+              <div class="tab_anchor_item">
+                <button type="button" class="tab_anchor">Checkpoint</button>
+              </div>
+              <div class="tab_anchor_item">
+                <button type="button" class="tab_anchor">System</button>
               </div>
             </div>
 
@@ -334,17 +329,7 @@
         </main>
       </div>
     </div>
-    <!-- Swiper JS 스와이프 라이브러리용. fo작업시 필요없음 -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
     <script src="../pub/common.js"></script>
     <!-- publishing 전용 include -->
-
-    <!--스와이프 라이브러리용. fo작업시 필요없음.-->
-    <script>
-      var swiper = new Swiper(".box_tab_anchors", {
-        slidesPerView: "auto",
-      });
-    </script>
   </body>
 </html>

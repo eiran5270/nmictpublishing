@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>퍼블리싱 현황판</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+
+    <script src="../../js/lib/shCore.js"></script>
+    <script src="../../js/lib/shBrushXml.js"></script>
+    <link rel="stylesheet" href="../../css/shCoreDefault.css" />
+    <link rel="stylesheet" href="../../css/all.css" />
+
+    <link rel="stylesheet" href="../../../styles/css/common.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/inputBox.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/boxTextarea.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/checkbox.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/formItem.css" />
+
+    <script type="text/javascript">
+      SyntaxHighlighter.all();
+    </script>
+  </head>
+  <body style="min-width: 1024px">
+    <div class="guide_wrap">
+      <header class="header_guide">
+        <h1>퍼블리싱 가이드</h1>
+        <button class="btn_guide_side"><span></span></button>
+        <ul class="guide_link">
+          <li>
+            <a href="../convention/index.html"><span>기본 환경 및 규칙</span></a>
+          </li>
+          <li class="on">
+            <a href="../elements/index.html"><span>퍼블리싱 가이드</span></a>
+          </li>
+          <li>
+            <a href="../../../index.html"><span>퍼블리싱 리스트</span></a>
+          </li>
+        </ul>
+      </header>
+      <div class="container_guide">
+        <div class="guide_grid">
+          <div class="guide_grid_left">
+            <ul>
+              <li>
+                <a href="./index.html">
+                  <i class="fab fa-buffer"></i>
+                  <span>LAYOUT</span>
+                </a>
+              </li>
+              <li>
+                <a href="./table.html">
+                  <i class="fas fa-table"></i>
+                  <span>TABLE</span>
+                </a>
+              </li>
+              <li class="on">
+                <a href="./form.html">
+                  <i class="fas fa-check-square"></i>
+                  <span>FORM</span>
+                </a>
+              </li>
+              <li>
+                <a href="./button.html">
+                  <i class="fas fa-bold"></i>
+                  <span>BUTTON</span>
+                </a>
+              </li>
+              <li>
+                <a href="./tab.html">
+                  <i class="far fa-star"></i>
+                  <span>TAB</span>
+                </a>
+              </li>
+              <li>
+                <a href="./text.html">
+                  <i class="fas fa-align-left"></i>
+                  <span>TITLE / TEXT</span>
+                </a>
+              </li>
+              <li>
+                <a href="./etc.html">
+                  <i class="fas fa-cloud-moon"></i>
+                  <span>ETC</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="guide_grid_right">
+            <div class="guide_box">
+              <strong class="guide_tit">Elements form</strong>
+
+              -input <br /><br />
+              <div class="box_input">
+                <input type="text" />
+                <div class="btn_area">
+                  <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                </div>
+              </div>
+              <br />
+              <div class="box_input disabled">
+                <input type="text" disabled value="disabled case" />
+                <div class="btn_area">
+                  <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                </div>
+              </div>
+              <br />
+              <div class="box_input error">
+                <input type="text" value="error case" />
+                <div class="btn_area">
+                  <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                </div>
+              </div>
+              <br /><br />
+
+              -selectbox (디자인 셀렉트를 기본으로 사용하며 가장 작은 small 사이즈는 테이블 안에 들어가는 경우 기본 select를 사용함.)<br /><br />
+              <div class="box_select">
+                <button type="button" class="btn_select"><span>높이 40px 기본 셀렉트</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>Any Organization</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+              <br />
+              <div class="box_select mid">
+                <button type="button" class="btn_select"><span>높이 34px 셀렉트</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>Any Organization</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+              <br />
+              <div class="box_select mid02">
+                <button type="button" class="btn_select"><span>높이 30px 셀렉트</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>Any Organization</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+              <br />
+              <div class="box_select small">
+                <button type="button" class="btn_select"><span>높이 25px 셀렉트</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>Any Organization</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+              <div class="box_select small">
+                <select title="타이틀필요">
+                  <option value="">options</option>
+                  <option value="">options</option>
+                  <option value="">options</option>
+                  <option value="">options</option>
+                  <option value="">options</option>
+                </select>
+              </div>
+              <br /><br />
+
+              -selectbox_disabled
+              <br /><br />
+
+              <div class="box_select disabled">
+                <button type="button" class="btn_select"><span>높이 40px 기본 셀렉트</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>Any Organization</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+              <br />
+              <div class="box_select mid disabled">
+                <button type="button" class="btn_select"><span>높이 34px 셀렉트</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>Any Organization</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+              <br />
+              <div class="box_select mid02 disabled">
+                <button type="button" class="btn_select"><span>높이 30px 셀렉트</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>Any Organization</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+              <br />
+              <div class="box_select small disabled">
+                <button type="button" class="btn_select"><span>높이 25px 셀렉트</span></button>
+                <div class="options">
+                  <button type="button" class="option"><span>Any Organization</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                  <button type="button" class="option"><span>test</span></button>
+                </div>
+              </div>
+              <br />
+              <br />
+              -checkbox <br /><br />
+              <div class="box_checkbox">
+                <label>
+                  <input type="checkbox" />
+                  <span class="txt_label">
+                    <i class="icon"></i>
+                    <em class="label">체크박스 </em>
+                  </span>
+                </label>
+              </div>
+
+              <div class="box_checkbox">
+                <label>
+                  <input type="checkbox" disabled />
+                  <span class="txt_label">
+                    <i class="icon"></i>
+                    <em class="label">체크박스 </em>
+                  </span>
+                </label>
+              </div>
+              <div class="box_checkbox">
+                <label>
+                  <input type="checkbox" checked />
+                  <span class="txt_label">
+                    <i class="icon"></i>
+                    <em class="label">체크박스 </em>
+                  </span>
+                </label>
+              </div>
+
+              <div class="box_checkbox">
+                <label>
+                  <input type="checkbox" checked disabled />
+                  <span class="txt_label">
+                    <i class="icon"></i>
+                    <em class="label">체크박스 </em>
+                  </span>
+                </label>
+              </div>
+              <br /><br />
+              -textarea <br /><br />
+              <div class="box_textarea">
+                <textarea placeholder="textarea default"></textarea>
+              </div>
+              <br />
+              <div class="box_textarea disabled">
+                <textarea placeholder="textarea disabled" disabled></textarea>
+              </div>
+              <br />
+              <div class="box_textarea error">
+                <textarea placeholder="textarea error"></textarea>
+              </div>
+
+              <br /><br />
+              -form list default <br /><br />
+              <div class="form_wrapper">
+                <div class="form_item">
+                  <strong class="label required"><span>Name</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid">
+                      <button type="button" class="btn_select"><span>abp-test05.example.com</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label required"><span>Organization</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid disabled">
+                      <button type="button" class="btn_select"><span>NamuICT</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label"><span>Locations</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid disabled">
+                      <button type="button" class="btn_select"><span>Research</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label"><span>Host Group</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid">
+                      <button type="button" class="btn_select"><span></span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <label for="ipt01" class="label required"><span>input 테스트용</span></label>
+                  <div class="form_cont">
+                    <div class="box_input error">
+                      <input type="text" id="ipt01" />
+                      <div class="btn_area">
+                        <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <label for="ipt02" class="label required"><span>textarea 테스트용</span></label>
+                  <div class="form_cont">
+                    <div class="box_textarea error">
+                      <textarea placeholder="test" id="ipt02"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br /><br />
+
+              -form list default + row type <br /><br />
+              <div class="form_wrapper row border">
+                <div class="form_item">
+                  <label for="ipt01" class="label required"><span>Design Name</span></label>
+                  <div class="form_cont">
+                    <div class="box_input">
+                      <input type="text" id="ipt01" />
+                      <div class="btn_area">
+                        <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label required"><span>Health Check</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid02">
+                      <button type="button" class="btn_select"><span>Select</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label required"><span>Node Type</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid02">
+                      <button type="button" class="btn_select"><span>Select</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br /><br />
+
+              -form list style01 (form 요소들의 넓이가 100%를 차지하고 label font-size: 14px )<br /><br />
+
+              <div class="form_wrapper style01">
+                <div class="form_item">
+                  <strong class="label required"><span>Name</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid">
+                      <button type="button" class="btn_select"><span>abp-test05.example.com</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item row">
+                  <strong class="label required"><span>Organization</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid disabled">
+                      <button type="button" class="btn_select"><span>NamuICT</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label"><span>Locations</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid disabled">
+                      <button type="button" class="btn_select"><span>Research</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label"><span>Host Group</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid">
+                      <button type="button" class="btn_select"><span></span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <label for="ipt01" class="label required"><span>input 테스트용</span></label>
+                  <div class="form_cont">
+                    <div class="box_input error">
+                      <input type="text" id="ipt01" />
+                      <div class="btn_area">
+                        <button type="button" class="btn_value_del"><span class="hidden">삭제</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <label for="ipt02" class="label required"><span>textarea 테스트용</span></label>
+                  <div class="form_cont">
+                    <div class="box_textarea error">
+                      <textarea placeholder="test" id="ipt02"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br /><br />
+              -form list style01 + col5 (정렬 케이스)<br /><br />
+              <div class="form_wrapper style01 col5">
+                <div class="form_item">
+                  <strong class="label"><span>Locations</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid02">
+                      <button type="button" class="btn_select"><span>Select Locations</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label"><span>Organizations</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid02">
+                      <button type="button" class="btn_select"><span>Select Organizations</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label"><span>Manufacturer</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid02">
+                      <button type="button" class="btn_select"><span>Companies Location</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label"><span>Model</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid02">
+                      <button type="button" class="btn_select"><span>Misc</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_item">
+                  <strong class="label"><span>Version</span></strong>
+                  <div class="form_cont">
+                    <div class="box_select mid02">
+                      <button type="button" class="btn_select"><span>0.1</span></button>
+                      <div class="options">
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                        <button type="button" class="option"><span>test</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../../../pc/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../pc/js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../../pc/js/lib/moment.min.js"></script>
+    <script type="text/javascript" src="../../../pc/js/lib/jquery.daterangepicker.js"></script>
+    <script src="../../../pc/js/common.js"></script>
+    <script>
+      var btnAside = document.querySelector(".btn_guide_side");
+      var sideMenu = document.querySelector(".container_guide");
+
+      btnAside.addEventListener("click", function () {
+        sideMenu.classList.toggle("on");
+      });
+
+      dateDisabledArr = ["2020.01.20", "2020.01.25", "2020.01.30"];
+    </script>
+  </body>
+</html>

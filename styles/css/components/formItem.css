@@ -43,6 +43,23 @@
   line-height: 1px;
   text-indent: -9999%;
 }
+.form_wrapper .form_item.row {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.form_wrapper .form_item.row .label {
+  display: inline-block;
+  margin: 0;
+}
+.form_wrapper .form_item.row .form_cont {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.form_wrapper .form_item.row .form_cont .sub_txt {
+  margin-top: 0;
+}
 .form_wrapper.row .label {
   min-width: 137px;
   margin-bottom: 0;
@@ -72,25 +89,9 @@
   margin-top: 10px;
 }
 .form_wrapper.style01 .form_item .box_input,
+.form_wrapper.style01 .form_item .box_select,
 .form_wrapper.style01 .form_item .box_textarea {
   max-width: 100%;
-}
-.form_wrapper.style01 .form_item.row {
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-}
-.form_wrapper.style01 .form_item.row .label {
-  display: inline-block;
-  margin: 0;
-}
-.form_wrapper.style01 .form_item.row .form_cont {
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-}
-.form_wrapper.style01 .form_item.row .form_cont .sub_txt {
-  margin-top: 0;
 }
 .form_wrapper.border {
   padding: 22px 20px;

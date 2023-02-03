@@ -1,8 +1,8 @@
 .box_table_list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 20px;
   .table_list_item {
+    width: 100%;
     padding: 20px;
     border: 1px solid #e7ecf0;
     border-radius: 6px;

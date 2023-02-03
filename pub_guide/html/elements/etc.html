@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>퍼블리싱 현황판</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+
+    <script src="../../js/lib/shCore.js"></script>
+    <script src="../../js/lib/shBrushXml.js"></script>
+    <link rel="stylesheet" href="../../css/shCoreDefault.css" />
+    <link rel="stylesheet" href="../../css/all.css" />
+
+    <link rel="stylesheet" href="../../../styles/css/common.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/pagination.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/selectBox.css" />
+
+    <script type="text/javascript">
+      SyntaxHighlighter.all();
+    </script>
+  </head>
+  <body style="min-width: 1024px">
+    <div class="guide_wrap">
+      <header class="header_guide">
+        <h1>퍼블리싱 가이드</h1>
+        <button class="btn_guide_side"><span></span></button>
+        <ul class="guide_link">
+          <li>
+            <a href="../convention/index.html"><span>기본 환경 및 규칙</span></a>
+          </li>
+          <li class="on">
+            <a href="../elements/index.html"><span>퍼블리싱 가이드</span></a>
+          </li>
+          <li>
+            <a href="../../../index.html"><span>퍼블리싱 리스트</span></a>
+          </li>
+        </ul>
+      </header>
+      <div class="container_guide">
+        <div class="guide_grid">
+          <div class="guide_grid_left">
+            <ul>
+              <li>
+                <a href="./index.html">
+                  <i class="fab fa-buffer"></i>
+                  <span>LAYOUT</span>
+                </a>
+              </li>
+              <li>
+                <a href="./table.html">
+                  <i class="fas fa-table"></i>
+                  <span>TABLE</span>
+                </a>
+              </li>
+              <li>
+                <a href="./form.html">
+                  <i class="fas fa-check-square"></i>
+                  <span>FORM</span>
+                </a>
+              </li>
+              <li>
+                <a href="./button.html">
+                  <i class="fas fa-bold"></i>
+                  <span>BUTTON</span>
+                </a>
+              </li>
+              <li>
+                <a href="./tab.html">
+                  <i class="far fa-star"></i>
+                  <span>TAB</span>
+                </a>
+              </li>
+              <li>
+                <a href="./text.html">
+                  <i class="fas fa-align-left"></i>
+                  <span>TITLE / TEXT</span>
+                </a>
+              </li>
+              <li class="on">
+                <a href="./etc.html">
+                  <i class="fas fa-cloud-moon"></i>
+                  <span>ETC</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="guide_grid_right">
+            <div class="guide_box">
+              <strong class="guide_tit">Elements_ETC</strong>
+
+              -pagination <br /><br />
+
+              <div class="box_pagination">
+                <button type="button" class="btn_page prev">
+                  <span class="hidden">이전</span>
+                </button>
+
+                <strong class="btn_num">1 </strong>
+                <button class="btn_num">2</button>
+                <button class="btn_num">3</button>
+                <button class="btn_num">4</button>
+                <button class="btn_num">5</button>
+                <button class="btn_num">6</button>
+                <button class="btn_num">7</button>
+                <button class="btn_num">8</button>
+                <button class="btn_num">9</button>
+                <button class="btn_num">10</button>
+                <button type="button" class="btn_page next">
+                  <span class="hidden">다음</span>
+                </button>
+                <div class="page_total">
+                  <div class="box_select mid02">
+                    <button type="button" class="btn_select"><span>100</span></button>
+                    <div class="options">
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                      <button type="button" class="option"><span>test</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../../../pc/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../pc/js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../../pc/js/lib/moment.min.js"></script>
+    <script type="text/javascript" src="../../../pc/js/lib/jquery.daterangepicker.js"></script>
+    <script src="../../../pc/js/common.js"></script>
+    <script>
+      var btnAside = document.querySelector(".btn_guide_side");
+      var sideMenu = document.querySelector(".container_guide");
+
+      btnAside.addEventListener("click", function () {
+        sideMenu.classList.toggle("on");
+      });
+    </script>
+  </body>
+</html>

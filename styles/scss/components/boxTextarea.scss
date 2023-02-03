@@ -18,4 +18,15 @@
       color: #db392e;
     }
   }
+  &.disabled {
+    background: #f7f7f7;
+    color: #767676;
+    textarea {
+      background: #f7f7f7;
+      color: #767676;
+      &::placeholder {
+        color: #767676;
+      }
+    }
+  }
 }

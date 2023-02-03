@@ -17,3 +17,20 @@
   border-color: #db392e;
   color: #db392e;
 }
+.box_textarea.disabled {
+  background: #f7f7f7;
+  color: #767676;
+}
+.box_textarea.disabled textarea {
+  background: #f7f7f7;
+  color: #767676;
+}
+.box_textarea.disabled textarea::-moz-placeholder {
+  color: #767676;
+}
+.box_textarea.disabled textarea:-ms-input-placeholder {
+  color: #767676;
+}
+.box_textarea.disabled textarea::placeholder {
+  color: #767676;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>퍼블리싱 현황판</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+
+    <script src="../../js/lib/shCore.js"></script>
+    <script src="../../js/lib/shBrushXml.js"></script>
+    <link rel="stylesheet" href="../../css/shCoreDefault.css" />
+    <link rel="stylesheet" href="../../css/all.css" />
+
+    <link rel="stylesheet" href="../../../styles/css/common.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/btnBasic.css" />
+
+    <script type="text/javascript">
+      SyntaxHighlighter.all();
+    </script>
+  </head>
+  <body style="min-width: 1024px">
+    <div class="guide_wrap">
+      <header class="header_guide">
+        <h1>퍼블리싱 가이드</h1>
+        <button class="btn_guide_side"><span></span></button>
+        <ul class="guide_link">
+          <li>
+            <a href="../convention/index.html"><span>기본 환경 및 규칙</span></a>
+          </li>
+          <li class="on">
+            <a href="../elements/index.html"><span>퍼블리싱 가이드</span></a>
+          </li>
+          <li>
+            <a href="../../../index.html"><span>퍼블리싱 리스트</span></a>
+          </li>
+        </ul>
+      </header>
+      <div class="container_guide">
+        <div class="guide_grid">
+          <div class="guide_grid_left">
+            <ul>
+              <li>
+                <a href="./index.html">
+                  <i class="fab fa-buffer"></i>
+                  <span>LAYOUT</span>
+                </a>
+              </li>
+              <li>
+                <a href="./table.html">
+                  <i class="fas fa-table"></i>
+                  <span>TABLE</span>
+                </a>
+              </li>
+              <li>
+                <a href="./form.html">
+                  <i class="fas fa-check-square"></i>
+                  <span>FORM</span>
+                </a>
+              </li>
+              <li class="on">
+                <a href="./button.html">
+                  <i class="fas fa-bold"></i>
+                  <span>BUTTON</span>
+                </a>
+              </li>
+              <li>
+                <a href="./tab.html">
+                  <i class="far fa-star"></i>
+                  <span>TAB</span>
+                </a>
+              </li>
+              <li>
+                <a href="./text.html">
+                  <i class="fas fa-align-left"></i>
+                  <span>TITLE / TEXT</span>
+                </a>
+              </li>
+              <li>
+                <a href="./etc.html">
+                  <i class="fas fa-cloud-moon"></i>
+                  <span>ETC</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="guide_grid_right">
+            <div class="guide_box">
+              <strong class="guide_tit">Elements _button</strong>
+              -기본버튼 (높이 30px)<br /><br />
+              <button type="button" class="btn_basic"><span>버튼 기본</span></button>
+              <button type="button" class="btn_basic btn_blue"><span>버튼 기본 파란색</span></button>
+              <button type="button" class="btn_basic btn_gray"><span>버튼 기본 회색 케이스1</span></button>
+              <button type="button" class="btn_basic btn_gray02"><span>버튼 기본 회색 케이스2</span></button>
+              <button type="button" class="btn_basic btn_gray03"><span>버튼 기본 회색 케이스3</span></button>
+              <button type="button" class="btn_basic btn_purple"><span>버튼 기본 보라색</span></button>
+              <button type="button" class="btn_basic btn_red"><span>버튼 기본 빨간색</span></button>
+              <button type="button" class="btn_basic btn_clear"><span>버튼 clear</span></button>
+              <button type="button" class="btn_basic btn_export"><span>버튼 export</span></button>
+
+              <br />
+              <br />
+
+              -기본버튼 disabled (비활성화 케이스 디자인 모두 동일함.)<br /><br />
+              <button type="button" class="btn_basic" disabled><span>버튼 기본</span></button>
+              <br />
+              <br />
+
+              -기본버튼 small(높이 25px)<br /><br />
+              <button type="button" class="btn_basic btn_small"><span>버튼 small</span></button>
+              <button type="button" class="btn_basic btn_small btn_blue"><span>버튼 small 파란색</span></button>
+              <button type="button" class="btn_basic btn_small btn_gray"><span>버튼 small 회색 케이스1</span></button>
+              <button type="button" class="btn_basic btn_small btn_gray02"><span>버튼 small 회색 케이스2</span></button>
+              <button type="button" class="btn_basic btn_small btn_gray03"><span>버튼 small 회색 케이스3</span></button>
+              <button type="button" class="btn_basic btn_small btn_purple"><span>버튼 small 보라색</span></button>
+              <button type="button" class="btn_basic btn_small btn_red"><span>버튼 small 빨간색</span></button>
+
+              <br />
+              <br />
+
+              -기본버튼 small disabled <br /><br />
+              <button type="button" class="btn_basic btn_small disabled"><span>버튼 small</span></button>
+
+              <br /><br />
+
+              -텍스트 버튼<br /><br />
+              <button type="button" class="btn_basic btn_text"><span>버튼 텍스트 케이스</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var btnAside = document.querySelector(".btn_guide_side");
+      var sideMenu = document.querySelector(".container_guide");
+
+      btnAside.addEventListener("click", function () {
+        sideMenu.classList.toggle("on");
+      });
+    </script>
+  </body>
+</html>

@@ -17,6 +17,7 @@
   line-height: 17px;
   color: #444444;
   background-color: #fff;
+  text-align: left;
 }
 .box_table_wrap thead th:first-child {
   padding-left: 20px;
@@ -30,6 +31,7 @@
   font-weight: 500;
   line-height: 17px;
   color: #444444;
+  text-align: left;
 }
 .box_table_wrap thead th .btn_sorting span {
   position: relative;
@@ -216,11 +218,14 @@
 .box_table_wrap .t_left {
   text-align: left;
 }
-.box_table_wrap .t_left .btn_sorting {
-  text-align: left;
-}
 .box_table_wrap .t_right {
   text-align: right;
+}
+.box_table_wrap .t_center {
+  text-align: center;
+}
+.box_table_wrap .t_center .btn_sorting {
+  text-align: center;
 }
 
 .box_table_btns {

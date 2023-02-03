@@ -8,7 +8,7 @@
     width: 380px;
   }
   .box_chart_total {
-    border-bottom: 1px solid #e7ecf0;
+    border-bottom: 1px solid #bebebe;
     th,
     td {
       padding: 9px 20px;
@@ -21,9 +21,15 @@
     td {
       text-align: right;
     }
-    tfoot th {
-      font-weight: 500;
-      font-size: 18px;
+    tfoot {
+      th,
+      td {
+        border-top-color: #bebebe;
+      }
+      th {
+        font-weight: 500;
+        font-size: 18px;
+      }
     }
   }
 }

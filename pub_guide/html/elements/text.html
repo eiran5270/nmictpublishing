@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>퍼블리싱 현황판</title>
-    <link rel="stylesheet" href="/pub_guide/css/reset.css" />
-    <link rel="stylesheet" href="/pub_guide/css/common.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
 
-    <script src="/pub_guide/js/lib/shCore.js"></script>
-    <script src="/pub_guide/js/lib/shBrushXml.js"></script>
-    <link rel="stylesheet" href="/pub_guide/css/shCoreDefault.css" />
-    <link rel="stylesheet" href="/pub_guide/css/all.css" />
+    <script src="../../js/lib/shCore.js"></script>
+    <script src="../../js/lib/shBrushXml.js"></script>
+    <link rel="stylesheet" href="../../css/shCoreDefault.css" />
+    <link rel="stylesheet" href="../../css/all.css" />
+
+    <link rel="stylesheet" href="../../../styles/css/common.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/title.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/btnBasic.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/inputBox.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/breadcrumb.css" />
+
     <script type="text/javascript">
       SyntaxHighlighter.all();
     </script>
@@ -23,13 +30,13 @@
         <button class="btn_guide_side"><span></span></button>
         <ul class="guide_link">
           <li>
-            <a href="/pub_guide/html/convention/index.html"><span>기본 환경 및 규칙</span></a>
+            <a href="../convention/index.html"><span>기본 환경 및 규칙</span></a>
           </li>
           <li class="on">
-            <a href="/pub_guide/html/elements/index.html"><span>가이드</span></a>
+            <a href="../elements/index.html"><span>퍼블리싱 가이드</span></a>
           </li>
           <li>
-            <a href="/index.html"><span>퍼블리싱 리스트</span></a>
+            <a href="../../../index.html"><span>퍼블리싱 리스트</span></a>
           </li>
         </ul>
       </header>
@@ -37,7 +44,7 @@
         <div class="guide_grid">
           <div class="guide_grid_left">
             <ul>
-              <li class="on">
+              <li>
                 <a href="./index.html">
                   <i class="fab fa-buffer"></i>
                   <span>LAYOUT</span>
@@ -50,31 +57,31 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./form.html">
                   <i class="fas fa-check-square"></i>
                   <span>FORM</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./button.html">
                   <i class="fas fa-bold"></i>
                   <span>BUTTON</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./tab.html">
                   <i class="far fa-star"></i>
                   <span>TAB</span>
                 </a>
               </li>
-              <li>
-                <a href="#">
+              <li class="on">
+                <a href="./text.html">
                   <i class="fas fa-align-left"></i>
                   <span>TITLE / TEXT</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./etc.html">
                   <i class="fas fa-cloud-moon"></i>
                   <span>ETC</span>
                 </a>
@@ -83,12 +90,29 @@
           </div>
           <div class="guide_grid_right">
             <div class="guide_box">
-              <strong class="guide_tit">Elements layout</strong>
-              -레이아웃_default<br /><br />
-              링크 :
-              <a href="/pages/Layout.html" target="_blank" style="text-decoration: underline; color: #3e999f">레이아웃 디폴트</a>
-              <br /><br />
-              <p>- 레이아웃의 최소 너비는 1280px. 컨텐츠의 내용에 따라 1536px(FHD 노트북 1920의 125배율 크기 기준)으로 반응형 적용.</p>
+              <strong class="guide_tit">Elements title</strong>
+
+              -title 최상단용 <br /><br />
+
+              <div class="title_wrap">
+                <h2 class="title">Devices</h2>
+
+                <div class="box_ctrl_btns">
+                  <button type="button" class="btn_basic btn_blue"><span>Console</span></button>
+                  <button type="button" class="btn_basic"><span>Edit</span></button>
+                  <button type="button" class="btn_basic"><span>Build</span></button>
+                  <button type="button" class="btn_basic btn_gray"><span>Delete</span></button>
+                </div>
+              </div>
+
+              <br />
+              <br />
+
+              - breadcrumb <br /><br />
+              <div class="box_breadcrumb">
+                <a href="#">Devices</a>
+                <strong>abp-test.example.com</strong>
+              </div>
             </div>
           </div>
         </div>

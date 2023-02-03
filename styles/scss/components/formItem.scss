@@ -44,6 +44,23 @@
     }
   }
   .form_item {
+    &.row {
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+      .label {
+        display: inline-block;
+        margin: 0;
+      }
+      .form_cont {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        .sub_txt {
+          margin-top: 0;
+        }
+      }
+    }
   }
   &.row {
     .label {
@@ -77,25 +94,9 @@
         margin-top: 10px;
       }
       .box_input,
+      .box_select,
       .box_textarea {
         max-width: 100%;
-      }
-      &.row {
-        display: flex;
-        align-items: center;
-        gap: 0 10px;
-        .label {
-          display: inline-block;
-          margin: 0;
-        }
-        .form_cont {
-          display: flex;
-          align-items: center;
-          gap: 0 10px;
-          .sub_txt {
-            margin-top: 0;
-          }
-        }
       }
     }
   }

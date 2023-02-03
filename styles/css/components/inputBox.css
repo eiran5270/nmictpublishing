@@ -45,18 +45,16 @@
   background: #f7f7f7;
   color: #767676;
 }
-.box_input.disabled textarea,
 .box_input.disabled input {
   background: #f7f7f7;
   color: #767676;
 }
-.box_input.disabled textarea::-moz-placeholder, .box_input.disabled input::-moz-placeholder {
+.box_input.disabled input::-moz-placeholder {
   color: #767676;
 }
-.box_input.disabled textarea:-ms-input-placeholder, .box_input.disabled input:-ms-input-placeholder {
+.box_input.disabled input:-ms-input-placeholder {
   color: #767676;
 }
-.box_input.disabled textarea::placeholder,
 .box_input.disabled input::placeholder {
   color: #767676;
 }
