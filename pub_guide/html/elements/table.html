@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="../../../styles/css/common.css" />
     <link rel="stylesheet" href="../../../styles/css/components/table.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/btnBasic.css" />
     <link rel="stylesheet" href="../../../styles/css/components/boxTableList.css" />
 
     <script type="text/javascript">
@@ -111,8 +112,8 @@
                   </colgroup>
                   <thead>
                     <tr>
-                      <th scope="col" class="t_left">Hosts</th>
-                      <th scope="col" class="t_left">Last report</th>
+                      <th scope="col">Hosts</th>
+                      <th scope="col" class="t_center">Last report</th>
                       <th scope="col">
                         <button type="button" class="btn_sorting"><span>정렬</span></button>
                       </th>
@@ -122,7 +123,7 @@
                       <th scope="col">Restarted Failures</th>
                       <th scope="col">Skipped</th>
                       <th scope="col">Pending</th>
-                      <th scope="col" class="t_left">Actions</th>
+                      <th scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -137,10 +138,26 @@
                       <td><span class="num small">0</span></td>
                       <td><span class="num small">0</span></td>
                       <td class="t_left">
-                        <button type="button" class="btn_basic btn_red"><span>delete</span></button>
+                        <button type="button" class="btn_basic btn_red line"><span>delete</span></button>
                       </td>
                     </tr>
 
+                    <tr>
+                      <td colspan="10">
+                        <div class="box_flag_area">
+                          <span class="box_flag col_red">col_red</span>
+                          <span class="box_flag col_orange">col_orange</span>
+                          <span class="box_flag col_yellow">col_yellow</span>
+                          <span class="box_flag col_green">col_green</span>
+                          <span class="box_flag col_green02">col_green02</span>
+                          <span class="box_flag col_blue">col_blue</span>
+                          <span class="box_flag col_blue02">col_blue02</span>
+                          <span class="box_flag col_purple">col_purple</span>
+                          <span class="box_flag col_gray">col_gray</span>
+                          <span class="box_flag col_pink">col_pink</span>
+                        </div>
+                      </td>
+                    </tr>
                     <tr class="no_data">
                       <td colspan="10">
                         <p>내용없음 텍스트</p>
@@ -148,6 +165,68 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
+
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                   <div class="box_table_wrap">
+                    <table>
+                      <caption>
+                        [th 내용 나열]에 관한 표
+                      </caption>
+                      <colgroup>
+                        <col />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">Hosts</th>
+                          <th scope="col" class="t_center">Last report</th>
+                          <th scope="col">
+                            <button type="button" class="btn_sorting"><span>정렬</span></button>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="t_left">abp-test05.exapmple.com</td>
+                          <td class="t_left"><span class="col_blue">10 minutes ago</span></td>
+                          <td><span class="icon_origin">P</span></td>
+                          <td><span class="num small">0</span></td>
+                          <td><span class="num small">0</span></td>
+                          <td><span class="num small">0</span></td>
+                          <td><span class="num small">0</span></td>
+                          <td><span class="num small">0</span></td>
+                          <td><span class="num small">0</span></td>
+                          <td class="t_left">
+                            <button type="button" class="btn_basic btn_red line"><span>delete</span></button>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="10">
+                            <div class="box_flag_area">
+                              <span class="box_flag col_red">col_red</span>
+                              <span class="box_flag col_orange">col_orange</span>
+                              <span class="box_flag col_yellow">col_yellow</span>
+                              <span class="box_flag col_green">col_green</span>
+                              <span class="box_flag col_green02">col_green02</span>
+                              <span class="box_flag col_blue">col_blue</span>
+                              <span class="box_flag col_blue02">col_blue02</span>
+                              <span class="box_flag col_purple">col_purple</span>
+                              <span class="box_flag col_gray">col_gray</span>
+                              <span class="box_flag col_pink">col_pink</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="no_data">
+                          <td colspan="10">
+                            <p>내용없음 텍스트</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </pre>
               </div>
 
               <br /><br />
@@ -184,6 +263,35 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                  <div class="box_table_wrap row">
+                    <table>
+                      <caption>
+                        [th 내용 나열] 에 관한 표
+                      </caption>
+                      <colgroup>
+                        <col style="width: 25%" />
+                        <col />
+                      </colgroup>
+
+                      <tbody>
+                        <tr>
+                          <th scope="row">library</th>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">registry_name_pattern</th>
+                          <td>null</td>
+                        </tr>
+                        <tr class="no_data">
+                          <td colspan="2"><p>내용없음</p></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </pre>
               </div>
 
               <br /><br />
@@ -277,6 +385,49 @@
                   </table>
                 </div>
               </div>
+
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                  <div class="box_table_list">
+                    <div class="table_list_item">
+                      <strong class="title">Basic Information</strong>
+                      <table>
+                        <caption>
+                          [th 내용 나열] 에 관한 표
+                        </caption>
+                        <colgroup>
+                          <col style="width: 180px" />
+                          <col />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Name</th>
+                            <td>CentOS-7-x86_64-2009</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table_list_item">
+                      <strong class="title">Sync Status</strong>
+                      <table>
+                        <caption>
+                          [th 내용 나열] 에 관한 표
+                        </caption>
+                        <colgroup>
+                          <col style="width: 180px" />
+                          <col />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Sync Plan</th>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </pre>
+              </div>
               <br /><br />
               -table_list_tab case(탭 안에 들어갈 경우 감싸는 보더선이 사라짐)<br /><br />
               <div class="tab_cont">
@@ -367,6 +518,51 @@
                     </table>
                   </div>
                 </div>
+              </div>
+
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                  <div class="tab_cont">
+                    <div class="box_table_list">
+                      <div class="table_list_item">
+                        <strong class="title">Basic Information</strong>
+                        <table>
+                          <caption>
+                            [th 내용 나열] 에 관한 표
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Name</th>
+                              <td>CentOS-7-x86_64-2009</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="table_list_item">
+                        <strong class="title">Sync Status</strong>
+                        <table>
+                          <caption>
+                            [th 내용 나열] 에 관한 표
+                          </caption>
+                          <colgroup>
+                            <col style="width: 180px" />
+                            <col />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Sync Plan</th>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </pre>
               </div>
             </div>
           </div>

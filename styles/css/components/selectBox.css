@@ -136,10 +136,17 @@
   color: #767676;
   pointer-events: none;
 }
+.box_select.error:not(.disabled) .btn_select {
+  border-color: #db392e;
+}
+.box_select.error:not(.disabled) select {
+  border-color: #db392e;
+}
 .box_select select:disabled {
   background-color: #f7f7f7;
   border-color: #c8c8c8;
   color: #767676;
+  opacity: 1;
 }
 .box_select.w200 {
   width: 200px;

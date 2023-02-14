@@ -18,9 +18,6 @@
   padding: 26px 3px;
   z-index: 1;
 }
-.side_bar .side_menu_list:hover + .box_ctrl_sidebar .btn_ctrl_sidebar {
-  display: block;
-}
 .side_bar .menu_item {
   display: block;
   position: relative;
@@ -165,14 +162,12 @@
 }
 .side_bar .btn_ctrl_sidebar {
   display: none;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 50%;
-  left: 80px;
+  position: absolute;
+  top: 18px;
+  left: 0;
   width: 11px;
   height: 33px;
-  margin-top: -17px;
-  background: #2e2f34;
+  background: #473ee9;
   border-radius: 0px 4px 4px 0px;
   transition: all 0.4s;
 }
@@ -246,9 +241,12 @@
   color: #fff;
 }
 .side_bar.open .btn_ctrl_sidebar {
-  left: 261px;
+  left: 0;
 }
 .side_bar.open .btn_ctrl_sidebar:before {
   left: 0px;
   transform: rotate(180deg);
+}
+.side_bar:hover .box_ctrl_sidebar .btn_ctrl_sidebar {
+  display: block;
 }

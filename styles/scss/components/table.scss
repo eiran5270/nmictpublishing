@@ -109,9 +109,9 @@
   }
   strong {
     font-weight: 700;
-    &.col_blue {
-      font-weight: 500;
-    }
+  }
+  em {
+    font-weight: 500;
   }
   .sub {
     display: block;
@@ -138,6 +138,7 @@
       height: 24px;
       line-height: 24px;
       border-radius: 2px;
+      background-color: #e8e8e8;
     }
   }
   .icon_origin {
@@ -166,16 +167,47 @@
   }
   .box_flag_area {
     display: flex;
-    gap: 0 1px;
+    gap: 0 2px;
     .box_flag {
       display: block;
-      height: 25px;
+      height: 24px;
       padding: 0 10px;
-      background: #e1ffe8;
       border-radius: 4px;
       font-size: 12px;
-      line-height: 25px;
-      color: #2aa436;
+      line-height: 24px;
+      color: #fff;
+      &.col_red {
+        background-color: #ea343f;
+      }
+      &.col_orange {
+        background-color: #ff8541;
+      }
+      &.col_yellow {
+        background-color: #ffe141;
+        color: #000;
+      }
+      &.col_green {
+        background-color: #089d4d;
+      }
+      &.col_green02 {
+        background-color: #92e94e;
+        color: #000;
+      }
+      &.col_blue {
+        background-color: #4353e8;
+      }
+      &.col_blue02 {
+        background-color: #39bab2;
+      }
+      &.col_purple {
+        background-color: #9539ce;
+      }
+      &.col_gray {
+        background-color: #888;
+      }
+      &.col_pink {
+        background-color: #f9477d;
+      }
     }
   }
   .btn_modify {
@@ -193,10 +225,10 @@
   }
   .icon_lock {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background: url("../../../assets/images/common/icon_locked.png") no-repeat;
-    background-size: 16px 16px;
+    background-size: 20px 20px;
     &.unlock {
       background-image: url("../../../assets/images/common/icon_unlocked.png");
     }
@@ -204,8 +236,10 @@
   .tbl_toggle_anchor {
     display: inline-block;
     position: relative;
+    min-width: 200px;
     padding-left: 22px;
     color: #2e86d8;
+    text-align: left;
     &:before {
       content: "";
       display: none;
@@ -235,6 +269,22 @@
   }
   .tbl_toggle_cont {
     display: none;
+    &.depth2 {
+      .tbl_toggle_anchor {
+        padding-left: 42px;
+        &::before {
+          left: 22px;
+        }
+      }
+    }
+    &.depth3 {
+      .tbl_toggle_anchor {
+        padding-left: 62px;
+        &::before {
+          left: 42px;
+        }
+      }
+    }
   }
   .t_left {
     text-align: left;

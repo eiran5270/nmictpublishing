@@ -16,11 +16,6 @@
     height: calc(100% - 71px);
     padding: 26px 3px;
     z-index: 1;
-    &:hover {
-      & + .box_ctrl_sidebar .btn_ctrl_sidebar {
-        display: block;
-      }
-    }
   }
   .menu_item {
     display: block;
@@ -172,13 +167,12 @@
   }
   .btn_ctrl_sidebar {
     display: none;
-    position: sticky;
-    top: 50%;
-    left: 80px;
+    position: absolute;
+    top: 18px;
+    left: 0;
     width: 11px;
     height: 33px;
-    margin-top: -17px;
-    background: #2e2f34;
+    background: #473ee9;
     border-radius: 0px 4px 4px 0px;
     transition: all 0.4s;
     &:before {
@@ -256,11 +250,16 @@
       }
     }
     .btn_ctrl_sidebar {
-      left: 261px;
+      left: 0;
       &:before {
         left: 0px;
         transform: rotate(180deg);
       }
+    }
+  }
+  &:hover {
+    .box_ctrl_sidebar .btn_ctrl_sidebar {
+      display: block;
     }
   }
 }

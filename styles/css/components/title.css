@@ -21,8 +21,8 @@
 .title_wrap .box_ctrl_btns .box_checkbox ~ .box_checkbox {
   margin-left: 14px;
 }
-.title_wrap .box_ctrl_btns .btn_basic {
-  width: 100%;
+.title_wrap .box_ctrl_btns .box_select {
+  width: 140px;
 }
 .title_wrap.line {
   margin-bottom: 20px;

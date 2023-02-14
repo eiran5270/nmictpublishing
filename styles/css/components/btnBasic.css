@@ -19,29 +19,88 @@
   border-color: #7e7e7e;
 }
 .btn_basic.btn_blue {
-  background-color: #473ee9;
-  border-color: #473ee9;
+  background-color: #4353e8;
+  border-color: #4353e8;
+  color: #fff;
+}
+.btn_basic.btn_blue02 {
+  background-color: #39bab2;
+  border-color: #39bab2;
   color: #fff;
 }
 .btn_basic.btn_gray {
-  background-color: #444;
+  background-color: #888;
+  border-color: #888;
   color: #fff;
 }
 .btn_basic.btn_gray02 {
+  background-color: #444;
+  color: #fff;
+}
+.btn_basic.btn_gray03 {
   background-color: #d6dadb;
   border-color: #d6dadb;
 }
-.btn_basic.btn_gray03 {
+.btn_basic.btn_gray04 {
   background-color: #eaf2f4;
   border-color: #eaf2f4;
 }
 .btn_basic.btn_purple {
+  background-color: #9539ce;
+  color: #fff;
+  border-color: #9539ce;
+}
+.btn_basic.btn_purple.line {
   color: #773bda;
   border-color: #773bda;
+  background-color: #fff;
 }
 .btn_basic.btn_red {
+  background-color: #ea343f;
+  border-color: #ea343f;
+  color: #fff;
+}
+.btn_basic.btn_red.line {
   color: #dc654c;
   border-color: #dc654c;
+  background-color: #fff;
+}
+.btn_basic.btn_pink {
+  background-color: #f9477d;
+  border-color: #f9477d;
+  color: #fff;
+}
+.btn_basic.btn_orange {
+  background-color: #ff8541;
+  border-color: #ff8541;
+  color: #fff;
+}
+.btn_basic.btn_yellow {
+  background-color: #ffe141;
+  border-color: #ffe141;
+  color: #000;
+}
+.btn_basic.btn_green {
+  background-color: #089d4d;
+  border-color: #089d4d;
+  color: #fff;
+}
+.btn_basic.btn_green02 {
+  border-color: #92e94e;
+  background-color: #92e94e;
+  color: #000;
+}
+.btn_basic.btn_blue.spinner span:before, .btn_basic.btn_blue02.spinner span:before, .btn_basic.btn_gray.spinner span:before, .btn_basic.btn_gray02.spinner span:before, .btn_basic.btn_purple.spinner span:before, .btn_basic.btn_red.spinner span:before, .btn_basic.btn_pink.spinner span:before, .btn_basic.btn_orange.spinner span:before, .btn_basic.btn_green.spinner span:before {
+  border-color: #fff;
+  border-right-color: transparent;
+}
+.btn_basic.btn_purple.line.spinner span:before {
+  border-color: #773bda;
+  border-right-color: transparent;
+}
+.btn_basic.btn_red.line.spinner span:before {
+  border-color: #dc654c;
+  border-right-color: transparent;
 }
 .btn_basic.btn_text {
   min-width: auto;
@@ -73,4 +132,36 @@
   border-color: #473ee9;
   background: #473ee9 url("../../../assets/images/common/icon_export.png") no-repeat left 8px center;
   background-size: 14px 14px;
+}
+.btn_basic.spinner span {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+.btn_basic.spinner span:before {
+  content: "";
+  display: inline-block;
+  min-width: 14px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #000;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 0.75s linear infinite spinner-rotate;
+  animation: 0.75s linear infinite spinner-rotate;
+}
+.btn_basic.spinner.btn_small span:before {
+  min-width: 12px;
+  width: 12px;
+  height: 12px;
+}
+@-webkit-keyframes spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }

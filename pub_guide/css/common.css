@@ -255,7 +255,9 @@
 
 /*guide_code_view*/
 .guide_code_view {
+  margin-top: 20px;
   font-size: 14px;
+  border: 1px solid #d3d3d3;
 }
 
 .guide_grid {

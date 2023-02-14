@@ -142,10 +142,19 @@
       pointer-events: none;
     }
   }
+  &.error:not(.disabled) {
+    .btn_select {
+      border-color: #db392e;
+    }
+    select {
+      border-color: #db392e;
+    }
+  }
   select:disabled {
     background-color: #f7f7f7;
     border-color: #c8c8c8;
     color: #767676;
+    opacity: 1;
   }
   &.w200 {
     width: 200px;

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../../../styles/css/common.css" />
     <link rel="stylesheet" href="../../../styles/css/components/pagination.css" />
     <link rel="stylesheet" href="../../../styles/css/components/selectBox.css" />
+    <link rel="stylesheet" href="../../../styles/css/components/boxStep.css" />
 
     <script type="text/javascript">
       SyntaxHighlighter.all();
@@ -123,6 +124,622 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_pagination">
+                      <button type="button" class="btn_page prev">
+                        <span class="hidden">이전</span>
+                      </button>
+
+                      <strong class="btn_num">1 </strong>
+                      <button class="btn_num">2</button>
+                      <button type="button" class="btn_page next">
+                        <span class="hidden">다음</span>
+                      </button>
+                      <div class="page_total">
+                        <div class="box_select mid02">
+                          <button type="button" class="btn_select"><span>1</span></button>
+                          <div class="options">
+                            <button type="button" class="option"><span>2</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </pre>
+              </div>
+              <br /><br />
+              -step 컬러 가이드 <br /><br />
+
+              <div class="box_step col_red">
+                <ul>
+                  <li class="active">
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li>
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li>
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_red">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
+              </div>
+
+              <div class="box_step col_orange">
+                <ul>
+                  <li>
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li class="active">
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li>
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_orange">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
+              </div>
+
+              <div class="box_step col_green">
+                <ul>
+                  <li>
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li>
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li class="active">
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li>
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_green">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
+              </div>
+
+              <div class="box_step col_green02">
+                <ul>
+                  <li>
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li>
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li class="active">
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_green02">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
+              </div>
+
+              <div class="box_step col_blue">
+                <ul>
+                  <li>
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li>
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li>
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li class="active">
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_blue">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
+              </div>
+
+              <div class="box_step col_blue02">
+                <ul>
+                  <li>
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li>
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li>
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li class="active">
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_blue02">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
+              </div>
+
+              <div class="box_step col_blue03">
+                <ul>
+                  <li>
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li>
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li>
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li class="active">
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_blue03">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
+              </div>
+
+              <div class="box_step col_purple">
+                <ul>
+                  <li class="active">
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li>
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li>
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_purple">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
+              </div>
+
+              <div class="box_step col_pink">
+                <ul>
+                  <li>
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li class="active">
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li>
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_pink">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
+              </div>
+
+              <div class="box_step col_gray">
+                <ul>
+                  <li>
+                    <i class="step">1</i>
+                    <strong>REGISTERING</strong>
+                    <span>47s / 60s</span>
+                  </li>
+                  <li>
+                    <i class="step">2</i>
+                    <strong>HEALTH_CHECK</strong>
+                    <span>5.4m / 300s</span>
+                  </li>
+                  <li class="active">
+                    <i class="step">3</i>
+                    <strong>BIOS_SETUP</strong>
+                    <span>2.4m / 120s</span>
+                  </li>
+                  <li>
+                    <i class="step">4</i>
+                    <strong>PROVISING</strong>
+                    <span>22.4m / 300s</span>
+                  </li>
+                  <li>
+                    <i class="step">5</i>
+                    <strong>HYPERVISOR_INSTALL</strong>
+                    <span>0 / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">6</i>
+                    <strong>PLATFORM_SETUP</strong>
+                    <span>46.7m / 600s</span>
+                  </li>
+                  <li>
+                    <i class="step">7</i>
+                    <strong>DEVELOPED</strong>
+                    <span>0 / 60s</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="guide_code_view">
+                <pre class="brush: html; gutter: false;">
+                    <div class="box_step col_gray">
+                      <ul>
+                        <li class="active">
+                          <i class="step">1</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        <li>
+                          <i class="step">2</i>
+                          <strong>TEST</strong>
+                          <span>Ns / Ns</span>
+                        </li>
+                        ...
+                      </ul>
+                    </div>
+                </pre>
               </div>
             </div>
           </div>

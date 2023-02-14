@@ -93,7 +93,7 @@
 .box_table_wrap strong {
   font-weight: 700;
 }
-.box_table_wrap strong.col_blue {
+.box_table_wrap em {
   font-weight: 500;
 }
 .box_table_wrap .sub {
@@ -122,6 +122,7 @@
   height: 24px;
   line-height: 24px;
   border-radius: 2px;
+  background-color: #e8e8e8;
 }
 .box_table_wrap .icon_origin {
   display: inline-block;
@@ -149,17 +150,48 @@
 }
 .box_table_wrap .box_flag_area {
   display: flex;
-  gap: 0 1px;
+  gap: 0 2px;
 }
 .box_table_wrap .box_flag_area .box_flag {
   display: block;
-  height: 25px;
+  height: 24px;
   padding: 0 10px;
-  background: #e1ffe8;
   border-radius: 4px;
   font-size: 12px;
-  line-height: 25px;
-  color: #2aa436;
+  line-height: 24px;
+  color: #fff;
+}
+.box_table_wrap .box_flag_area .box_flag.col_red {
+  background-color: #ea343f;
+}
+.box_table_wrap .box_flag_area .box_flag.col_orange {
+  background-color: #ff8541;
+}
+.box_table_wrap .box_flag_area .box_flag.col_yellow {
+  background-color: #ffe141;
+  color: #000;
+}
+.box_table_wrap .box_flag_area .box_flag.col_green {
+  background-color: #089d4d;
+}
+.box_table_wrap .box_flag_area .box_flag.col_green02 {
+  background-color: #92e94e;
+  color: #000;
+}
+.box_table_wrap .box_flag_area .box_flag.col_blue {
+  background-color: #4353e8;
+}
+.box_table_wrap .box_flag_area .box_flag.col_blue02 {
+  background-color: #39bab2;
+}
+.box_table_wrap .box_flag_area .box_flag.col_purple {
+  background-color: #9539ce;
+}
+.box_table_wrap .box_flag_area .box_flag.col_gray {
+  background-color: #888;
+}
+.box_table_wrap .box_flag_area .box_flag.col_pink {
+  background-color: #f9477d;
 }
 .box_table_wrap .btn_modify {
   display: inline-block;
@@ -176,10 +208,10 @@
 }
 .box_table_wrap .icon_lock {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background: url("../../../assets/images/common/icon_locked.png") no-repeat;
-  background-size: 16px 16px;
+  background-size: 20px 20px;
 }
 .box_table_wrap .icon_lock.unlock {
   background-image: url("../../../assets/images/common/icon_unlocked.png");
@@ -187,8 +219,10 @@
 .box_table_wrap .tbl_toggle_anchor {
   display: inline-block;
   position: relative;
+  min-width: 200px;
   padding-left: 22px;
   color: #2e86d8;
+  text-align: left;
 }
 .box_table_wrap .tbl_toggle_anchor:before {
   content: "";
@@ -214,6 +248,18 @@
 }
 .box_table_wrap .tbl_toggle_cont {
   display: none;
+}
+.box_table_wrap .tbl_toggle_cont.depth2 .tbl_toggle_anchor {
+  padding-left: 42px;
+}
+.box_table_wrap .tbl_toggle_cont.depth2 .tbl_toggle_anchor::before {
+  left: 22px;
+}
+.box_table_wrap .tbl_toggle_cont.depth3 .tbl_toggle_anchor {
+  padding-left: 62px;
+}
+.box_table_wrap .tbl_toggle_cont.depth3 .tbl_toggle_anchor::before {
+  left: 42px;
 }
 .box_table_wrap .t_left {
   text-align: left;

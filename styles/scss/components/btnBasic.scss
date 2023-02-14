@@ -18,30 +18,111 @@
     border-color: #7e7e7e;
   }
   &.btn_blue {
-    background-color: #473ee9;
-    border-color: #473ee9;
+    background-color: #4353e8;
+    border-color: #4353e8;
+    color: #fff;
+  }
+  &.btn_blue02 {
+    background-color: #39bab2;
+    border-color: #39bab2;
     color: #fff;
   }
   &.btn_gray {
-    background-color: #444;
+    background-color: #888;
+    border-color: #888;
     color: #fff;
   }
   &.btn_gray02 {
+    background-color: #444;
+    color: #fff;
+  }
+  &.btn_gray03 {
     background-color: #d6dadb;
     border-color: #d6dadb;
   }
-  &.btn_gray03 {
+  &.btn_gray04 {
     background-color: #eaf2f4;
     border-color: #eaf2f4;
   }
   &.btn_purple {
-    color: #773bda;
-    border-color: #773bda;
+    background-color: #9539ce;
+    color: #fff;
+    border-color: #9539ce;
+    &.line {
+      color: #773bda;
+      border-color: #773bda;
+      background-color: #fff;
+    }
   }
   &.btn_red {
-    color: #dc654c;
-    border-color: #dc654c;
+    background-color: #ea343f;
+    border-color: #ea343f;
+    color: #fff;
+    &.line {
+      color: #dc654c;
+      border-color: #dc654c;
+      background-color: #fff;
+    }
   }
+  &.btn_pink {
+    background-color: #f9477d;
+    border-color: #f9477d;
+    color: #fff;
+  }
+  &.btn_orange {
+    background-color: #ff8541;
+    border-color: #ff8541;
+    color: #fff;
+  }
+  &.btn_yellow {
+    background-color: #ffe141;
+    border-color: #ffe141;
+    color: #000;
+  }
+  &.btn_green {
+    background-color: #089d4d;
+    border-color: #089d4d;
+    color: #fff;
+  }
+  &.btn_green02 {
+    border-color: #92e94e;
+    background-color: #92e94e;
+    color: #000;
+  }
+  &.btn_blue,
+  &.btn_blue02,
+  &.btn_gray,
+  &.btn_gray02,
+  &.btn_purple,
+  &.btn_red,
+  &.btn_pink,
+  &.btn_orange,
+  &.btn_green {
+    &.spinner {
+      span:before {
+        border-color: #fff;
+        border-right-color: transparent;
+      }
+    }
+  }
+
+  &.btn_purple.line {
+    &.spinner {
+      span:before {
+        border-color: #773bda;
+        border-right-color: transparent;
+      }
+    }
+  }
+  &.btn_red.line {
+    &.spinner {
+      span:before {
+        border-color: #dc654c;
+        border-right-color: transparent;
+      }
+    }
+  }
+
   &.btn_text {
     min-width: auto;
     height: auto;
@@ -73,5 +154,36 @@
     border-color: #473ee9;
     background: #473ee9 url("../../../assets/images/common/icon_export.png") no-repeat left 8px center;
     background-size: 14px 14px;
+  }
+  &.spinner {
+    span {
+      display: flex;
+      align-items: center;
+      gap: 0 5px;
+      &:before {
+        content: "";
+        display: inline-block;
+        min-width: 14px;
+        width: 14px;
+        height: 14px;
+        border: 2px solid #000;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: 0.75s linear infinite spinner-rotate;
+        animation: 0.75s linear infinite spinner-rotate;
+      }
+    }
+    &.btn_small {
+      span:before {
+        min-width: 12px;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+  @keyframes spinner-rotate {
+    to {
+      transform: rotate(360deg);
+    }
   }
 }

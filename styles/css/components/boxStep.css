@@ -47,24 +47,6 @@
   position: relative;
   width: 0;
 }
-.box_step li:nth-child(2) .step {
-  background-color: #c0bcff;
-}
-.box_step li:nth-child(3) .step {
-  background-color: #a7a1ff;
-}
-.box_step li:nth-child(4) .step {
-  background-color: #8f88ff;
-}
-.box_step li:nth-child(5) .step {
-  background-color: #7971fa;
-}
-.box_step li:nth-child(6) .step {
-  background-color: #5c53f3;
-}
-.box_step li:nth-child(7) .step {
-  background-color: #473ee9;
-}
 .box_step .step {
   display: flex;
   align-items: center;
@@ -91,6 +73,66 @@
   display: block;
   margin-top: 10px;
   line-height: 17px;
+}
+.box_step.col_red .step {
+  background-color: #fedadc;
+}
+.box_step.col_red li.active .step {
+  background-color: #ea343f;
+}
+.box_step.col_orange .step {
+  background-color: #ffdac6;
+}
+.box_step.col_orange li.active .step {
+  background-color: #ff8541;
+}
+.box_step.col_green .step {
+  background-color: #c9f2dc;
+}
+.box_step.col_green li.active .step {
+  background-color: #089d4d;
+}
+.box_step.col_green02 .step {
+  background-color: #bdf1ee;
+}
+.box_step.col_green02 li.active .step {
+  background-color: #39bab2;
+}
+.box_step.col_blue .step {
+  background-color: #e1dffc;
+}
+.box_step.col_blue li.active .step {
+  background-color: #473ee9;
+}
+.box_step.col_blue02 .step {
+  background-color: #d6d9ff;
+}
+.box_step.col_blue02 li.active .step {
+  background-color: #22297c;
+}
+.box_step.col_blue03 .step {
+  background-color: #d0ecf8;
+}
+.box_step.col_blue03 li.active .step {
+  background-color: #00b3ff;
+}
+.box_step.col_purple .step {
+  background-color: #ecd7f9;
+}
+.box_step.col_purple li.active .step {
+  background-color: #9539ce;
+}
+.box_step.col_pink .step {
+  background-color: #ffccdb;
+}
+.box_step.col_pink li.active .step {
+  background-color: #f9477d;
+}
+.box_step.col_gray .step {
+  background-color: #e0e0e0;
+}
+.box_step.col_gray li.active .step {
+  background-color: #7e7e7e;
 }
 
 @media all and (max-width: 1536px) {
