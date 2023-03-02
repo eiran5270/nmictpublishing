@@ -91,19 +91,21 @@
     }
   }
   .box_code_editor & {
+    border: 0;
     .box_tab_anchors {
+      padding: 0;
       background-color: #fff;
       border-radius: 0;
-      border-top: 0;
+      border: 1px solid #e7ecf0;
+      border-bottom: 0;
       &:before {
         top: 0;
         bottom: initial;
       }
     }
     .tab_anchor_item {
-      border-top: 1px solid #e7ecf0;
+      height: 40px;
       border-right: 0;
-      border-bottom: 0;
       &:before {
         content: "";
         display: none;
@@ -120,6 +122,7 @@
         }
       }
       .tab_anchor {
+        height: 100%;
         background-color: #fff;
         border-radius: 0 !important;
         border: 0 !important;
