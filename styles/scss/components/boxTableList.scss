@@ -144,6 +144,58 @@
       }
     }
   }
+  .box_memo_wrap {
+    display: flex;
+    gap: 0 10px;
+    width: 100%;
+    margin-top: 20px;
+    .box_memo {
+      width: 100%;
+      max-width: 348px;
+      min-height: 90px;
+      padding: 15px;
+      background: rgba(133, 141, 250, 0.1);
+      border-radius: 6px;
+    }
+    .memo_title {
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #473ee9;
+    }
+    .memo_cont {
+      margin-top: 6px;
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #565656;
+      }
+    }
+  }
+  .box_progress_wrap {
+    p + .box_progress {
+      margin-top: 18px;
+    }
+  }
+  .box_progress {
+    width: 100%;
+    max-width: 348px;
+    height: 20px;
+    background: #f3f4ff;
+    border-radius: 10px;
+    .progress_bar {
+      height: 100%;
+      padding-left: 12px;
+      background: #473ee9;
+      border-radius: 10px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 20px;
+      color: #fff;
+    }
+  }
 
   .box_tab_menu & {
     padding: 0;
