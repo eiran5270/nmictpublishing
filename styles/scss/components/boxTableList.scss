@@ -175,25 +175,31 @@
     }
   }
   .box_progress_wrap {
+    padding-bottom: 25px;
     p + .box_progress {
       margin-top: 18px;
     }
   }
   .box_progress {
+    position: relative;
     width: 100%;
     max-width: 348px;
-    height: 20px;
+    height: 10px;
     background: #f3f4ff;
     border-radius: 10px;
     .progress_bar {
       height: 100%;
-      padding-left: 12px;
       background: #473ee9;
       border-radius: 10px;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 11px;
       line-height: 20px;
-      color: #fff;
+      color: #473ee9;
+      span {
+        display: block;
+        position: absolute;
+        top: 15px;
+      }
     }
   }
 

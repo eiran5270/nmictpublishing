@@ -7,6 +7,30 @@
       white-space: normal;
     }
   }
+  &.select_tbl {
+    th {
+      padding: 10px 0 !important;
+    }
+    td {
+      padding: 10px 0 !important;
+      border: 0;
+      .box_checkbox {
+        .label {
+          font-weight: 400;
+          color: #565656;
+        }
+      }
+    }
+
+    tr.no_data {
+      p {
+        height: auto;
+      }
+    }
+    tr:hover {
+      background-color: transparent !important;
+    }
+  }
   table {
     table-layout: auto;
     white-space: nowrap;

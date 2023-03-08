@@ -6,6 +6,23 @@
   table-layout: fixed;
   white-space: normal;
 }
+.box_table_wrap.select_tbl th {
+  padding: 10px 0 !important;
+}
+.box_table_wrap.select_tbl td {
+  padding: 10px 0 !important;
+  border: 0;
+}
+.box_table_wrap.select_tbl td .box_checkbox .label {
+  font-weight: 400;
+  color: #565656;
+}
+.box_table_wrap.select_tbl tr.no_data p {
+  height: auto;
+}
+.box_table_wrap.select_tbl tr:hover {
+  background-color: transparent !important;
+}
 .box_table_wrap table {
   table-layout: auto;
   white-space: nowrap;

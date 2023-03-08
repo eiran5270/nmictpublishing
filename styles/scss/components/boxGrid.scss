@@ -22,6 +22,28 @@
   .grid_cont {
     height: calc(100% - 44px);
     padding: 20px;
+    &.col2 {
+      display: grid;
+      grid-template-columns: 3fr 0.8fr;
+      gap: 0 44px;
+      .box_tbl_info {
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #565656;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -20px;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          background-color: #e7ecf0;
+        }
+      }
+    }
   }
   & ~ .box_grid_item {
     margin-top: 15px;

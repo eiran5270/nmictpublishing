@@ -61,3 +61,38 @@
 .box_checkbox input:disabled:checked + .txt_label .icon:before {
   background-image: url("../../../assets/images/common/icon_checkbox_disabled.png");
 }
+.box_checkbox.switch .txt_label .icon {
+  display: block;
+  position: relative;
+  width: 27px;
+  height: 16px;
+  padding: 2px;
+  background-color: #73728c;
+  border-radius: 8px;
+}
+.box_checkbox.switch .txt_label .icon:before {
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  background-image: none !important;
+  border-radius: 50%;
+}
+.box_checkbox.switch .txt_label .label {
+  color: #565656;
+  font-weight: 400;
+}
+.box_checkbox.switch input:checked + .txt_label .icon {
+  background: #473ee9;
+}
+.box_checkbox.switch input:checked + .txt_label .icon:before {
+  left: inherit;
+  right: 2px;
+}
+.box_checkbox.switch input:disabled + .txt_label .icon {
+  background: #d6dbe1;
+}
+.box_checkbox.switch input:disabled:checked + .txt_label .icon {
+  background: #c9c7ea;
+}
