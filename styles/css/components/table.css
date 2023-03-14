@@ -81,7 +81,7 @@
 .box_table_wrap tbody td:last-child {
   padding-right: 20px;
 }
-.box_table_wrap tr:hover:not(.no_data) {
+.box_table_wrap tbody tr:hover:not(.no_data) {
   background-color: #f6f6f6;
 }
 .box_table_wrap .no_data p {
